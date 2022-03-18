@@ -17,10 +17,14 @@
       <div>
         <CommunityHub></CommunityHub>
       </div>
+      <div>
+        <Subscribe></Subscribe>
+      </div>
   </div>
 </template>
 
 <script>
+import Subscribe from '../../components/Subscribe';
 import CommunityHub from '../../components/CommunityHub';
 export default {
   name: 'CommunityPage',
@@ -30,7 +34,8 @@ export default {
     }
   },
   components:{
-    CommunityHub
+    CommunityHub,
+    Subscribe
   }
 }
 </script>

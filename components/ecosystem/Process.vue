@@ -10,18 +10,18 @@
             <div class="learn-color">Learn Detail></div>
           </v-row>
           <v-row class="mt-16" justify="space-between">
-            <div class="process-block">
+            <v-card class="process-block">
               <v-img :src="banner" class="img-style"/>
               <h6>Apply</h6>
-            </div>
-            <div class="process-block">
+            </v-card>
+            <v-card class="process-block">
               <v-img :src="banner1" class="img-style"/>
               <h6>Evaluation Criteria</h6>
-            </div>
-            <div class="process-block">
+            </v-card>
+            <v-card class="process-block">
               <v-img :src="banner2" class="img-style"/>
               <h6>Funding Distribution Rules</h6>
-            </div>
+            </v-card>
           </v-row>
         </v-col>
         <div class="mt-16 learn-join learn-rei">
