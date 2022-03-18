@@ -17,14 +17,14 @@
                 </div>
                 </div>
             </div>
+          </div>
+          <div>
+            <Explore></Explore>
+          </div>
+          <div>
+            <Process></Process>
+          </div>
       </div>
-      <div>
-        <Explore></Explore>
-      </div>
-      <div>
-        <Process></Process>
-      </div>
-  </div>
 </template>
 
 <script>

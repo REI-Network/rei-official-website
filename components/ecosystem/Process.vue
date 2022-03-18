@@ -1,27 +1,48 @@
 <template>
   <div>
     <v-container class="align-center">
-      <v-row
-        class="mt-10"
-      >
-        <v-col cols="12">
+        <v-col>
           <v-row justify="space-between">
             <h2>Application Process</h2>
             <div class="learn-color">Learn Detail></div>
           </v-row>
           <v-row class="mt-16" justify="space-between">
-            <v-card class="process-block">
-              <v-img :src="banner" class="img-style"/>
-              <h6>Apply</h6>
-            </v-card>
-            <v-card class="process-block">
-              <v-img :src="banner1" class="img-style"/>
-              <h6>Evaluation Criteria</h6>
-            </v-card>
-            <v-card class="process-block">
-              <v-img :src="banner2" class="img-style"/>
-              <h6>Funding Distribution Rules</h6>
-            </v-card>
+            <v-hover
+                v-slot="{ hover }"
+                open-delay="200">
+                <v-card tile
+                  :elevation="hover ? 12 : 0"
+                  :class="{ 'on-hover': hover }"
+                  class="process-block"
+                  >
+                  <v-img :src="banner" class="img-style"/>
+                  <h6>Apply</h6>
+                </v-card>
+            </v-hover>
+            <v-hover
+                v-slot="{ hover }"
+                open-delay="200">
+                <v-card tile
+                  :elevation="hover ? 12 : 0"
+                  :class="{ 'on-hover': hover }"
+                  class="process-block"
+                  >
+                  <v-img :src="banner1" class="img-style"/>
+                  <h6>Evaluation Criteria</h6>
+                </v-card>
+            </v-hover>
+            <v-hover
+                v-slot="{ hover }"
+                open-delay="200">
+                <v-card tile
+                  :elevation="hover ? 12 : 0"
+                  :class="{ 'on-hover': hover }"
+                  class="process-block"
+                  >
+                  <v-img :src="banner2" class="img-style"/>
+                  <h6>Funding Distribution Rules</h6>
+                </v-card>
+            </v-hover>
           </v-row>
         </v-col>
         <div class="mt-16 learn-join learn-rei">
@@ -66,7 +87,6 @@
           </v-btn>
           </div>
         </div>
-      </v-row>
     </v-container>
   </div>
 </template>
@@ -88,9 +108,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.align-center{
-  // background: blue;
-}
 .learn-color{
   color:#4A37F8 ;
 }

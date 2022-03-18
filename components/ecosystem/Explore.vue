@@ -1,12 +1,9 @@
 <template>
   <div>
-    <v-container class="align-center">
-      <v-row
-        class="mt-10"
-      >
-        <v-col>
+    <v-container class="mt-12">
           <h2>Explore REIcostystem</h2>
-          <v-row class="mt-10" justify="space-between">
+          <v-row class="mt-4" justify="space-between">
+            <v-col cols="12" sm="6">
               <v-hover
                 v-slot="{ hover }"
                 open-delay="200"
@@ -29,6 +26,50 @@
                   </div>
                 </v-card>
               </v-hover>
+               <v-hover
+                v-slot="{ hover }"
+                open-delay="200"
+              >
+                <v-card
+                  :elevation="hover ? 12 : 0"
+                  :class="{ 'on-hover': hover }"
+                  class="card-content"
+                  max-width="560"
+                  >
+                  <div class="img-background">
+                    <v-img :src="banner3" class="img-style"/>
+                  </div>
+                  <div class="card-margin">
+                    <h3>Stablecoin</h3>
+                    <v-card-text class="card-text">
+                      Build The Next-Generation Stablecoin On REI Network.Think DAI,USUC And More.
+                    </v-card-text>
+                  </div>
+                </v-card>
+              </v-hover>
+               <v-hover
+                v-slot="{ hover }"
+                open-delay="200"
+              >
+                <v-card
+                  :elevation="hover ? 12 : 0"
+                  :class="{ 'on-hover': hover }"
+                  class="card-content"
+                  max-width="560"
+                  >
+                  <div class="img-background">
+                    <v-img :src="banner3" class="img-style"/>
+                  </div>
+                  <div class="card-margin">
+                    <h3>NFT Marketplace</h3>
+                    <v-card-text class="card-text">
+                      Gaming And Decentralized Finance(DeFi),Which Also Referred To As Play-To-Earn(P2E)Games.Think Acie
+                    </v-card-text>
+                  </div>
+                </v-card>
+              </v-hover>
+            </v-col>
+            <v-col cols="12" sm="6">
               <v-hover
                 v-slot="{ hover }"
                 open-delay="200"
@@ -72,52 +113,8 @@
                   </div>
                 </v-card>
               </v-hover>
-
-               <v-hover
-                v-slot="{ hover }"
-                open-delay="200"
-              >
-                <v-card
-                  :elevation="hover ? 12 : 0"
-                  :class="{ 'on-hover': hover }"
-                  class="card-content"
-                  max-width="560"
-                  >
-                  <div class="img-background">
-                    <v-img :src="banner3" class="img-style"/>
-                  </div>
-                  <div class="card-margin">
-                    <h3>Stablecoin</h3>
-                    <v-card-text class="card-text">
-                      Build The Next-Generation Stablecoin On REI Network.Think DAI,USUC And More.
-                    </v-card-text>
-                  </div>
-                </v-card>
-              </v-hover>
-              <v-hover
-                v-slot="{ hover }"
-                open-delay="200"
-              >
-                <v-card
-                  :elevation="hover ? 12 : 0"
-                  :class="{ 'on-hover': hover }"
-                  class="card-content"
-                  max-width="560"
-                  >
-                  <div class="img-background">
-                    <v-img :src="banner3" class="img-style"/>
-                  </div>
-                  <div class="card-margin">
-                    <h3>NFT Marketplace</h3>
-                    <v-card-text class="card-text">
-                      Gaming And Decentralized Finance(DeFi),Which Also Referred To As Play-To-Earn(P2E)Games.Think Acie
-                    </v-card-text>
-                  </div>
-                </v-card>
-              </v-hover>
+              </v-col>
           </v-row>
-        </v-col>
-      </v-row>
     </v-container>
   </div>
 </template>

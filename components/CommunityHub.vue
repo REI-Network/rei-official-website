@@ -1,23 +1,19 @@
 <template>
   <div>
-    <v-container class="align-center">
-      <v-row class="mt-10">
-        <v-col>
-          <v-row>
-            <h2>Community Hub</h2>
-          </v-row>
-          <v-row class="mt-10 font-white" justify="space-between">
-            <div class="Hub">
+    <v-container class="mt-12">
+          <h2>Community Hub</h2>
+          <v-row class="font-white mt-4" justify="space-between">
+            <v-col cols="12" sm="4">
               <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
-                <v-card
+                   <v-card
                   tile
                   :elevation="hover ? 12 : 0"
                   :class="{ 'on-hover': hover }"
                   class="hub-background mt-10 twitter"
                   >
-                  <img src="@/assets/img/ecosystem/exchange.png" height="200" width="200" />
+                  <img src="@/assets/img/ecosystem/exchange.png" height="180" width="180" />
                   <div class="hub-content">
                     <div class="hub-name font-white">Twitter <v-icon color="#FFF">～</v-icon></div>
                     <h2 class=" font-white">≈ 94,330</h2>
@@ -34,7 +30,7 @@
                   :class="{ 'on-hover': hover }"
                   class="hub-background mt-10 reddit"
                   >
-                  <img src="@/assets/img/ecosystem/exchange.png" height="200" width="200" />
+                  <img src="@/assets/img/ecosystem/exchange.png" height="180" width="180" />
                   <div class="hub-content">
                     <div class="hub-name font-white">Redditt <v-icon color="#FFF">～</v-icon></div>
                     <h2 class=" font-white">≈ 94,330</h2>
@@ -42,8 +38,8 @@
                   </div>
                 </v-card>
               </v-hover>
-            </div>
-            <div class="Hub">
+            </v-col>
+            <v-col cols="12" sm="4" class="Hub">
               <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
@@ -53,7 +49,7 @@
                   :class="{ 'on-hover': hover }"
                   class="hub-background mt-10 github"
                   >
-                  <img src="@/assets/img/ecosystem/exchange.png" height="200" width="200" />
+                  <img src="@/assets/img/ecosystem/exchange.png" height="180" width="180" />
                   <div class="hub-content">
                     <div class="hub-name font-white">GitHub <v-icon color="#FFF">～</v-icon></div>
                     <h2 class=" font-white">≈ 94,330</h2>
@@ -70,7 +66,7 @@
                   :class="{ 'on-hover': hover }"
                   class="hub-background mt-10 kakao"
                   >
-                  <img src="@/assets/img/ecosystem/exchange.png" height="200" width="200" />
+                  <img src="@/assets/img/ecosystem/exchange.png" height="180" width="180" />
                   <div class="hub-content">
                     <div class="hub-name font-white">KaKao <v-icon color="#FFF">～</v-icon></div>
                     <h2 class=" font-white">≈ 94,330</h2>
@@ -78,9 +74,9 @@
                   </div>
                 </v-card>
               </v-hover>
-            </div>
-            <div class="Hub">
-            <v-hover
+            </v-col>
+            <v-col cols="12" sm="4">
+              <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
                 <v-card
@@ -89,95 +85,104 @@
                   :class="{ 'on-hover': hover }"
                   class="hub-background mt-10 discord"
                   >
-                  <img src="@/assets/img/ecosystem/exchange.png" height="200" width="200" />
+                  <img src="@/assets/img/ecosystem/exchange.png" height="180" width="180" />
                   <div class="mt-16 hub-content">
                     <div class="hub-name font-white">Discord <v-icon color="#FFF">～</v-icon></div>
                     <h2 class=" font-white">≈ 94,330</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </v-card>
-              </v-hover>
-            </div>
+                </v-hover>
+            </v-col>
           </v-row>
-          <v-row class="mt-12 telegram font-white" justify="space-between">
-            <div class="left-telegram">
-                <div class="hub-name">Telegram <v-icon color="#FFF">～</v-icon></div>
-                <h2>≈ 94,330</h2>
-                <div>Members</div>
-            </div>
-            <div class="right-telegram">
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-              <div class="nation">
-                <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                <div>English</div>
-                <div>Community</div>
-              </div>
-            </div>
+        <v-col>
+          <v-row class="mt-10 telegram font-white" justify="space-between">
+            <v-col cols="12" sm="6" md="4">
+               <div class="left-telegram">
+                  <img src="@/assets/img/ecosystem/exchange.png" height="180" width="180" />
+                  <div class="mt-10 hub-content">
+                    <div class="hub-name font-white">Telegram <v-icon color="#FFF">～</v-icon></div>
+                    <h2 class=" font-white">≈ 94,330</h2>
+                    <div class="font-white">Members</div>
+                  </div>
+                </div>
+            </v-col >
+            <v-col cols="12"  md="8">
+              <v-row class="right-telegram" justify="space-around" no-gutters>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+              </v-row>
+              <v-row class="right-telegram" justify="space-around" no-gutters>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+                  <div class="nation">
+                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <div>English</div>
+                    <div>Community</div>
+                  </div>
+              </v-row>
+            </v-col>
           </v-row>
           <v-row class="mt-16">
             <div class="learn-join">
@@ -207,7 +212,6 @@
              </div>
           </v-row>
         </v-col>
-      </v-row>
     </v-container>
   </div>
 </template>
@@ -231,15 +235,13 @@ export default {
 .font-white{
   color: #FFF;
 }
-.Hub{
-  width: 32%;
   .hub-background{
-    width: 96%;
-    height: 23rem;
+    height: 22rem;
     background-color: lightgreen;
     padding-right: 2rem;
     .hub-content{
-      margin-top:2rem;text-align:right;
+      margin-top:2rem;
+      text-align:right;
     }
   }
   .twitter{
@@ -255,47 +257,34 @@ export default {
     background: linear-gradient(to bottom, #FFCE6B, #FBD99B);
   }
   .discord{
-    margin-top: 1.2rem;
-    width: 100%;
-    height: 48.5rem;
+    height: 46.5rem;
     background: linear-gradient(to bottom, #8A92CE, #B6C5F5);
     .hub-content{
-      margin-top: 2orem;
+      margin-top: 2rem;
     }
   }
-}
 .hub-name{
   font-size: 28px;
 }
 .telegram{
-  // width: 100%;
-  height: 23rem;
   font-size: 14px;
   background: linear-gradient(to bottom, #78B8DE, #B4E7FF);
   .left-telegram{
-    width: 31%;
-    height: 23rem;
-    // background: red;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    .hub-content{
+      text-align:right;
+    }
   }
   .right-telegram{
-    width: 62%;
-    height: 72%;
-    margin-top: 5%;
-    margin-right: 4%;
-    // background: blue;
+    margin-top: 6%;
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
     align-items: center;
-    .nation{
-      width: 13%;
-      // background: green;
+  }
+  .nation{
+      font-size:14px;
       text-align: center;
     }
     .img-head{
@@ -303,7 +292,6 @@ export default {
       width: 4rem;
       border-radius: 2.5rem;
     }
-  }
 }
 
 .learn-join{
