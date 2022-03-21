@@ -14,7 +14,6 @@
                 style="height:76px"
               >
                 <v-text-field
-                  label="Outlined"
                   outlined
                   placeholder="Placeholder"
                 ></v-text-field>

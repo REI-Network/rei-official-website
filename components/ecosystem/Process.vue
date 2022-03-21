@@ -1,13 +1,13 @@
 <template>
   <div>
     <v-container class="align-center">
-        <v-col>
           <v-row justify="space-between">
             <h2>Application Process</h2>
             <div class="learn-color">Learn Detail></div>
           </v-row>
-          <v-row class="mt-16" justify="space-between">
-            <v-hover
+          <v-row class="mt-16 apply-rules" justify="space-between">
+            <v-col cols="12" sm="4">
+              <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
                 <v-card tile
@@ -18,8 +18,10 @@
                   <v-img :src="banner" class="img-style"/>
                   <h6>Apply</h6>
                 </v-card>
-            </v-hover>
-            <v-hover
+              </v-hover>
+            </v-col>
+            <v-col cols="12" sm="4">
+              <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
                 <v-card tile
@@ -31,7 +33,9 @@
                   <h6>Evaluation Criteria</h6>
                 </v-card>
             </v-hover>
-            <v-hover
+            </v-col>
+            <v-col cols="12" sm="4">
+              <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
                 <v-card tile
@@ -43,8 +47,8 @@
                   <h6>Funding Distribution Rules</h6>
                 </v-card>
             </v-hover>
+            </v-col>
           </v-row>
-        </v-col>
         <div class="mt-16 learn-join learn-rei">
           <div><v-img :src="banner3" class="img-style-learn"/></div>
           <div class="bounty">
@@ -112,7 +116,7 @@ export default {
   color:#4A37F8 ;
 }
 .process-block{
-  width: 31%;
+  // width: 31%;
   height: 25rem;
   background: linear-gradient(to bottom, #A4C6FF, #D2FBFC);
   text-align: center;
@@ -164,5 +168,8 @@ export default {
   background: linear-gradient(to right, #FFF0B5, #FFADBF);
   -webkit-background-clip: text;
   color: transparent;
+}
+@media screen {
+
 }
 </style>
