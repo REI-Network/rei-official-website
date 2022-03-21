@@ -1,10 +1,8 @@
 <template>
   <div>
     <v-container class="align-center">
-          <v-row justify="space-between">
-            <h2>Application Process</h2>
-            <div class="learn-color">Learn Detail></div>
-          </v-row>
+          <h2>Application Process</h2>
+          <h5 class="learn-color">Learn Detail></h5>
           <v-row class="mt-16 apply-rules" justify="space-between">
             <v-col cols="12" sm="4">
               <v-hover
@@ -49,8 +47,8 @@
             </v-hover>
             </v-col>
           </v-row>
-        <div class="mt-16 learn-join learn-rei">
-          <div><v-img :src="banner3" class="img-style-learn"/></div>
+        <v-row class="mt-16 learn-join learn-rei" justify="space-around" align="center">
+          <div><v-img :src="banner3" :aspect-ratio="5/6" width="80"/></div>
           <div class="bounty">
             <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
             <p class="font-white">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
@@ -73,9 +71,9 @@
               Submit
           </v-btn>
           </div>
-        </div>
-        <div class="mt-14 learn-join join-rei">
-          <div><v-img :src="banner4" class="img-style"/></div>
+        </v-row>
+        <v-row class="mt-14 learn-join join-rei" justify="space-around" align="center">
+          <div><v-img :src="banner4" :aspect-ratio="1" width="90"/></div>
           <div class="bounty">
             <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
             <p class="font-white">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
@@ -90,7 +88,7 @@
               Learn More
           </v-btn>
           </div>
-        </div>
+        </v-row>
     </v-container>
   </div>
 </template>
@@ -113,7 +111,8 @@ export default {
 
 <style lang="scss" scoped>
 .learn-color{
-  color:#4A37F8 ;
+  color:#4A37F8;
+  text-align: right;
 }
 .process-block{
   // width: 31%;
@@ -131,32 +130,19 @@ export default {
   }
 }
 .learn-join{
-  height: 8rem;
-  width: 100%;
-  background-color: pink;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding: 20px;
+  margin: auto;
   background: linear-gradient(to bottom right, #4B72C8, #9EB8F4);
-  .img-style{
-    width: 6rem;
-    height: 8rem;
-  }
-  .img-style-learn{
-    width: 4.6rem;
-    height: 6.8rem;
-  }
   .tow-btn{
     display: flex;
     flex-direction: column;
   }
   .btn-background{
-  background-color: blue;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: 700;
-  margin: 4px 0;
-}
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 4px 0;
+  }
 }
 .join-rei{
     background: linear-gradient(to bottom right, #373943, #404457);

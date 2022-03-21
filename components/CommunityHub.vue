@@ -184,9 +184,8 @@
               </v-row>
             </v-col>
           </v-row>
-          <v-row class="mt-16">
-            <div class="learn-join">
-              <div><v-img :src="banner4" class="img-style-learn"/></div>
+            <v-row class="learn-join mt-16" justify="space-around" align="center">
+              <div><v-img :src="banner4" :aspect-ratio="5/6" width="80"/></div>
               <div class="bounty">
                 <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
                 <p class="font-white">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
@@ -209,8 +208,7 @@
                   Submit
                 </v-btn>
               </div>
-             </div>
-          </v-row>
+             </v-row>
         </v-col>
     </v-container>
   </div>
@@ -295,12 +293,7 @@ export default {
 }
 
 .learn-join{
-  height: 8rem;
-  width: 100%;
-  background-color: pink;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding: 20px;
   background: linear-gradient(to bottom right, #3E1D8C, #715FA3);
   .img-style{
     width: 6rem;
@@ -315,7 +308,6 @@ export default {
     flex-direction: column;
   }
   .btn-background{
-    background-color: blue;
     border-radius: 30px;
     cursor: pointer;
     font-weight: 700;
