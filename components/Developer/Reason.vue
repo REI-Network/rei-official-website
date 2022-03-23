@@ -16,7 +16,7 @@
                   color="#EEF3F7"
                   >
                   <div class="img-background">
-                    <img :src="banner" height="180" width="180" class="img-style"/>
+                    <img :src="banner" height="160" width="160" class="img-style"/>
                   </div>
                   <div class="title">More<br/>Compatible</div>
                   <v-card-text class="card-text">
@@ -35,7 +35,7 @@
                   color="#EEF3F7"
                   >
                   <div class="img-background">
-                    <img :src="banner1" height="180" width="180" class="img-style"/>
+                    <img :src="banner1" height="160" width="160" class="img-style"/>
                   </div>
                   <div class="title">More<br/>Efficient</div>
                   <v-card-text class="card-text">
@@ -56,7 +56,7 @@
                   color="#EEF3F7"
                   >
                   <div class="img-background">
-                    <img :src="banner1" height="180" width="180" class="img-style"/>
+                    <img :src="banner2" height="160" width="180" class="img-style"/>
                   </div>
                   <div class="title">More<br/>Economical</div>
                   <v-card-text class="card-text">
@@ -75,7 +75,7 @@
                   color="#EEF3F7"
                   >
                   <div class="img-background">
-                    <img :src="banner3" height="180" width="180" class="img-style"/>
+                    <img :src="banner3" height="160" width="180" class="img-style"/>
                   </div>
                   <div class="title">More<br/>Innovative</div>
                   <v-card-text class="card-text">
@@ -96,7 +96,7 @@
                   color="#EEF3F7"
                   >
                   <div class="img-background">
-                    <img :src="banner2" height="180" width="180" class="img-style"/>
+                    <img :src="banner4" height="160" width="160" class="img-style"/>
                   </div>
                     <div class="title">More<br/>Fast Transactions</div>
                   <v-card-text class="card-text">
@@ -116,7 +116,7 @@
                   color="#EEF3F7"
                   >
                   <div class="img-background">
-                    <img :src="banner4" height="180" width="180" class="img-style"/>
+                    <img :src="banner5" height="160" width="200" class="img-style"/>
                   </div>
                   <div class="title">More<br/>Grants</div>
                   <v-card-text class="card-text">
@@ -133,11 +133,12 @@
 export default {
   data() {
     return {
-      banner: require('@/assets/img/ecosystem/exchange.png'),
-      banner1: require('@/assets/img/ecosystem/Lending.png'),
-      banner2: require('@/assets/img/ecosystem/REIiconGame.png'),
-      banner3: require('@/assets/img/ecosystem/Stablecoin.png'),
-      banner4: require('@/assets/img/ecosystem/NFTMarketplace.png')
+      banner: require('@/assets/img/developer/REIiconMorrCompatible.png'),
+      banner1: require('@/assets/img/developer/REIicon4MoreRfficient.png'),
+      banner2: require('@/assets/img/developer/REIicon2MoreEconomical.png'),
+      banner3: require('@/assets/img/developer/REIicon5MoreInnovative.png'),
+      banner4: require('@/assets/img/developer/REIicon3MoreFastTransactions.png'),
+      banner5: require('@/assets/img/developer/REIStartanode.png')
     }
   },
   components: {
@@ -174,7 +175,7 @@ export default {
   .img-style{
     float:right;
     margin-right: -2.5rem;
-    margin-top: -2.5rem;
+    margin-top: -20px;
   }
 }
 </style>

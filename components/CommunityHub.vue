@@ -13,7 +13,7 @@
                   :class="{ 'on-hover': hover }"
                   class="hub-background mt-10 twitter"
                   >
-                  <img src="@/assets/img/ecosystem/exchange.png" height="180" width="180" />
+                  <v-img :src="twitter" height="180" width="160" />
                   <div class="hub-content">
                     <div class="hub-name font-white">Twitter <v-icon color="#FFF">～</v-icon></div>
                     <h2 class=" font-white">≈ 94,330</h2>
@@ -28,9 +28,9 @@
                   tile
                   :elevation="hover ? 12 : 0"
                   :class="{ 'on-hover': hover }"
-                  class="hub-background mt-10 reddit"
+                  class="hub-background mt-6 reddit"
                   >
-                  <img src="@/assets/img/ecosystem/exchange.png" height="180" width="180" />
+                  <img :src="reddit" height="180" width="160" />
                   <div class="hub-content">
                     <div class="hub-name font-white">Redditt <v-icon color="#FFF">～</v-icon></div>
                     <h2 class=" font-white">≈ 94,330</h2>
@@ -49,7 +49,7 @@
                   :class="{ 'on-hover': hover }"
                   class="hub-background mt-10 github"
                   >
-                  <img src="@/assets/img/ecosystem/exchange.png" height="180" width="180" />
+                  <img :src="github" height="180" width="160" />
                   <div class="hub-content">
                     <div class="hub-name font-white">GitHub <v-icon color="#FFF">～</v-icon></div>
                     <h2 class=" font-white">≈ 94,330</h2>
@@ -64,9 +64,9 @@
                   tile
                   :elevation="hover ? 12 : 0"
                   :class="{ 'on-hover': hover }"
-                  class="hub-background mt-10 kakao"
+                  class="hub-background mt-6 kakao"
                   >
-                  <img src="@/assets/img/ecosystem/exchange.png" height="180" width="180" />
+                  <img :src="talk" height="180" width="160" />
                   <div class="hub-content">
                     <div class="hub-name font-white">KaKao <v-icon color="#FFF">～</v-icon></div>
                     <h2 class=" font-white">≈ 94,330</h2>
@@ -85,8 +85,8 @@
                   :class="{ 'on-hover': hover }"
                   class="hub-background mt-10 discord"
                   >
-                  <img src="@/assets/img/ecosystem/exchange.png" height="180" width="180" />
-                  <div class="mt-16 hub-content">
+                  <v-img :src="discord" height="260" width="280" class="discord-img"/>
+                  <div class="hub-content">
                     <div class="hub-name font-white">Discord <v-icon color="#FFF">～</v-icon></div>
                     <h2 class=" font-white">≈ 94,330</h2>
                     <div class="font-white">Members</div>
@@ -99,7 +99,7 @@
           <v-row class="mt-10 telegram font-white" justify="space-between">
             <v-col cols="12" sm="6" md="4">
                <div class="left-telegram">
-                  <img src="@/assets/img/ecosystem/exchange.png" height="180" width="180" />
+                  <img :src="Telegram" height="180" width="180" />
                   <div class="mt-10 hub-content">
                     <div class="hub-name font-white">Telegram <v-icon color="#FFF">～</v-icon></div>
                     <h2 class=" font-white">≈ 94,330</h2>
@@ -110,82 +110,81 @@
             <v-col cols="12"  md="8">
               <v-row class="right-telegram" justify="space-around" no-gutters>
                   <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
+                    <img src="@/assets/img/community/EnglishCommunity.png" alt="" class="img-head">
                     <div>English</div>
                     <div>Community</div>
                   </div>
                   <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                    <div>English</div>
+                    <img src="@/assets/img/community/KoreanCommunity.png" alt="" class="img-head">
+                    <div>Korean</div>
                     <div>Community</div>
                   </div>
                   <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                    <div>English</div>
+                    <img src="@/assets/img/community/RussianCommunity.png" alt="" class="img-head">
+                    <div>Russian</div>
                     <div>Community</div>
                   </div>
                   <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                    <div>English</div>
+                    <img src="@/assets/img/community/SpanishCommunity.png" alt="" class="img-head">
+                    <div>Spanish</div>
                     <div>Community</div>
                   </div>
                   <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                    <div>English</div>
+                    <img src="@/assets/img/community/GermanCommunity.png" alt="" class="img-head">
+                    <div>German</div>
                     <div>Community</div>
                   </div>
                   <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                    <div>English</div>
+                    <img src="@/assets/img/community/JapaneseCommunity.png" alt="" class="img-head">
+                    <div>Japanese</div>
                     <div>Community</div>
                   </div>
                   <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                    <div>English</div>
-                    <div>Community</div>
-                  </div>
-              </v-row>
-              <v-row class="right-telegram" justify="space-around" no-gutters>
-                  <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                    <div>English</div>
+                    <img src="@/assets/img/community/BrazilCommunity.png" alt="" class="img-head">
+                    <div>Brazil</div>
                     <div>Community</div>
                   </div>
                   <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                    <div>English</div>
+                    <img src="@/assets/img/community/ItlianCommunity.png" alt="" class="img-head">
+                    <div>Itlian</div>
                     <div>Community</div>
                   </div>
                   <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                    <div>English</div>
+                    <img src="@/assets/img/community/VietnameseCommunity.png" alt="" class="img-head">
+                    <div>Vietnamese</div>
                     <div>Community</div>
                   </div>
                   <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                    <div>English</div>
+                    <img src="@/assets/img/community/AfricanCommunity.png" alt="" class="img-head">
+                    <div>African</div>
+                    <div>Community</div>
+                  </div>
+
+                  <div class="nation">
+                    <img src="@/assets/img/community/TurkishCommunity.png" alt="" class="img-head">
+                    <div>Turkish</div>
                     <div>Community</div>
                   </div>
                   <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                    <div>English</div>
+                    <img src="@/assets/img/community/SriLankaCommunity.png" alt="" class="img-head">
+                    <div>SriLanka</div>
                     <div>Community</div>
                   </div>
                   <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                    <div>English</div>
+                    <img src="@/assets/img/community/IndonesianCommunity.png" alt="" class="img-head">
+                    <div>Indonesian</div>
                     <div>Community</div>
                   </div>
                   <div class="nation">
-                    <img src="@/assets/img/ecosystem/banner.png" alt="" class="img-head">
-                    <div>English</div>
+                    <img src="@/assets/img/community/FrenchCommunity.png" alt="" class="img-head">
+                    <div>French</div>
                     <div>Community</div>
                   </div>
               </v-row>
             </v-col>
           </v-row>
             <v-row class="learn-join mt-16" justify="space-around" align="center">
-              <div><v-img :src="banner4" :aspect-ratio="5/6" width="80"/></div>
+              <div><v-img :src="banner" :aspect-ratio="10/9" width="100"/></div>
               <div class="bounty">
                 <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
                 <p class="font-white">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
@@ -217,8 +216,13 @@
 export default {
   data() {
     return {
-      banner: require('@/assets/img/ecosystem/banner.png'),
-      banner4: require('@/assets/img/ecosystem/REIiconDeveloperCommunity.png')
+      twitter:require('@/assets/img/community/twitter.png'),
+      reddit:require('@/assets/img/community/reddit.png'),
+      github:require('@/assets/img/community/github.png'),
+      talk:require('@/assets/img/community/talk.png'),
+      discord:require('@/assets/img/community/discord.png'),
+      Telegram:require('@/assets/img/community/tg.png'),
+      banner: require('@/assets/img/community/REIStartanode.png')
     }
   },
   components: {
@@ -236,9 +240,9 @@ export default {
   .hub-background{
     height: 22rem;
     background-color: lightgreen;
-    padding-right: 2rem;
+    padding:1.2rem 2rem 0 0;
     .hub-content{
-      margin-top:2rem;
+      margin-top:1rem;
       text-align:right;
     }
   }
@@ -255,10 +259,17 @@ export default {
     background: linear-gradient(to bottom, #FFCE6B, #FBD99B);
   }
   .discord{
-    height: 46.5rem;
+    height: 45.5rem;
     background: linear-gradient(to bottom, #8A92CE, #B6C5F5);
+    .discord-img{
+      margin-top: 60px;
+    }
     .hub-content{
-      margin-top: 2rem;
+      margin-top: 14rem;
+    }
+
+    h2{
+      margin: 12px 0;
     }
   }
 .hub-name{
@@ -275,7 +286,7 @@ export default {
     }
   }
   .right-telegram{
-    margin-top: 6%;
+    margin-top: 4%;
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
@@ -284,11 +295,18 @@ export default {
   .nation{
       font-size:14px;
       text-align: center;
+      // background: pink;
+      padding: 10px 12px;
     }
     .img-head{
       height: 4rem;
       width: 4rem;
       border-radius: 2.5rem;
+    }
+    .nation:hover{
+      background-color: rgba(255,255,255,0.6);
+      border-radius: 6px;
+      color: #000;
     }
 }
 

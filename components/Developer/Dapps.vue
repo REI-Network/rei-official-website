@@ -34,7 +34,7 @@
                 >
                   <h2>Stablecoin</h2>
                   <div>
-                    <img :src="banner" width="90">
+                    <img :src="banner1" width="90">
                   </div>
                 </v-card>
               </v-hover>
@@ -53,7 +53,7 @@
                 >
                   <h2>NFT</h2>
                   <div>
-                    <img :src="banner" width="90">
+                    <img :src="banner2" width="68">
                   </div>
                 </v-card>
               </v-hover>
@@ -70,7 +70,7 @@
                 >
                   <h2>Exchange</h2>
                   <div>
-                    <img :src="banner" width="90">
+                    <img :src="banner3" width="90">
                   </div>
                 </v-card>
               </v-hover>
@@ -89,7 +89,7 @@
                 >
                   <h2>Gamefi</h2>
                   <div>
-                    <img :src="banner" width="90">
+                    <img :src="banner4" width="96">
                   </div>
                 </v-card>
               </v-hover>
@@ -106,14 +106,14 @@
                 >
                   <h2>Socialfi</h2>
                   <div>
-                    <img :src="banner" width="90">
+                    <img :src="banner5" width="78">
                   </div>
                 </v-card>
               </v-hover>
           </v-col>
         </v-row>
          <v-row class="mt-16 learn-join" justify="space-around" align="center">
-          <div><v-img :src="banner3" :aspect-ratio="1" width="90"/></div>
+          <div><v-img :src="bounty" :aspect-ratio="5/6" width="90"/></div>
           <div class="bounty">
             <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
             <p class="font-white">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
@@ -144,11 +144,13 @@
 export default {
   data() {
     return {
-      banner: require('@/assets/img/ecosystem/exchange.png'),
-      banner1: require('@/assets/img/ecosystem/Lending.png'),
-      banner2: require('@/assets/img/ecosystem/REIiconGame.png'),
-      banner3: require('@/assets/img/ecosystem/Stablecoin.png'),
-      banner4: require('@/assets/img/ecosystem/NFTMarketplace.png')
+      banner: require('@/assets/img/developer/REIiconDefi.png'),
+      banner1: require('@/assets/img/developer/Stablecoin.png'),
+      banner2: require('@/assets/img/developer/REIiconNFT.png'),
+      banner3: require('@/assets/img/developer/exchange.png'),
+      banner4: require('@/assets/img/developer/gamefi.png'),
+      banner5: require('@/assets/img/developer/REIiconSocialfi.png'),
+      bounty:require('@/assets/img/ecosystem/bug bounty.png')
     }
   },
   components: {

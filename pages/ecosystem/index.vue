@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import Explore from '../../components/ecosystem/Explore';
-import Process from '../../components/ecosystem/Process';
+import Explore from '../../components/Ecosystem/Explore';
+import Process from '../../components/Ecosystem/Process';
 export default {
   name: 'EcosystemPage',
   data() {

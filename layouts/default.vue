@@ -64,15 +64,16 @@
           </v-list>
         </v-menu>
 
-       
+
         <v-btn
             small
             color="primary"
             dark
+            to="/getStarted"
         >
             Get Started
         </v-btn>
-       
+
       </v-container>
     </v-app-bar>
     <v-main>
