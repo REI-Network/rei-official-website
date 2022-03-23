@@ -138,6 +138,10 @@ export default {
           link: '/developer',
         },
         {
+          text: 'REI USE',
+          link: '/reiuse',
+        },
+        {
           text: 'REI.DAO',
           href: 'https://dao.rei.network',
           target: '_blank',
