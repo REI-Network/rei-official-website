@@ -1,0 +1,161 @@
+<template>
+  <div>
+    <v-container class="align-center">
+          <h2>Application Process</h2>
+          <h5 class="learn-color">Learn Detail></h5>
+          <v-row class="mt-16 apply-rules" justify="space-between">
+            <v-col cols="12" sm="4">
+              <v-hover
+                v-slot="{ hover }"
+                open-delay="200">
+                <v-card tile
+                  :elevation="hover ? 12 : 0"
+                  :class="{ 'on-hover': hover }"
+                  class="process-block"
+                  >
+                  <v-img :src="banner" class="img-style"/>
+                  <h6>Apply</h6>
+                </v-card>
+              </v-hover>
+            </v-col>
+            <v-col cols="12" sm="4">
+              <v-hover
+                v-slot="{ hover }"
+                open-delay="200">
+                <v-card tile
+                  :elevation="hover ? 12 : 0"
+                  :class="{ 'on-hover': hover }"
+                  class="process-block"
+                  >
+                  <v-img :src="banner1" class="img-style"/>
+                  <h6>Evaluation Criteria</h6>
+                </v-card>
+            </v-hover>
+            </v-col>
+            <v-col cols="12" sm="4">
+              <v-hover
+                v-slot="{ hover }"
+                open-delay="200">
+                <v-card tile
+                  :elevation="hover ? 12 : 0"
+                  :class="{ 'on-hover': hover }"
+                  class="process-block"
+                  >
+                  <v-img :src="banner2" class="img-style"/>
+                  <h6>Funding Distribution Rules</h6>
+                </v-card>
+            </v-hover>
+            </v-col>
+          </v-row>
+        <v-row class="mt-16 learn-join learn-rei" justify="space-around" align="center">
+          <div><v-img :src="banner3" :aspect-ratio="5/6" width="80"/></div>
+          <div class="bounty">
+            <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
+            <p class="font-white">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
+          </div>
+          <div class="tow-btn">
+            <v-btn
+            color="#1D10F8"
+            class="btn-background font-white"
+            width="120"
+            height="36"
+           >
+              Learn More
+          </v-btn>
+          <v-btn
+            color="green"
+            class="btn-background font-white"
+            width="120"
+            height="36"
+           >
+              Submit
+          </v-btn>
+          </div>
+        </v-row>
+        <v-row class="mt-14 learn-join join-rei" justify="space-around" align="center">
+          <div><v-img :src="banner4" :aspect-ratio="1" width="90"/></div>
+          <div class="bounty">
+            <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
+            <p class="font-white">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
+          </div>
+          <div class="tow-btn">
+            <v-btn
+            color="#1D10F8"
+            class="btn-background font-white"
+            width="120"
+            height="36"
+           >
+              Learn More
+          </v-btn>
+          </div>
+        </v-row>
+    </v-container>
+  </div>
+</template>
+<script>
+export default {
+  data() {
+    return {
+      banner: require('@/assets/img/ecosystem/Apply.png'),
+      banner1: require('@/assets/img/ecosystem/DistributionRules.png'),
+      banner2: require('@/assets/img/ecosystem/EvaluationCriteria.png'),
+      banner3: require('@/assets/img/ecosystem/bug bounty.png'),
+      banner4: require('@/assets/img/ecosystem/REIiconDeveloperCommunity.png')
+    }
+  },
+  components: {
+
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+.learn-color{
+  color:#4A37F8;
+  text-align: right;
+}
+.process-block{
+  // width: 31%;
+  height: 25rem;
+  background: linear-gradient(to bottom, #A4C6FF, #D2FBFC);
+  text-align: center;
+  padding-top: 6rem;
+  .img-style{
+    width: 8rem;
+    height: 10rem;
+    margin:0 auto;
+  }
+  h6{
+    margin-top: 4rem;
+  }
+}
+.learn-join{
+  padding: 20px;
+  margin: auto;
+  background: linear-gradient(to bottom right, #4B72C8, #9EB8F4);
+  .tow-btn{
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-background{
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 4px 0;
+  }
+}
+.join-rei{
+    background: linear-gradient(to bottom right, #373943, #404457);
+  }
+.font-white{
+  color: #FFF;
+}
+.font-gradient{
+  background: linear-gradient(to right, #FFF0B5, #FFADBF);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@media screen {
+
+}
+</style>
