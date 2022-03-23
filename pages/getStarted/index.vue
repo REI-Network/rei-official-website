@@ -71,7 +71,7 @@
                   :class="{ 'on-hover': hover }"
                   class="process-block exchange"
                   >
-                  <v-img :src="banner3" class="img-style"/>
+                  <v-img :src="banner4" class="img-style"/>
                   <h6>Exchange integration</h6>
                 </v-card>
               </v-hover>
