@@ -48,10 +48,10 @@
             </v-col>
           </v-row>
         <v-row class="mt-16 learn-join learn-rei" justify="space-around" align="center">
-          <div><v-img :src="banner3" :aspect-ratio="5/6" width="80"/></div>
+          <div><v-img :src="banner3" :aspect-ratio="5/6" width="80" class="img-style"/></div>
           <div class="bounty">
             <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
-            <p class="font-white">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
+            <p class="font-white distance">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
           </div>
           <div class="tow-btn">
             <v-btn
@@ -64,7 +64,7 @@
           </v-btn>
           <v-btn
             color="green"
-            class="btn-background font-white"
+            class="btn-background mt-2 font-white"
             width="120"
             height="36"
            >
@@ -73,10 +73,10 @@
           </div>
         </v-row>
         <v-row class="mt-14 learn-join join-rei" justify="space-around" align="center">
-          <div><v-img :src="banner4" :aspect-ratio="1" width="90"/></div>
+          <div><v-img :src="banner4" :aspect-ratio="1" width="90" class="img-style2"/></div>
           <div class="bounty">
             <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
-            <p class="font-white">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
+            <p class="font-white distance">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
           </div>
           <div class="tow-btn">
             <v-btn
@@ -130,18 +130,26 @@ export default {
   }
 }
 .learn-join{
-  padding: 20px;
   margin: auto;
   background: linear-gradient(to bottom right, #4B72C8, #9EB8F4);
   .tow-btn{
     display: flex;
     flex-direction: column;
   }
+  .img-style{
+    margin-top: 20px;
+  }
+  .img-style2{
+    margin: 12px 0;
+  }
+   .bounty{
+     margin-top: 12px;
+  }
+  .distance{
+    margin-top: 12px;
+  }
   .btn-background{
     border-radius: 30px;
-    cursor: pointer;
-    font-weight: 700;
-    margin: 4px 0;
   }
 }
 .join-rei{

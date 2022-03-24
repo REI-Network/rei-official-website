@@ -12,11 +12,13 @@
             </div>
       </div>
       <Blogs></Blogs>
+      <Assets></Assets>
   </div>
 </template>
 
 <script>
 import Blogs from '../../components/Media/Blogs';
+import Assets from '../../components/Media/Assets';
 export default {
   name: 'MediaPage',
   data() {
@@ -26,6 +28,7 @@ export default {
   },
   components:{
     Blogs,
+    Assets
   }
 }
 </script>

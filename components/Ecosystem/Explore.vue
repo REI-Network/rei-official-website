@@ -13,7 +13,6 @@
                   :class="{ 'on-hover': hover }"
                   class="card-content"
                   max-width="560"
-
                   >
                   <div class="img-background">
                     <v-img :src="banner" class="img-style"/>
@@ -137,9 +136,9 @@ export default {
 
 <style lang="scss" scoped>
 .img-background{
-  border-radius: 6px;
-  width: 6rem;
-  height: 6rem;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
   background: linear-gradient(to bottom, #A2C4FF, #D4FBFC);
 }
 .img-style{
@@ -157,8 +156,8 @@ export default {
 .card-content{
   display: flex;
   align-items: center;
-  border-radius: 4px;
-  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  padding: 15px 0 24px 14px;
   margin-top: 1.6rem;
   .card-margin{
     margin-left: 20px;

@@ -184,10 +184,10 @@
             </v-col>
           </v-row>
             <v-row class="learn-join mt-16" justify="space-around" align="center">
-              <div><v-img :src="banner" :aspect-ratio="10/9" width="100"/></div>
+              <div><v-img :src="banner" :aspect-ratio="10/9" width="100" class="img-style"/></div>
               <div class="bounty">
                 <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
-                <p class="font-white">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
+                <p class="font-white distance">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
               </div>
               <div class="tow-btn">
                 <v-btn
@@ -311,11 +311,10 @@ export default {
 }
 
 .learn-join{
-  padding: 20px;
+  // padding: 20px;
   background: linear-gradient(to bottom right, #3E1D8C, #715FA3);
   .img-style{
-    width: 6rem;
-    height: 8rem;
+    margin: 20px 0;
   }
   .img-style-learn{
     width: 4.6rem;
@@ -324,6 +323,12 @@ export default {
   .tow-btn{
     display: flex;
     flex-direction: column;
+  }
+  .bounty{
+     margin-top: 12px;
+  }
+  .distance{
+    margin-top: 12px;
   }
   .btn-background{
     border-radius: 30px;

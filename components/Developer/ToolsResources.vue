@@ -6,8 +6,7 @@
           <v-col cols="12" md="5" align-self="center" class="left-color">
             <v-card
                   tile
-                  :elevation="hover ? 12 : 0"
-                  :class="{ 'on-hover': hover }"
+                  :elevation="0"
                   color="left-color"
                   >
                   <img src="@/assets/img/developer/REIiconTOOLS.png" height="220" width="220" />
@@ -33,8 +32,7 @@
           <v-col cols="12" md="5" align-self="center" class="left-color">
             <v-card
                   tile
-                  :elevation="hover ? 12 : 0"
-                  :class="{ 'on-hover': hover }"
+                  :elevation="0"
                   color="left-color"
                   >
                   <img src="@/assets/img/developer/REIicondoc.png" height="200" width="200" />
@@ -56,10 +54,10 @@
           </v-col>
         </v-row>
          <v-row class="mt-12 learn-join" justify="space-around" align="center">
-          <div><v-img :src="banner" :aspect-ratio="10/9" width="100"/></div>
+          <div><v-img :src="banner" :aspect-ratio="10/9" width="110"/></div>
           <div class="bounty">
-            <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
-            <p class="font-white">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
+            <h3 class="font-gradient">50 Million $ REI Growth Fund For #REIcosystem Building!</h3>
+            <p class="font-white distance">If You Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
           </div>
           <div class="tow-btn">
             <v-btn
@@ -81,10 +79,10 @@
           </div>
         </v-row>
         <v-row class="mt-12 learn-join join-rei" justify="space-around" align="center">
-          <div><v-img :src="banner1" :aspect-ratio="1" width="90"/></div>
+          <div><v-img :src="banner1" :aspect-ratio="1" width="110"/></div>
           <div class="bounty">
             <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
-            <p class="font-white">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
+            <p class="font-white distance">REI`s Developer Community Spans All Across The Globe.Share Your Ideas,And Build Without Limits.</p>
           </div>
           <div class="tow-btn">
             <v-btn
@@ -145,7 +143,7 @@ export default {
   margin-top:20px;
 }
 .learn-join{
-  padding: 20px;
+  padding: 12px;
   margin: auto;
   background: linear-gradient(to bottom right, #3E1D8C, #715FA3);
   .tow-btn{
@@ -157,6 +155,12 @@ export default {
     cursor: pointer;
     font-weight: 700;
     margin: 4px 0;
+  }
+  .bounty{
+     margin-top: 12px;
+  }
+  .distance{
+    margin-top: 12px;
   }
 }
 .join-rei{
