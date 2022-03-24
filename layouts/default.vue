@@ -62,18 +62,25 @@
               </v-btn>
             </v-list-item>
           </v-list>
+
         </v-menu>
-
-
         <v-btn
             small
-            color="primary"
+            class="hidden-sm-and-down nav-btn text-subtitle-1"
+            color="#1D10F8"
             dark
             to="/getStarted"
         >
             Get Started
         </v-btn>
-
+        <v-btn
+          class="hidden-md-and-up"
+          text
+          icon
+          @click.stop="showDrawer = !showDrawer"
+        >
+          <v-icon>{{ mdiMenu }}</v-icon>
+        </v-btn>
       </v-container>
     </v-app-bar>
     <v-main>
@@ -115,7 +122,18 @@
               </span>
             </v-list-item-title>
           </v-list-item>
+          
         </template>
+        <v-list-item
+            nuxt
+            to="/getStarted"
+          >
+            <v-list-item-title>
+              <span>
+                Get Started
+              </span>
+            </v-list-item-title>
+          </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <app-footer />
@@ -123,14 +141,16 @@
 </template>
 
 <script>
-import { mdiMenu } from '@mdi/js'
+import { mdiMenu,mdiChevronDown } from '@mdi/js'
 import Logo from '../components/Logo.vue'
 import AppFooter from '../components/AppFooter.vue'
 export default {
   name: 'DefaultLayout',
+  components: { Logo, AppFooter },
   data () {
     return {
       mdiMenu,
+      mdiChevronDown,
       showDrawer: false,
       links: [
         {

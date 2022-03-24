@@ -3,10 +3,9 @@
     <v-container class="align-center">
       <v-row
         class="mt-16"
-        :class="{ 'text-center': $vuetify.breakpoint.smAndDown }"
       >
         <v-col cols="12" md="4" lg="4">
-          <div class="footer-titele font-weight-black"><logo /></div>
+          <div class="footer-title font-weight-black"><logo /></div>
           <div class="footer-text2 mt-3">
             REI Network is A New,Lightweight And
             Quasi-Free Application-Level Public Chain
@@ -19,20 +18,21 @@
             <v-col
               v-for="item in project"
               :key="item.name"
-              cols="3"
+              cols="6"
               lg="3"
               md="3"
               class="d-flex flex-column"
             >
-              <div class="ml-4 mb-4 text-h6">{{ item.name }}</div>
+              <div class="ml-2 mb-4 font-weight-black subtitle-2">{{ item.name }}</div>
               <div v-for="link in item.list" :key="link.name">
                 <v-btn
                   :to="link.to"
                   :href="link.href"
                   :target="link.target"
                   plain
-                  text
+                  text="#b1b6bb"
                   nofollow
+                  x-small
                 >
                   {{ link.name }}
                 </v-btn>
@@ -133,7 +133,7 @@ export default {
 #footer {
   padding-top: 88px;
 }
-.footer-titele {
+.footer-title {
   font-size: 28px;
 }
 .footer-text {
@@ -141,8 +141,7 @@ export default {
   color: #b1b6bb;
 }
 .footer-text2 {
-  max-width: 460px;
-  font-size: 16px;
+  font-size: .8rem;
   color: #b1b6bb;
 }
 
