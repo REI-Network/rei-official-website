@@ -48,17 +48,28 @@
       </div>
       <div id="video" class="section-video">
         <v-container>
-            <v-row class="video-box grey lighten-4">
+            <v-row class="video-box lighten-4 cardbg">
                 <v-col
                 class="d-flex flex-column justify-center"
                 cols="12"
                 md="6"
                 lg="6"
                 >
-                <div class="pa-10">
+                <div class="pa-10 ">
                     <div class="text-h3  mb-1 font-italic font-weight-bold">Hello,World</div>
                     <div class="text-h6">
-                        REI Mainnet Is Now Live
+                        REI Mainnet Is<br /> Now Live
+                    </div>
+                    <div>
+                        <v-btn
+                            href=""
+                            dark
+                            rounded
+                            color="#2340f0"
+                            class="font-weight-bold"
+                        >
+                            Learn More
+                        </v-btn>
                     </div>
                 </div>
                 </v-col>
@@ -67,7 +78,7 @@
                     controls
                     preload="meta"
                     class="video-play"
-                    src=""
+                    src="https://static.rei.network/media/rei-network.mp4"
                 ></video>
                 </v-col>
             </v-row>
@@ -82,23 +93,34 @@
                     md="6"
                     lg="6"
                 >
-                    <div class="grey lighten-4 pa-15">
-                        <div class="text-h4 mb-1 font-italic font-weight-bold">
+                <div class="cardbg">
+                    <div class="lighten-4 pa-10 pb-1 pr-16">
+                        <div class="text-h5 mb-1 font-italic font-weight-bold">
                             <b class="text-h1 font-weight-bold">F</b>ree Gas
                         </div>
-                        <p class="text-justify">
+                        <p class="text-justify feat-des pr-16">
                             REI Network can achieve free, users are able to complete on-chain transactions with almost zero fees through the innovative design of staking&replacement for on-chain resources.
                         </p>
+                        
                     </div>
+                    <div class="d-flex justify-end">
+                        <v-img :src="featImg1" contain position="right bottom" height="230" class="imgStyle" />
+                    </div>
+                </div>
                 </v-col>
                 <v-col cols="12" md="6" lg="6">
-                    <div class="grey lighten-4 pa-15">
-                        <div class="text-h4 mb-1 font-italic font-weight-bold">
-                            <b class="text-h1 font-weight-bold">F</b>ast Transactions
+                    <div class="cardbg">
+                        <div class="lighten-4 pa-10 pb-1 pr-16">
+                            <div class="text-h5 mb-1 font-italic font-weight-bold">
+                                <b class="text-h1 font-weight-bold">F</b>ast Transactions
+                            </div>
+                            <p class="text-justify feat-des pr-16">
+                                REI.network pays great attention to speed, with an average block time of 3 seconds. Tps reaches 3000+. Under the premise of ensuring decentralization, it will bring users a faster experience.
+                            </p>
                         </div>
-                        <p class="text-justify">
-                            REI.network pays great attention to speed, with an average block time of 3 seconds. Tps reaches 3000+. Under the premise of ensuring decentralization, it will bring users a faster experience.
-                        </p>
+                        <div class="d-flex justify-end">
+                            <v-img :src="featImg2" contain position="right bottom" height="230" class="imgStyle" />
+                        </div>
                     </div>
                 </v-col>
             </v-row>
@@ -109,7 +131,7 @@
                 md="6"
                 lg="6"
                 >
-                    <div class="grey lighten-4 pa-15">
+                    <div class="cardbg lighten-4 pa-15">
                         <div class="text-h4">Developer</div>
                         <p class="text-justify">
                             Read the REI.network document, learn the features of REI.network, look for development resources, and apply for developer growth funds.
@@ -127,7 +149,7 @@
                     </div>
                 </v-col>
                 <v-col cols="12" md="6" lg="6">
-                    <div class="grey lighten-4 pa-15">
+                    <div class="cardbg lighten-4 pa-15">
                         <div class="text-h4">REI DAO</div>
                         <p class="text-justify">
                             Join REI.DAO to become a validator, vote for the validator to get rewards, Stake gets Free Gas, participate in community governance, and submit proposals.
@@ -152,7 +174,7 @@
                 md="6"
                 lg="6"
                 >
-                    <div class="grey lighten-4 pa-15">
+                    <div class="cardbg lighten-4 pa-15">
                         <div class="text-h4">Ecosystem</div>
                         <p class="text-justify">
                             REI.Network can be shared and symbiotic with the EVM ecosystem, also supporting the development of Defi, GameFi, and NFT.
@@ -170,7 +192,7 @@
                     </div>
                 </v-col>
                 <v-col cols="12" md="6" lg="6">
-                    <div class="grey lighten-4 pa-15">
+                    <div class="cardbg lighten-4 pa-15">
                         <div class="text-h4">Media center</div>
                        <p class="text-justify">
                             Learn about REI's latest brand building, operation trends, development progress, etc.
@@ -192,7 +214,7 @@
       </div>
       <div id="index-community">
           <v-container>
-            <v-row class="grey lighten-4" justify="space-between" align="center" no-gutters>
+            <v-row class="cardbg lighten-4" justify="space-between" align="center" no-gutters>
                 <v-col
                     align-self="center"
                     cols="12"
@@ -242,7 +264,9 @@ export default {
   data() {
     return {
       banner: require('@/assets/img/index/banner-index.png'),
-      communityImg: require('@/assets/img/index/index-community.png')
+      communityImg: require('@/assets/img/index/index-community.png'),
+      featImg1: require('@/assets/img/index/feat-1.png'),
+      featImg2: require('@/assets/img/index/feat-2.png'),
     }
   },
 }
@@ -251,6 +275,12 @@ export default {
 <style lang="scss">
 .index-statistic {
     background: url('@/assets/img/index/mid-bg.png') center center no-repeat;
+}
+.cardbg {
+    background-color: #f2f5f8;
+}
+.feat-des{
+
 }
 .text-nowrap {
   white-space: nowrap;
