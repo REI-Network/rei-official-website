@@ -18,10 +18,12 @@
                 </div>
             </div>
       </div>
+      <GameFi></GameFi>
   </div>
 </template>
 
 <script>
+import GameFi from '../../components/ReiUse/GameFi';
 export default {
   name: 'ReiUsePage',
   data() {
@@ -30,6 +32,7 @@ export default {
     }
   },
   components:{
+    GameFi
   }
 }
 </script>

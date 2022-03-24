@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="mt-12">
+    <v-container class="mt-8">
         <h2>REI Network Tools</h2>
         <v-row class="mt-10 tools" justify="space-between" align="center">
           <v-col cols="12" md="5" align-self="center" class="left-color">
