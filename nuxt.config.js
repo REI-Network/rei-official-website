@@ -39,6 +39,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    // https://www.npmjs.com/package/vuetify-dialog
+    'vuetify-dialog/nuxt',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

@@ -1,5 +1,6 @@
 <template>
   <div id="footer">
+    <v-divider></v-divider>
     <v-container class="align-center">
       <v-row
         class="mt-16"
@@ -30,7 +31,7 @@
                   :href="link.href"
                   :target="link.target"
                   plain
-                  text="#b1b6bb"
+                  text
                   nofollow
                   x-small
                 >
@@ -42,7 +43,6 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-divider></v-divider>
     <v-container>
       <div class="copy-center">&copy; 2022 REI Network</div>
     </v-container>
@@ -131,7 +131,7 @@ export default {
 </script>
 <style scoped>
 #footer {
-  padding-top: 88px;
+  padding-top: 18px;
 }
 .footer-title {
   font-size: 28px;
