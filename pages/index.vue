@@ -13,33 +13,33 @@
       <div class="index-statistic">
         <v-container>
         <v-row class="white--text text-center">
-            <v-col 
+            <v-col
                 cols="12"
                 md="4"
                 class="d-flex flex-column justify-center"
             >
                 <div class="py-4">
-                    <h3>2,983,713</h3>
+                    <h2 class="font-bebas">2,983,713</h2>
                     <p>Total Wallet Addresses</p>
                 </div>
             </v-col>
-            <v-col 
+            <v-col
                 cols="12"
                 md="4"
                 class="d-flex flex-column justify-center "
             >
-                <div class="py-4">
-                    <h3>2,983,713</h3>
+                <div class="py-4 border-both">
+                    <h2 class="font-bebas">2,983,713</h2>
                     <p>Total Wallet Addresses</p>
                 </div>
             </v-col>
-            <v-col 
+            <v-col
                 cols="12"
                 md="4"
                 class="d-flex flex-column justify-center"
             >
-                <div class="py-4 ">
-                    <h3>2,983,713</h3>
+                <div class="py-4">
+                    <h2 class="font-bebas">2,983,713</h2>
                     <p>Total Stake (REI)</p>
                 </div>
             </v-col>
@@ -101,7 +101,7 @@
                         <p class="text-justify feat-des pr-16">
                             REI Network can achieve free, users are able to complete on-chain transactions with almost zero fees through the innovative design of staking&replacement for on-chain resources.
                         </p>
-                        
+
                     </div>
                     <div class="d-flex justify-end">
                         <v-img :src="featImg1" contain position="right bottom" height="230" class="imgStyle" />
@@ -273,6 +273,16 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: 'bebas';
+  src: url('../assets/bebas/BEBAS.eot');
+  src: url('../assets/bebas/BEBAS.eot#iefix') format('embedded-opentype'),
+  url('../assets/bebas/BEBAS.ttf') format('truetype'),
+  url('../assets/bebas/BEBAS.woff') format('woff'),
+  url('../assets/bebas/BEBAS.svg#Bebas') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .index-statistic {
     background: url('@/assets/img/index/mid-bg.png') center center no-repeat;
 }
@@ -313,5 +323,12 @@ export default {
       font-size: 18px;
       color: #b1b6bb;
     }
+  }
+  .border-both{
+    border-right: 2px solid #636774;
+    border-left: 2px solid #636774;
+  }
+  .font-bebas{
+    font-family: bebas;
   }
 </style>

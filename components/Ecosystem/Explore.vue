@@ -157,16 +157,18 @@ export default {
   display: flex;
   align-items: center;
   border-radius: 10px;
-  padding: 15px 0 24px 14px;
+  padding-left:14px;
   margin-top: 1.6rem;
   .card-margin{
     margin-left: 20px;
+    margin-top: 13px;
   }
   h3{
     margin-left: 12px;
   }
 }
 .card-text {
+  margin-top:10px;
   font-size: 14px;
   color: #b1b6bb;
 }

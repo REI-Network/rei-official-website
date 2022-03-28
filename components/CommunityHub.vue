@@ -13,10 +13,10 @@
                   :class="{ 'on-hover': hover }"
                   class="hub-background mt-10 twitter"
                   >
-                  <v-img :src="twitter" height="180" width="160" />
+                  <v-img :src="twitter" height="180" width="180" />
                   <div class="hub-content">
                     <div class="hub-name font-white">Twitter <v-icon color="#FFF">～</v-icon></div>
-                    <h2 class=" font-white">≈ 94,330</h2>
+                    <h2 class="font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </v-card>
@@ -33,7 +33,7 @@
                   <img :src="reddit" height="180" width="160" />
                   <div class="hub-content">
                     <div class="hub-name font-white">Redditt <v-icon color="#FFF">～</v-icon></div>
-                    <h2 class=" font-white">≈ 94,330</h2>
+                    <h2 class=" font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </v-card>
@@ -52,7 +52,7 @@
                   <img :src="github" height="180" width="160" />
                   <div class="hub-content">
                     <div class="hub-name font-white">GitHub <v-icon color="#FFF">～</v-icon></div>
-                    <h2 class=" font-white">≈ 94,330</h2>
+                    <h2 class="font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </v-card>
@@ -69,7 +69,7 @@
                   <img :src="talk" height="180" width="160" />
                   <div class="hub-content">
                     <div class="hub-name font-white">KaKao <v-icon color="#FFF">～</v-icon></div>
-                    <h2 class=" font-white">≈ 94,330</h2>
+                    <h2 class=" font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </v-card>
@@ -85,10 +85,10 @@
                   :class="{ 'on-hover': hover }"
                   class="hub-background mt-10 discord"
                   >
-                  <v-img :src="discord" height="260" width="280" class="discord-img"/>
+                  <v-img :src="discord" height="289" width="312" class="discord-img"/>
                   <div class="hub-content">
                     <div class="hub-name font-white">Discord <v-icon color="#FFF">～</v-icon></div>
-                    <h2 class=" font-white">≈ 94,330</h2>
+                    <h2 class=" font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </v-card>
@@ -100,9 +100,9 @@
             <v-col cols="12" sm="6" md="4">
                <div class="left-telegram">
                   <img :src="Telegram" height="180" width="180" />
-                  <div class="mt-10 hub-content">
+                  <div class="hub-content">
                     <div class="hub-name font-white">Telegram <v-icon color="#FFF">～</v-icon></div>
-                    <h2 class=" font-white">≈ 94,330</h2>
+                    <h2 class=" font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </div>
@@ -115,7 +115,7 @@
                     <div>Community</div>
                   </div>
                   <div class="nation">
-                    <img src="@/assets/img/community/KoreanCommunity.png" alt="" class="img-head">
+                    <img src="@/assets/img/community/KoreanCommunity.png" alt="" width="60" height="54">
                     <div>Korean</div>
                     <div>Community</div>
                   </div>
@@ -184,25 +184,25 @@
             </v-col>
           </v-row>
             <v-row class="learn-join mt-16" justify="space-around" align="center">
-              <div><v-img :src="banner" :aspect-ratio="10/9" width="100" class="img-style"/></div>
+              <div><v-img :src="banner" :aspect-ratio="13/12" width="130" class="img-style"/></div>
               <div class="bounty">
-                <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
-                <p class="font-white distance">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
+                <h3 class="font-gradient">50 Million $ REI Growth Fund For #Recosystem Build!</h3>
+                <p class="font-white distance">Thank you for applying to the REI Network accelerator. Please include all details of your proposal within this form.</p>
               </div>
               <div class="tow-btn">
                 <v-btn
                   color="#1D10F8"
                   class="btn-background font-white"
-                  width="120"
-                  height="36"
+                  width="100"
+                  height="32"
                 >
                   Learn More
                 </v-btn>
                 <v-btn
                   color="green"
-                  class="btn-background font-white"
-                  width="120"
-                  height="36"
+                  class="btn-background mt-4 font-white"
+                  width="100"
+                  height="32"
                 >
                   Submit
                 </v-btn>
@@ -232,17 +232,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.align-center{
+.font-bebas{
+  font-family:bebas;
 }
 .font-white{
   color: #FFF;
+  font-family:bebas;
 }
   .hub-background{
-    height: 22rem;
-    background-color: lightgreen;
-    padding:1.2rem 2rem 0 0;
+    height:22rem;
+    padding:20px 45px 45px 0;
     .hub-content{
-      margin-top:1rem;
       text-align:right;
     }
   }
@@ -262,10 +262,10 @@ export default {
     height: 45.5rem;
     background: linear-gradient(to bottom, #8A92CE, #B6C5F5);
     .discord-img{
-      margin-top: 60px;
+      margin-top: 50px;
     }
     .hub-content{
-      margin-top: 14rem;
+      margin-top: 200px;
     }
 
     h2{
@@ -274,6 +274,7 @@ export default {
   }
 .hub-name{
   font-size: 28px;
+  font-weight: 900;
 }
 .telegram{
   font-size: 14px;
@@ -286,7 +287,7 @@ export default {
     }
   }
   .right-telegram{
-    margin-top: 4%;
+    margin-top: 28px;
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
@@ -299,9 +300,9 @@ export default {
       padding: 10px 12px;
     }
     .img-head{
-      height: 4rem;
-      width: 4rem;
-      border-radius: 2.5rem;
+      height: 54px;
+      width: 54px;
+      border-radius:28px;
     }
     .nation:hover{
       background-color: rgba(255,255,255,0.6);
@@ -311,10 +312,10 @@ export default {
 }
 
 .learn-join{
-  // padding: 20px;
   background: linear-gradient(to bottom right, #3E1D8C, #715FA3);
+  padding: 0 20px;
   .img-style{
-    margin: 20px 0;
+    margin: 16px 0;
   }
   .img-style-learn{
     width: 4.6rem;
@@ -323,20 +324,22 @@ export default {
   .tow-btn{
     display: flex;
     flex-direction: column;
+    margin-bottom: 12px;
   }
   .bounty{
      margin-top: 12px;
   }
   .distance{
-    margin-top: 12px;
+    margin-top: 20px;
+    font-size: 15px;
   }
   .btn-background{
     border-radius: 30px;
-    cursor: pointer;
-    font-weight: 700;
-    margin: 4px 0;
+    font-size: 12px;
   }
   .font-gradient{
+    font-size: 25px;
+    font-weight: 900;
     background: linear-gradient(to right, #FFF0B5, #FFADBF);
     -webkit-background-clip: text;
     color: transparent;

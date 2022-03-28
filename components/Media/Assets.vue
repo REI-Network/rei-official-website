@@ -24,7 +24,7 @@
           </v-col>
         </v-row>
         <v-row class="mt-12 learn-join" justify="space-around" align="center">
-          <div><v-img :src="banner" :aspect-ratio="1" width="120"/></div>
+          <div><v-img :src="banner" :aspect-ratio="6/7" width="120"/></div>
           <div class="bounty">
             <h3 class="font-gradient">Join The REI Developer Community</h3>
             <p class="font-white distance">REI`s Developer Community Spans All Across The Globe.Share Your Ideas,And Build Without Limits</p>
@@ -84,26 +84,31 @@ export default {
   margin-top:20px;
 }
 .learn-join{
-  margin: auto;
+  padding: 0 20px;
+   margin: auto;
    background: linear-gradient(to bottom right, #373943, #404457);
   .tow-btn{
     margin-top: -20px;
+    margin-bottom: 20px;
   }
   .bounty{
      margin-top: 12px;
   }
   .distance{
-    margin-top: 12px;
+    margin-top: 20px;
+    font-size: 15px;
   }
   .btn-background{
     border-radius: 30px;
-    cursor: pointer;
+    font-size: 12px;
   }
 }
 .font-white{
   color: #FFF;
 }
 .font-gradient{
+  font-size: 25px;
+  font-weight: 900;
   background: linear-gradient(to right, #FFF0B5, #FFADBF);
   -webkit-background-clip: text;
   color: transparent;

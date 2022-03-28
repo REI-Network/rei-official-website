@@ -16,7 +16,7 @@
                   color="#EEF3F7"
                   >
                   <div class="img-background">
-                    <img :src="banner" height="160" width="160" class="img-style"/>
+                    <img :src="banner" :aspect-ratio="5/6" width="150" class="img-style"/>
                   </div>
                   <div class="title">More<br/>Compatible</div>
                   <v-card-text class="card-text">
@@ -35,7 +35,7 @@
                   color="#EEF3F7"
                   >
                   <div class="img-background">
-                    <img :src="banner1" height="160" width="160" class="img-style"/>
+                    <img :src="banner1" :aspect-ratio="17/15" width="170" class="img-style"/>
                   </div>
                   <div class="title">More<br/>Efficient</div>
                   <v-card-text class="card-text">
@@ -56,7 +56,7 @@
                   color="#EEF3F7"
                   >
                   <div class="img-background">
-                    <img :src="banner2" height="160" width="180" class="img-style"/>
+                    <img :src="banner2" :aspect-ratio="9/8" width="180" class="img-style"/>
                   </div>
                   <div class="title">More<br/>Economical</div>
                   <v-card-text class="card-text">
@@ -75,7 +75,7 @@
                   color="#EEF3F7"
                   >
                   <div class="img-background">
-                    <img :src="banner3" height="160" width="180" class="img-style"/>
+                    <img :src="banner3" :aspect-ratio="15/14" width="150" class="img-style"/>
                   </div>
                   <div class="title">More<br/>Innovative</div>
                   <v-card-text class="card-text">
@@ -96,7 +96,7 @@
                   color="#EEF3F7"
                   >
                   <div class="img-background">
-                    <img :src="banner4" height="160" width="160" class="img-style"/>
+                    <img :src="banner4" :aspect-ratio="16/17"  width="160" class="img-style"/>
                   </div>
                     <div class="title">More<br/>Fast Transactions</div>
                   <v-card-text class="card-text">
@@ -116,7 +116,7 @@
                   color="#EEF3F7"
                   >
                   <div class="img-background">
-                    <img :src="banner5" height="160" width="200" class="img-style"/>
+                    <img :src="banner5" :aspect-ratio="9/7" width="180" class="img-style"/>
                   </div>
                   <div class="title">More<br/>Grants</div>
                   <v-card-text class="card-text">
@@ -159,7 +159,7 @@ export default {
  font-size: 36px;
 }
 .card-text {
-  font-size: 14px;
+  font-size: 12px;
   color: #b1b6bb;
   margin-top: 20px;
 }

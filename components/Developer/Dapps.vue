@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="mt-12">
+    <v-container class="mt-10">
         <h2>What Dapps You Can Build On REI Network?</h2>
         <v-row class="mt-10" justify="space-between" align="center">
           <v-col cols="12" sm="4">
@@ -17,7 +17,7 @@
                 >
                   <h2>Defi</h2>
                   <div>
-                    <img :src="banner" width="90">
+                    <v-img :src="banner" :aspect-ratio="11/10" width="100" />
                   </div>
                 </v-card>
               </v-hover>
@@ -34,7 +34,7 @@
                 >
                   <h2>Stablecoin</h2>
                   <div>
-                    <img :src="banner1" width="90">
+                    <v-img :src="banner1" :aspect-ratio="10/9" width="100" />
                   </div>
                 </v-card>
               </v-hover>
@@ -53,7 +53,7 @@
                 >
                   <h2>NFT</h2>
                   <div>
-                    <img :src="banner2" width="68">
+                    <v-img :src="banner2" :aspect-ratio="4/5" width="80" />
                   </div>
                 </v-card>
               </v-hover>
@@ -70,7 +70,7 @@
                 >
                   <h2>Exchange</h2>
                   <div>
-                    <img :src="banner3" width="90">
+                    <v-img :src="banner3" :aspect-ratio="12/11" width="120" />
                   </div>
                 </v-card>
               </v-hover>
@@ -89,7 +89,7 @@
                 >
                   <h2>Gamefi</h2>
                   <div>
-                    <img :src="banner4" width="96">
+                    <v-img :src="banner4" :aspect-ratio="9/8" width="90" />
                   </div>
                 </v-card>
               </v-hover>
@@ -106,14 +106,14 @@
                 >
                   <h2>Socialfi</h2>
                   <div>
-                    <img :src="banner5" width="78">
+                    <v-img :src="banner5" :aspect-ratio="11/12" width="110" />
                   </div>
                 </v-card>
               </v-hover>
           </v-col>
         </v-row>
          <v-row class="mt-16 learn-join" justify="space-around" align="center">
-          <div><v-img :src="bounty" :aspect-ratio="5/6" width="80" class="img-style"/></div>
+          <div><v-img :src="bounty" :aspect-ratio="11/13" width="110" class="img-style"/></div>
           <div class="bounty">
             <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
             <p class="font-white distance">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
@@ -122,16 +122,16 @@
             <v-btn
             color="#1D10F8"
             class="btn-background font-white"
-            width="120"
-            height="36"
+            width="100"
+            height="32"
            >
               Learn More
           </v-btn>
           <v-btn
             color="green"
-            class="btn-background mt-2 font-white"
-            width="120"
-            height="36"
+            class="btn-background mt-4 font-white"
+            width="100"
+            height="32"
            >
               Submit
           </v-btn>
@@ -164,7 +164,8 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:20px 40px;
+  height: 158px;
+  padding:0 40px;
 
 }
 .content-bottom{
@@ -173,18 +174,22 @@ export default {
 .learn-join{
   margin: auto;
   background: linear-gradient(to bottom right, #4B72C8, #9EB8F4);
+  padding: 0 20px;
   .tow-btn{
     display: flex;
     flex-direction: column;
+    margin-bottom: 12px;
   }
   .btn-background{
     border-radius: 30px;
+    font-size: 12px;
   }
   .bounty{
      margin-top: 12px;
   }
   .distance{
-    margin-top: 12px;
+     margin-top: 20px;
+    font-size: 15px;
   }
   .img-style{
     margin-top: 20px;
@@ -194,6 +199,8 @@ export default {
   color: #FFF;
 }
 .font-gradient{
+  font-size: 25px;
+  font-weight: 900;
   background: linear-gradient(to right, #FFF0B5, #FFADBF);
   -webkit-background-clip: text;
   color: transparent;
