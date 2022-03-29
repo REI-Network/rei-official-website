@@ -93,10 +93,7 @@ export default {
   computed: {
     asMobile() {
       return this.$vuetify.breakpoint.smAndDown;
-    },
-    disabled() {
-      return !this.$regMap.email.test(this.email);
-    },
+    }
   },
   data() {
     return {
@@ -109,7 +106,8 @@ export default {
       banner1: require('@/assets/img/ecosystem/Lending.png'),
       banner2: require('@/assets/img/ecosystem/REIiconGame.png'),
       banner3: require('@/assets/img/ecosystem/Stablecoin.png'),
-      banner4: require('@/assets/img/ecosystem/NFTMarketplace.png')
+      banner4: require('@/assets/img/ecosystem/NFTMarketplace.png'),
+      links:[]
     }
   },
   methods: {

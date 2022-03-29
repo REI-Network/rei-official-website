@@ -1,12 +1,6 @@
 <template>
   <div id="footer">
-<<<<<<< Updated upstream
     <v-divider></v-divider>
-=======
-    <v-divider/>
-    <Subscribe></Subscribe>
-    <v-divider/>
->>>>>>> Stashed changes
     <v-container class="align-center">
       <v-row
         class="mt-16"
