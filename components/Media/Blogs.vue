@@ -16,17 +16,17 @@
               <v-card>
                 <v-carousel v-model="model">
                 <v-carousel-item
-                  v-for="(item,i) in Lists"
+                  v-for="(item,i) in lists"
                   :key="i"
-                  :src="item.src"
+                  :src="item.img"
                 >
                   </v-carousel-item>
                 </v-carousel>
                 <v-list three-line style="padding:0;">
                     <v-list-item class="list-content">
                       <v-list-item-content>
-                        <v-list-item-title>REI|#REIcosystem Started!150 Million $REI Growth Fund For Ecosystem</v-list-item-title>
-                        <v-list-item-subtitle class="subtitle-content">We have Witnessed A Lof of Innovative On-Chain Protocols That Have Been Born</v-list-item-subtitle>
+                        <v-list-item-title>{{lists.length>0?lists[model].title:''}}</v-list-item-title>
+                        <v-list-item-subtitle class="subtitle-content">{{lists.length>0?lists[model].desc:0}}</v-list-item-subtitle>
                       </v-list-item-content>
                       <v-list-item-action>
                         <v-btn
@@ -34,6 +34,7 @@
                           class="font-white"
                           width="120"
                           height="36"
+                          :href="lists.length>0?lists[model].link:''"
                           tile
                         >
                           Read More
@@ -44,28 +45,21 @@
               </v-card>
               </v-col>
             <v-col cols="12" md="4">
-              <v-card class="right-content">
-                <v-img :src="banner1" width="100%"  :aspect-ratio="16/9" />
+              <v-card class="right-content"  
+                  v-for="(item,i) in otherLists"
+                  :key="i"
+                  :src="item.img">
+                <v-img :src="item.img" width="100%"  :aspect-ratio="16/9" />
                 <v-list two-line>
                   <v-list-item>
                     <v-list-item-content>
-                        <v-list-item-title>REI|#REIcosystem Started!150 Million $REI Growth Fund For Ecosystem</v-list-item-title>
-                        <v-list-item-subtitle class="subtitle-content">We have Witnessed A Lof of Innovative On-Chain Protocols That Have Been Born</v-list-item-subtitle>
+                        <v-list-item-title>{{item.title}}</v-list-item-title>
+                        <v-list-item-subtitle class="subtitle-content">{{item.desc}}</v-list-item-subtitle>
                       </v-list-item-content>
                   </v-list-item>
                 </v-list>
               </v-card>
-              <v-card class="right-content">
-                <v-img :src="banner1" width="100%"  :aspect-ratio="16/9" style="margin-top:22px"/>
-                <v-list two-line>
-                  <v-list-item>
-                    <v-list-item-content>
-                        <v-list-item-title>REI|#REIcosystem Started!150 Million $REI Growth Fund For Ecosystem</v-list-item-title>
-                        <v-list-item-subtitle class="subtitle-content">We have Witnessed A Lof of Innovative On-Chain Protocols That Have Been Born</v-list-item-subtitle>
-                      </v-list-item-content>
-                  </v-list-item>
-                </v-list>
-              </v-card>
+              
             </v-col>
           </v-row>
     </v-container>
@@ -77,21 +71,28 @@ export default {
     return {
       banner1: require('@/assets/img/media/banner.png'),
       model: 0,
-      Lists: [
-          {
-            src:require('@/assets/img/ecosystem/banner.png'),
-          },
-          {
-            src:require('@/assets/img/media/banner.png'),
-          },
-          {
-            src:require('@/assets/img/ecosystem/exchange.png'),
-          },
-          {
-            src:require('@/assets/img/ecosystem/banner.png'),
-          },
-      ],
+      lists: [],
+      otherLists:[]
     }
+  },
+  mounted() {
+    this.getDataList();
+  },
+  methods:{
+      async getDataList(){
+        try {
+            const { data } = await this.$axios.get('/api/news/list')
+            console.log(data)
+            this.setData(data.rows)
+        } catch (error) {
+            //
+        }
+      },
+      setData(data){
+          let _data = [].concat(data);
+          this.lists = _data.slice(0,4);
+          this.otherLists = _data.slice(4);
+      }
   },
   components: {
 
