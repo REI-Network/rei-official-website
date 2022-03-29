@@ -16,7 +16,14 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+        {
+          src: '/js/twitter-widgets.js',
+          type: 'text/javascript',
+          charset: 'utf-8',
+        },
+      ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
