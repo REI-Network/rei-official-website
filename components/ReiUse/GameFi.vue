@@ -1,14 +1,14 @@
 <template>
   <div>
     <v-container class="mt-12 align-item">
-          <h2>GameFi Projects</h2>
+          <h2>Projects</h2>
           <v-row class="mt-12">
             <v-col
               cols="12"
               sm="4"
               class="project-background"
-              v-for="n in 9"
-              :key="n"
+              v-for="(item,i) in lists"
+              :key="i"
             >
             <!-- v-for="(item,i) in Lists"
               :key="i" -->
@@ -23,11 +23,11 @@
                   <v-list two-line class="list-item">
                     <v-list-item>
                       <v-list-item-avatar size="80">
-                        <v-img src="https://cdn.vuetifyjs.com/images/john.png"></v-img>
+                        <v-img :src="item.logo"></v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-white">Defikindom</v-list-item-title>
-                        <v-list-item-subtitle class="subtitle-content font-white">We have Witnessed A Lof of<br/> Innovative On-Chain Protocols <br/>That Have Been Born Been Bor</v-list-item-subtitle>
+                        <v-list-item-title class="font-white">{{item.app_name}}</v-list-item-title>
+                        <v-list-item-subtitle class="subtitle-content font-white">{{item.description}}</v-list-item-subtitle>
                         <v-list-item-icon class="right-icon" style="margin-bottom:0;"><v-icon class=" font-white">～</v-icon></v-list-item-icon>
                       </v-list-item-content>
                     </v-list-item>
@@ -48,10 +48,25 @@ export default {
       banner2: require('@/assets/img/ecosystem/REIiconGame.png'),
       banner3: require('@/assets/img/ecosystem/Stablecoin.png'),
       banner4: require('@/assets/img/ecosystem/NFTMarketplace.png'),
-      Lists:{
-
-      }
+      lists: []
     }
+  },
+  mounted() {
+    this.getDataList();
+  },
+  methods:{
+      async getDataList(){
+        try {
+            const { data } = await this.$axios.get('/api/project/list')
+            console.log(data)
+            this.setData(data.rows)
+        } catch (error) {
+            //
+        }
+      },
+      setData(data){
+          this.lists = data;
+      }
   },
   components: {
 
