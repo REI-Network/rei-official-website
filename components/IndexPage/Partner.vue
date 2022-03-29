@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <v-container class="mt-12">
+  <div style="width:100%">
+    <v-container class="mt-12 content-width">
         <h2>Partners</h2>
         <v-row no-gutters>
             <v-col
@@ -139,4 +139,7 @@ export default {
       box-shadow: 0 0 8px #ddd;
     }
 }
+.content-width{
+    max-width: 1220px;
+  }
 </style>

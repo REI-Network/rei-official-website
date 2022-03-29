@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <v-container class="mt-12">
+  <div style="width:100%">
+    <v-container class="mt-12 content-width">
         <h2>Roadmap</h2>
-        <v-row no-gutters 
+        <v-row no-gutters
             v-for="(item, i) in items"
             :key="i">
             <v-col
@@ -58,3 +58,8 @@ export default {
   },
 }
 </script>
+<style scoped lang="scss">
+.content-width{
+    max-width: 1220px;
+  }
+</style>

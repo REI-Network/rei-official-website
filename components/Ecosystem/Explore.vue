@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="mt-12">
+    <v-container class="mt-12 align-item">
           <h2>Explore REIcostystem</h2>
           <v-row class="mt-4" justify="space-between">
             <v-col cols="12" sm="6">
@@ -20,7 +20,7 @@
                   <div class="card-margin">
                     <h3>Decentralized Exchange</h3>
                     <v-card-text class="card-text">
-                      Build A Secure,Easy-To-Use Decentralized Exchange On Avalanche.Think Uniswap,0x,And More.
+                      Build a secure, easy-to-use decentralized exchange on Avalanche. Think Uniswap, 0x, and more.
                     </v-card-text>
                   </div>
                 </v-card>
@@ -39,9 +39,9 @@
                     <v-img :src="banner3" class="img-style"/>
                   </div>
                   <div class="card-margin">
-                    <h3>Stablecoin</h3>
+                    <h3>Gamefi </h3>
                     <v-card-text class="card-text">
-                      Build The Next-Generation Stablecoin On REI Network.Think DAI,USUC And More.
+                      Gaming and decentralized finance (DeFi), which also referred to as play-to-earn (P2E) games. Think Axie
                     </v-card-text>
                   </div>
                 </v-card>
@@ -62,7 +62,7 @@
                   <div class="card-margin">
                     <h3>NFT Marketplace</h3>
                     <v-card-text class="card-text">
-                      Gaming And Decentralized Finance(DeFi),Which Also Referred To As Play-To-Earn(P2E)Games.Think Acie
+                      Gaming and decentralized finance (DeFi), which also referred to as play-to-earn (P2E) games. Think Axie
                     </v-card-text>
                   </div>
                 </v-card>
@@ -86,7 +86,7 @@
                   <div class="card-margin">
                     <h3>Lending</h3>
                     <v-card-text class="card-text">
-                      Build A Safe,Non-Custodial Lending Solution On Avalanche.Think Compound.Or Aave.
+                      Build a safe, non-custodial lending solution on Avalanche. Think Compound, or Aave.
                     </v-card-text>
                   </div>
                 </v-card>
@@ -105,9 +105,9 @@
                     <v-img :src="banner2" class="img-style"/>
                   </div>
                   <div class="card-margin">
-                    <h3>GameFi</h3>
+                    <h3>Stablecoin</h3>
                     <v-card-text class="card-text">
-                      Gaming And Decentralized Finance(DeFi),Which Also Referred To As Play-To-Earn(P2E)Games.Think Acie
+                      Build the next-generation stablecoin on REI Network. Think DAI, USDC and more.
                     </v-card-text>
                   </div>
                 </v-card>
@@ -135,12 +135,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.align-item{
+  max-width: 1220px;
+}
 .img-background{
   border-radius: 10px;
   width: 100px;
   height: 100px;
-  background: linear-gradient(to bottom, #A2C4FF, #D4FBFC);
+  background: linear-gradient(180deg, #B5D0FF, #E1FBFC);
 }
+.on-hover{
+    transform: translateY(-10px);
+    transition: transform .8s;
+  }
 .img-style{
   float:right;
   margin-right: -10px;

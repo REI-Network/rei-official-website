@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-container class="mt-8">
-        <h2>REI Network Tools</h2>
+    <v-container class="mt-8 align-item">
+        <h2>REI Network Assets</h2>
         <v-row class="mt-10 tools" justify="space-between" align="center">
           <v-col cols="12" md="5" align-self="center" class="left-color">
               <img src="@/assets/img/media/Assets.png" height="280" class="img-style"/>
@@ -26,17 +26,18 @@
         <v-row class="mt-12 learn-join" justify="space-around" align="center">
           <div><v-img :src="banner" :aspect-ratio="6/7" width="120"/></div>
           <div class="bounty">
-            <h3 class="font-gradient">Join The REI Developer Community</h3>
-            <p class="font-white distance">REI`s Developer Community Spans All Across The Globe.Share Your Ideas,And Build Without Limits</p>
+            <h3 class="font-gradient">Join The REI Network International Community</h3>
+            <p class="font-white distance">Join the growing REI.NETWORK community–supporting 13+ languages.</p>
           </div>
           <div class="tow-btn">
             <v-btn
             color="#1D10F8"
             class="btn-background font-white"
+            to="/community"
             width="150"
             height="36"
            >
-              Join Discord
+              Learn More
           </v-btn>
           </div>
         </v-row>
@@ -57,6 +58,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.align-item{
+  max-width: 1220px;
+}
 .tools{
   background-color:#2A2E3D;
   margin: auto;
@@ -86,7 +90,7 @@ export default {
 .learn-join{
   padding: 0 20px;
    margin: auto;
-   background: linear-gradient(to bottom right, #373943, #404457);
+   background: linear-gradient(150deg, #383D4D, #505668);
   .tow-btn{
     margin-top: -20px;
     margin-bottom: 20px;

@@ -1,8 +1,16 @@
 <template>
   <div>
-    <v-container class="mt-12">
+    <v-container class="mt-12 align-item">
           <h2>Blogs</h2>
-          <h5 class="learn-color">Read More></h5>
+          <div class="learn-color">
+            <v-btn class="learn-btn"
+              depressed
+              href="https://medium.com/gxchain-project"
+              target="_blank"
+              >
+              Learn Detail>
+            </v-btn>
+          </div>
           <v-row class="mt-10" justify="space-between">
             <v-col cols="12" md="8" class="">
               <v-card>
@@ -92,9 +100,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.align-item{
+  max-width: 1220px;
+}
+.v-btn.v-btn--has-bg{
+  background-color: transparent;
+}
 .learn-color{
-  color:#4A37F8;
   text-align: right;
+  .learn-btn{
+    color:#4A37F8;
+    font-weight: 700;
+  }
 }
 .cover-content{
   width: 100%;

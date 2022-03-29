@@ -1,8 +1,16 @@
 <template>
   <div>
-    <v-container class="align-center">
+    <v-container class="align-center align-item">
           <h2>Application Process</h2>
-          <h5 class="learn-color">Learn Detail></h5>
+          <div class="learn-color">
+            <v-btn class="learn-btn"
+              depressed
+              href="https://medium.com/gxchain-project/rei-reicosystem-started-150-million-rei-growth-fund-for-ecosystem-building-bcb78658e506"
+              target="_blank"
+              >
+              Learn Detail>
+            </v-btn>
+          </div>
           <v-row class="mt-10 apply-rules" justify="space-between">
             <v-col cols="12" sm="4">
               <v-hover
@@ -50,21 +58,23 @@
         <v-row class="mt-16 learn-join learn-rei" justify="space-around" align="center">
           <div><v-img :src="banner3" :aspect-ratio="11/13" width="110" class="img-style"/></div>
           <div class="bounty">
-            <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
-            <p class="font-white distance">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
+            <h3 class="font-gradient">$1,500,000 for  Bug Bounty ! #REI #Mainnet</h3>
+            <p class="font-white distance">If you find a bug or have any ideas which will improve mainnet security, plz contact us</p>
           </div>
           <div class="tow-btn">
-            <v-btn
+            <!-- <v-btn
             color="#1D10F8"
             class="btn-background font-white"
             width="120"
             height="36"
            >
               Learn More
-          </v-btn>
+          </v-btn> -->
           <v-btn
-            color="green"
+            color="#1D10F8"
             class="btn-background mt-4 font-white"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdW0tOt5nDVlCZw4auUWW0BrfqxujpV6Y_jJt-ilZsGS4sWOQ/viewform"
+            target="_blank"
             width="120"
             height="36"
            >
@@ -75,17 +85,19 @@
         <v-row class="mt-14 learn-join join-rei" justify="space-around" align="center">
           <div><v-img :src="banner4" :aspect-ratio="11/13" width="110" class="img-style2"/></div>
           <div class="bounty">
-            <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
-            <p class="font-white distance">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
+            <h3 class="font-gradient">Join The REI Network Developer Community</h3>
+            <p class="font-white distance">REI’s developer community spans all across the globe. Share your ideas, and build without limits.</p>
           </div>
           <div class="tow-btn">
             <v-btn
             color="#1D10F8"
             class="btn-background font-white"
+            href="https://discord.com/invite/zhwWkXYtJt"
+            target="_blank"
             width="120"
             height="36"
            >
-              Learn More
+              Join Discord
           </v-btn>
           </div>
         </v-row>
@@ -110,14 +122,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.learn-color{
-  color:#4A37F8;
-  text-align: right;
+.align-item{
+  max-width: 1220px;
 }
+.v-btn.v-btn--has-bg{
+  background-color: transparent;
+}
+.learn-color{
+  text-align: right;
+  .learn-btn{
+    color:#4A37F8;
+    font-weight: 700;
+  }
+}
+.on-hover{
+    transform: translateY(-10px);
+    transition: transform .8s;
+  }
 .process-block{
   // width: 31%;
   height: 450px;
-  background: linear-gradient(to bottom, #A4C6FF, #D2FBFC);
+  background: linear-gradient(180deg, #B5D0FF, #E1FBFC);
+  box-shadow: 0px 0px 10px 0px rgba(22, 36, 48, 0.1);
   text-align: center;
   padding-top: 62px;
   padding-bottom:66px;
@@ -158,7 +184,7 @@ export default {
   }
 }
 .join-rei{
-    background: linear-gradient(to bottom right, #373943, #404457);
+    background: linear-gradient(150deg, #383D4D, #505668);
   }
 .font-white{
   color: #FFF;

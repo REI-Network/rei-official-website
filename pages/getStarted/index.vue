@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="align-item">
      <h2 class="mt-12 start-title">Getting Start On REI.NetWork</h2>
      <v-row class="mt-16" justify="space-between" no-gutters>
           <v-col cols="12" md="2">
@@ -96,6 +96,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.align-item{
+  max-width: 1220px;
+}
 .start-title{
   text-align: center;
 }
@@ -113,6 +116,10 @@ export default {
     margin-top: 4rem;
   }
 }
+.on-hover{
+    transform: translateY(-10px);
+    transition: transform .8s;
+  }
 .node{
     background: linear-gradient(to bottom, #B7E1F7, #DFF6FF);
   }

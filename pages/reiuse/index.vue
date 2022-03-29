@@ -4,7 +4,7 @@
           <v-img :src="banner" height="480" />
           <div class="pos-mask">
                 <div class="wrap-1">
-                  <div class="con-1">
+                  <div class="con-1 typing-text">
                     <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white">the REI<br/> network<br/> ecosystem</h1>
                     <h5 class="font-white font-margin">Explore the latest projects on REI network</h5>
                     <v-btn
@@ -28,7 +28,7 @@ export default {
   name: 'ReiUsePage',
   data() {
     return {
-      banner: require('@/assets/img/media/banner.png')
+      banner: require('@/assets/img/ReiUse/banner.png')
     }
   },
   components:{
@@ -50,5 +50,17 @@ export default {
   border-radius: 30px;
   cursor: pointer;
   font-weight: 700;
+}
+.typing-text{
+  animation-name: example;
+  animation-duration: 1s;
+}
+@keyframes example {
+  from{
+    transform: translateY(-80px);
+  }
+  to{
+    transform: translateY(0px);
+  }
 }
 </style>

@@ -1,6 +1,12 @@
 <template>
   <div id="footer">
+<<<<<<< Updated upstream
     <v-divider></v-divider>
+=======
+    <v-divider/>
+    <Subscribe></Subscribe>
+    <v-divider/>
+>>>>>>> Stashed changes
     <v-container class="align-center">
       <v-row
         class="mt-16"
@@ -10,7 +16,7 @@
           <div class="footer-text2 mt-3">
             REI Network is A New,Lightweight And
             Quasi-Free Application-Level Public Chain
-            That is EVM-Compatible And is More 
+            That is EVM-Compatible And is More
             Friendly To Developers.
           </div>
         </v-col>
@@ -50,6 +56,7 @@
 </template>
 <script>
 import Logo from '../components/Logo.vue'
+import Subscribe from './Subscribe.vue';
 export default {
   data() {
     return {
@@ -126,12 +133,18 @@ export default {
         },
       ],
     }
+  },
+  components:{
+    Subscribe
   }
 }
 </script>
 <style scoped>
 #footer {
   padding-top: 18px;
+}
+.align-center{
+  max-width: 1220px;
 }
 .footer-title {
   font-size: 28px;

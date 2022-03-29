@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="mt-12" style="overflow: auto;">
+    <v-container class="mt-12 align-item" style="overflow: auto;">
         <h2>Comparing To Other Blockchains</h2>
         <div class="mt-12 ov-a">
           <table class="compare-table e-table-1">
@@ -50,6 +50,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.align-item{
+  max-width: 1220px;
+}
 .compare-table{
   width: 100%;
   font-size: 14px;

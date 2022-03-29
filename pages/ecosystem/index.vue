@@ -4,12 +4,14 @@
           <v-img :src="banner" height="480" />
           <div class="pos-mask">
                 <div class="wrap-1">
-                <div class="con-1">
+                <div class="con-1 typing-text">
                     <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white">REIcosystem</h1>
                     <h5 class="font-white font-margin">50 Million $REI Growth Fund For #REIcostystem Building!</h5>
                     <v-btn
                       color="#1D10F8"
                       class="btn-background font-white"
+                      href="https://reinetwork0.typeform.com/ApplyforGrants?typeform-source=www.rei.network"
+                      target="_blank"
                       width="160"
                     >
                       Apply
@@ -57,5 +59,17 @@ export default {
   border-radius: 30px;
   cursor: pointer;
   font-weight: 700;
+}
+.typing-text{
+  animation-name: example;
+  animation-duration: 1s;
+}
+@keyframes example {
+  from{
+    transform: translateY(-80px);
+  }
+  to{
+    transform: translateY(0px);
+  }
 }
 </style>

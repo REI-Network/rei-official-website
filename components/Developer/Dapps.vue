@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="mt-10">
+    <v-container class="mt-10 align-item">
         <h2>What Dapps You Can Build On REI Network?</h2>
         <v-row class="mt-10" justify="space-between" align="center">
           <v-col cols="12" sm="4">
@@ -116,12 +116,14 @@
           <div><v-img :src="bounty" :aspect-ratio="11/13" width="110" class="img-style"/></div>
           <div class="bounty">
             <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
-            <p class="font-white distance">If Ypu Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
+            <p class="font-white distance">If You Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
           </div>
           <div class="tow-btn">
             <v-btn
             color="#1D10F8"
             class="btn-background font-white"
+            href="https://medium.com/@GXS/1-500-000-for-rei-mainnet-bug-bounty-298ad4648146"
+            target="_blank"
             width="100"
             height="32"
            >
@@ -130,6 +132,8 @@
           <v-btn
             color="green"
             class="btn-background mt-4 font-white"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdW0tOt5nDVlCZw4auUWW0BrfqxujpV6Y_jJt-ilZsGS4sWOQ/viewform"
+            target="_blank"
             width="100"
             height="32"
            >
@@ -160,6 +164,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.align-item{
+  max-width: 1220px;
+}
 .dapps{
   display: flex;
   justify-content: space-between;
@@ -171,9 +178,13 @@ export default {
 .content-bottom{
   margin-top: 20px;
 }
+.on-hover{
+    transform: translateY(-10px);
+    transition: transform .8s;
+  }
 .learn-join{
   margin: auto;
-  background: linear-gradient(to bottom right, #4B72C8, #9EB8F4);
+  background: linear-gradient(150deg, #4B72C8, #9EB8F4);
   padding: 0 20px;
   .tow-btn{
     display: flex;
@@ -201,7 +212,7 @@ export default {
 .font-gradient{
   font-size: 25px;
   font-weight: 900;
-  background: linear-gradient(to right, #FFF0B5, #FFADBF);
+  background: linear-gradient(90deg, #FFF0B5, #FFADBF);
   -webkit-background-clip: text;
   color: transparent;
 }

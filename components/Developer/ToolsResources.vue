@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="mt-8">
+    <v-container class="mt-8 align-item">
         <h2>REI Network Tools</h2>
         <v-row class="mt-10 tools" justify="space-between" align="center">
           <v-col cols="12" md="5" align-self="center" class="left-color">
@@ -13,17 +13,19 @@
                 </v-card>
           </v-col>
           <v-col cols="12" md="7" class="right-color"  align-self="center">
-              <h2>REI Network Scan</h2>
+              <h2>REI explorer</h2>
               <div class="card-text">
-                REI.Network Supports Developers To Find Data On The Chain,Including Transaction Records,Account Information,Etc.
+                REI.network supports developers to find data on the chain, including transaction records, account information, etc.
               </div>
               <v-btn
               color="#1D10F8"
               class="btn-background font-white"
-              width="100"
+              href="https://scan.rei.network/"
+              target="_blank"
+              width="120"
               height="32"
             >
-              Get Started
+              Learn More
             </v-btn>
           </v-col>
         </v-row>
@@ -41,12 +43,14 @@
           <v-col cols="12" md="7" class="right-color"  align-self="center">
               <h2>REI Network Doc</h2>
               <div class="card-text">
-                The Document Provides A Detailed Interpretation Of The Concepts,Advantages,Vision And Technical Development Guidelines Of REI.Network
+                The document provides a detailed interpretation of the concepts, advantages, vision and technical development guidelines of REI.network
               </div>
               <v-btn
               color="#1D10F8"
               class="btn-background font-white"
-              width="100"
+              href="https://docs.rei.network/rei-network/welcome-to-rei-network"
+              target="_blank"
+              width="120"
               height="32"
             >
               Learn More
@@ -63,6 +67,8 @@
             <v-btn
             color="#1D10F8"
             class="btn-background font-white"
+            href="https://medium.com/gxchain-project/rei-reicosystem-started-150-million-rei-growth-fund-for-ecosystem-building-bcb78658e506"
+            target="_blank"
             width="120"
             height="36"
            >
@@ -71,10 +77,12 @@
           <v-btn
             color="green"
             class="btn-background font-white"
+            href="https://reinetwork0.typeform.com/ApplyforGrants?typeform-source=www.rei.network"
+            target="_blank"
             width="120"
             height="36"
            >
-              Submit
+              Apply
           </v-btn>
           </div>
         </v-row>
@@ -88,6 +96,8 @@
             <v-btn
             color="#1D10F8"
             class="btn-background font-white"
+            href="https://discord.com/invite/zhwWkXYtJt"
+            target="_blank"
             width="120"
             height="36"
            >
@@ -113,6 +123,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.align-item{
+  max-width: 1220px;
+}
 .tools{
   background-color:#EEF3F7;
   margin: auto;
@@ -120,13 +133,13 @@ export default {
 .left-color{
   text-align: center;
   padding: 12px 0;
-  background: linear-gradient(to bottom, #9EC1FF, #D2FCFC);
+  background: linear-gradient(180deg, #B5D0FF, #E1FBFC);
 }
 .right-color{
   padding:1.2rem 2rem;
 }
 .card-text {
-  font-size: 14px;
+  font-size: 15px;
   color: #b1b6bb;
   margin-top:12px;
 }
@@ -137,7 +150,7 @@ export default {
 .learn-join{
   padding: 0 20px;
   margin: auto;
-  background: linear-gradient(to bottom right, #3E1D8C, #715FA3);
+  background: linear-gradient(150deg, #6757A0, #8A7EB5);
   .tow-btn{
     display: flex;
     flex-direction: column;
@@ -156,7 +169,7 @@ export default {
   }
 }
 .join-rei{
-    background: linear-gradient(to bottom right, #373943, #404457);
+    background:  linear-gradient(150deg, #383D4D, #505668);
   }
 .font-white{
   color: #FFF;

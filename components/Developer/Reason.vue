@@ -1,8 +1,10 @@
 <template>
   <div>
-    <v-container class="mt-12">
+    <v-container class="mt-12 align-item">
         <h2>Why Build On REI Network?</h2>
-        <h5 class="learn-color">Get Start ></h5>
+        <div class="learn-color">
+          <v-btn class="learn-btn" depressed to="/getStarted">Get Start ></v-btn>
+        </div>
         <v-row justify="space-between">
           <v-col cols="12" sm="4">
             <v-hover
@@ -18,9 +20,10 @@
                   <div class="img-background">
                     <img :src="banner" :aspect-ratio="5/6" width="150" class="img-style"/>
                   </div>
-                  <div class="title">More<br/>Compatible</div>
+                  <h2 class="more-title">More<br/>Compatible</h2>
                   <v-card-text class="card-text">
-                    Compatible With EVM And Ethereum RPC Seamless Migration Of Ethereum Applications Ethereum Infrastructure Can Be Used Directly.
+                    EVM-compatible and Ethereum RPC, seamless migration of Ethereum
+                    applications, Ethereum infrastructure can be used directly.
                   </v-card-text>
                 </v-card>
             </v-hover>
@@ -37,9 +40,10 @@
                   <div class="img-background">
                     <img :src="banner1" :aspect-ratio="17/15" width="170" class="img-style"/>
                   </div>
-                  <div class="title">More<br/>Efficient</div>
+                  <h2 class="more-title">More<br/>Efficient</h2>
                   <v-card-text class="card-text">
-                    No Pow,Green Based On Dpos + BFT,Second Level Block Out Is Realized Block Out Is Consensus.
+                    No Pow, but green based on Dpos + BFT, second-level blocking Is
+                    realized. Blocking Is consensus.
                   </v-card-text>
                 </v-card>
             </v-hover>
@@ -58,9 +62,11 @@
                   <div class="img-background">
                     <img :src="banner2" :aspect-ratio="9/8" width="180" class="img-style"/>
                   </div>
-                  <div class="title">More<br/>Economical</div>
+                  <h2 class="more-title">More<br/>Economical</h2>
                   <v-card-text class="card-text">
-                    REI Network Can Achieve Free,Users Are Able To Complete On-Chain Transparent With Almost Zero Fees Through The Innovative Design Of Staking&Replacement For On-Chain Resources.
+                    REI Network achieves free model, users are able to complete on-chain
+                    transactions with almost zero fees through the innovative design of
+                    staking & replacement for on-chain resources.
                   </v-card-text>
                 </v-card>
             </v-hover>
@@ -77,9 +83,11 @@
                   <div class="img-background">
                     <img :src="banner3" :aspect-ratio="15/14" width="150" class="img-style"/>
                   </div>
-                  <div class="title">More<br/>Innovative</div>
+                  <h2 class="more-title">More<br/>Innovative</h2>
                   <v-card-text class="card-text">
-                    Abstract Consensus Module Build In Cross Chain Mechanism It Can Be Easily Combined To Become A Chain Marking Tool.
+                      Abstract consensus module built in cross-chain
+                    mechanism, it can be easily integrated to become a
+                    chain making tool.
                   </v-card-text>
                 </v-card>
             </v-hover>
@@ -98,10 +106,11 @@
                   <div class="img-background">
                     <img :src="banner4" :aspect-ratio="16/17"  width="160" class="img-style"/>
                   </div>
-                    <div class="title">More<br/>Fast Transactions</div>
+                    <h2 class="more-title">More<br/>Fast Transactions</h2>
                   <v-card-text class="card-text">
-                    REI.Network Pays Great Attention To Speed,With An Average Block Time Of 3 Seconds-Tips Reachs 3000+.
-                    Under The Premise Of Ensuring Decentralization,It Will Bring Users A Faster Experience.
+                    REI Network pays great attention to speed. With an average
+                    block time of 3 seconds and 3000+ TPS, it bring users
+                    a faster experience.
                   </v-card-text>
                 </v-card>
             </v-hover>
@@ -118,9 +127,10 @@
                   <div class="img-background">
                     <img :src="banner5" :aspect-ratio="9/7" width="180" class="img-style"/>
                   </div>
-                  <div class="title">More<br/>Grants</div>
+                  <h2 class="more-title">More<br/>Grants</h2>
                   <v-card-text class="card-text">
-                    REIcosystem Started 150 Million $REI Growth Fund For Ecosystem Building.
+                    REIcosystem started! 150 million $REI growth fund
+                    for ecosystem building.
                   </v-card-text>
                 </v-card>
             </v-hover>
@@ -148,18 +158,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.learn-color{
-  color:#4A37F8;
-  text-align: right;
+.align-item{
+  max-width: 1220px;
 }
-.title{
+.v-btn.v-btn--has-bg{
+  background-color: transparent;
+}
+.learn-color{
+  text-align: right;
+  .learn-btn{
+    color:#4A37F8;
+    font-weight: 700;
+  }
+}
+.more-title{
  color: #000;
  margin-left: 16px;
- font-weight: 700;
- font-size: 36px;
+//  font-weight: 900;
+//  font-size: 30px;
 }
+.on-hover{
+    transform: translateY(-10px);
+    transition: transform .8s;
+  }
 .card-text {
-  font-size: 12px;
+  font-size: 15px;
   color: #b1b6bb;
   margin-top: 20px;
 }
@@ -167,7 +190,7 @@ export default {
   padding-bottom: 1.2rem;
   padding-left:2rem;
   padding-right:2rem;
-  height: 390px;
+  height: 420px;
 }
 .img-background{
   width: 100%;

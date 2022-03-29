@@ -5,7 +5,8 @@
           <div class="pos-mask">
                 <div class="wrap-1">
                 <div class="con-1">
-                    <h1 class="mt-16 text-h2 font-italic font-weight-bold">Rapid<br> Economical<br> Innonative</h1>
+                    <h1 class="mt-16 text-h2 font-italic font-weight-bold" style="width:200px">{{animatedText}}<span id="caret">&nbsp;</span></h1>
+                    <!-- <h1>{{animatedText}}</h1> -->
                 </div>
                 </div>
             </div>
@@ -47,7 +48,7 @@
         </v-container>
       </div>
       <div id="video" class="section-video">
-        <v-container>
+        <v-container class="content-width">
             <v-row class="video-box lighten-4 cardbg">
                 <v-col
                 class="d-flex flex-column justify-center"
@@ -85,7 +86,7 @@
         </v-container>
       </div>
       <div id="feature-wrap">
-          <v-container>
+          <v-container class="content-width">
             <v-row>
                 <v-col
                     class="d-flex flex-column justify-center"
@@ -213,7 +214,7 @@
         </v-container>
       </div>
       <div id="index-community">
-          <v-container>
+          <v-container class="content-width">
             <v-row class="cardbg lighten-4" justify="space-between" align="center" no-gutters>
                 <v-col
                     align-self="center"
@@ -266,11 +267,27 @@ export default {
   },
   data() {
     return {
+      sloganText: "Rapid Economical Innonative",
+      animatedText: "",
+      i: 0,
       banner: require('@/assets/img/index/banner-index.png'),
       communityImg: require('@/assets/img/index/index-community.png'),
       featImg1: require('@/assets/img/index/feat-1.png'),
       featImg2: require('@/assets/img/index/feat-2.png'),
     }
+  },
+  created() {
+    setTimeout(() => this.typeWriter(), 1000);
+  },
+  methods: {
+    typeWriter() {
+      const speed = 100;
+      if (this.i < this.sloganText.length) {
+        this.animatedText += this.sloganText.charAt(this.i);
+        this.i++;
+        setTimeout(this.typeWriter, speed);
+      }
+    },
   },
 }
 </script>
@@ -285,6 +302,9 @@ export default {
   url('../assets/bebas/BEBAS.svg#Bebas') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+.index-page{
+
 }
 .index-statistic {
     background: url('@/assets/img/index/mid-bg.png') center center no-repeat;
@@ -301,6 +321,9 @@ export default {
 .section-video {
   padding: 20px 0;
 }
+.content-width{
+    max-width: 1220px;
+  }
 .video-play {
   max-width: 1200px;
   width: 100%;
@@ -334,4 +357,20 @@ export default {
   .font-bebas{
     font-family: bebas;
   }
+  #caret {
+  border-left: 2px solid #000;
+  margin-left: 3px;
+  animation: blink-caret 1s infinite;
+}
+
+
+@keyframes blink-caret {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border:none;
+    opacity: 0;
+  }
+}
 </style>

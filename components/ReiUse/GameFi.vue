@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="mt-12">
+    <v-container class="mt-12 align-item">
           <h2>GameFi Projects</h2>
           <v-row class="mt-12">
             <v-col
@@ -60,9 +60,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.project-background{
-  // background: pink;
-  // height: 10rem;
+.align-item{
+  max-width: 1220px;
 }
 .subtitle-content{
   margin-top: 12px;
@@ -77,6 +76,8 @@ export default {
 }
 .list-item:hover{
   background-color:#2A2E3D;
+  transform: translateY(-10px);
+  transition: transform .8s;
   .font-white{
     color: #FFF;
   }
