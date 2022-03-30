@@ -20,7 +20,7 @@
                 class="d-flex flex-column justify-center"
             >
                 <div class="py-4">
-                    <h2 class="font-bebas">481</h2>
+                    <h2 class="font-bebas">{{stats.totalAddress}}</h2>
                     <p>Total Wallet Addresses</p>
                 </div>
             </v-col>
@@ -30,7 +30,7 @@
                 class="d-flex flex-column justify-center "
             >
                 <div class="py-4 border-both">
-                    <h2 class="font-bebas">1,374</h2>
+                    <h2 class="font-bebas">{{stats.totalTransaction}}</h2>
                     <p>Total Transactions</p>
                 </div>
             </v-col>
@@ -40,7 +40,7 @@
                 class="d-flex flex-column justify-center"
             >
                 <div class="py-4">
-                    <h2 class="font-bebas">2,455,301</h2>
+                    <h2 class="font-bebas">{{stats.totalStake}}</h2>
                     <p>Total Stake (REI)</p>
                 </div>
             </v-col>
@@ -285,10 +285,16 @@ export default {
       communityImg: require('@/assets/img/index/index-community.png'),
       featImg1: require('@/assets/img/index/feat-1.png'),
       featImg2: require('@/assets/img/index/feat-2.png'),
+      stats:{
+
+      }
     }
   },
   created() {
     setTimeout(() => this.typeWriter(), 1000);
+  },
+  mounted() {
+    this.getData();
   },
   methods: {
     typeWriter() {
@@ -299,6 +305,14 @@ export default {
         setTimeout(this.typeWriter, speed);
       }
     },
+    async getData(){
+        try {
+            const { data } = await this.$axios.get('/api/reistats')
+            this.stats = data.row.json;
+        } catch (error) {
+            console.log(error)
+        }
+    }
   },
 }
 </script>
