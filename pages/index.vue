@@ -20,7 +20,7 @@
                 class="d-flex flex-column justify-center"
             >
                 <div class="py-4">
-                    <h2 class="font-bebas">2,983,713</h2>
+                    <h2 class="font-bebas">481</h2>
                     <p>Total Wallet Addresses</p>
                 </div>
             </v-col>
@@ -30,8 +30,8 @@
                 class="d-flex flex-column justify-center "
             >
                 <div class="py-4 border-both">
-                    <h2 class="font-bebas">2,983,713</h2>
-                    <p>Total Wallet Addresses</p>
+                    <h2 class="font-bebas">1,374</h2>
+                    <p>Total Transactions</p>
                 </div>
             </v-col>
             <v-col
@@ -40,7 +40,7 @@
                 class="d-flex flex-column justify-center"
             >
                 <div class="py-4">
-                    <h2 class="font-bebas">2,983,713</h2>
+                    <h2 class="font-bebas">2,455,301</h2>
                     <p>Total Stake (REI)</p>
                 </div>
             </v-col>
