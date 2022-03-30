@@ -5,7 +5,7 @@
           <div class="second"></div>
           <div class="third"></div>
           <div class="pos-mask media-content">
-                <v-row class="wrap-1" align="center" justify="space-betweenn">
+                <v-row class="" align="center" justify="space-betweenn">
                   <v-col cols="12" md="7" class="typing-text">
                     <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white">REI<br/>Media Center<br/> Mainnet Is Now Live!</h1>
                     <h5 class="font-white font-margin">The Latest REI Nnetwork Media Information.</h5>

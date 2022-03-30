@@ -28,7 +28,9 @@
                       <v-list-item-content>
                         <v-list-item-title class="font-white">{{item.app_name}}</v-list-item-title>
                         <v-list-item-subtitle class="subtitle-content font-white">{{item.description}}</v-list-item-subtitle>
-                        <v-list-item-icon class="right-icon" style="margin-bottom:0;"><v-icon class=" font-white">～</v-icon></v-list-item-icon>
+                        <v-list-item-icon class="right-icon" style="margin-bottom:0;">
+                          <img src='https://lanhu.oss-cn-beijing.aliyuncs.com/pslxlxij4x8t7sx8bfe0loaxw2j1r3704c2a56dfbc-0780-4980-ad1e-5e068eae88ba' width="20" height="8"/>
+                        </v-list-item-icon>
                       </v-list-item-content>
                     </v-list-item>
                   </v-list>

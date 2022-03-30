@@ -1,16 +1,16 @@
 <template>
   <div>
     <v-container class="align-center align-item">
-          <h2>Application Process</h2>
-          <div class="learn-color">
+          <v-row justify="space-between" align="center">
+            <h2>Application Process</h2>
             <v-btn class="learn-btn"
-              depressed
-              href="https://medium.com/gxchain-project/rei-reicosystem-started-150-million-rei-growth-fund-for-ecosystem-building-bcb78658e506"
-              target="_blank"
-              >
-              Learn Detail>
+                depressed
+                href="https://medium.com/gxchain-project/rei-reicosystem-started-150-million-rei-growth-fund-for-ecosystem-building-bcb78658e506"
+                target="_blank"
+               >
+                Learn Detail>
             </v-btn>
-          </div>
+          </v-row>
           <v-row class="mt-10 apply-rules" justify="space-between">
             <v-col cols="12" sm="4">
               <v-hover
@@ -77,6 +77,7 @@
             target="_blank"
             width="120"
             height="36"
+            depressed
            >
               Submit
           </v-btn>
@@ -96,6 +97,7 @@
             target="_blank"
             width="120"
             height="36"
+            depressed
            >
               Join Discord
           </v-btn>
@@ -128,13 +130,11 @@ export default {
 .v-btn.v-btn--has-bg{
   background-color: transparent;
 }
-.learn-color{
-  text-align: right;
   .learn-btn{
     color:#4A37F8;
     font-weight: 700;
   }
-}
+
 .on-hover{
     transform: translateY(-10px);
     transition: transform .8s;
@@ -196,7 +196,9 @@ export default {
   -webkit-background-clip: text;
   color: transparent;
 }
-@media screen {
-
+.learn-join:hover{
+  box-shadow: 0 0 20px #ddd;
+  transform: translateY(-10px);
+  transition: transform .8s;
 }
 </style>

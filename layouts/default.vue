@@ -6,7 +6,7 @@
       color="white"
       elevation="1"
     >
-      <v-container class="d-flex align-center">
+      <v-container class="d-flex align-center" style="max-width:1220px">
         <v-btn text color="transparent" to="/" class="always-active mr-8">
           <logo />
         </v-btn>
@@ -122,7 +122,7 @@
               </span>
             </v-list-item-title>
           </v-list-item>
-          
+
         </template>
         <v-list-item
             nuxt

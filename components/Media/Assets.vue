@@ -17,8 +17,12 @@
                   class="btn-background font-white"
                   width="120"
                   height="36"
+<<<<<<< Updated upstream
                   target="_blank"
                   href="https://static.rei.network/media/REI-VIS-Basic-System.zip"
+=======
+                  depressed
+>>>>>>> Stashed changes
                 >
                   Download
                 </v-btn>
@@ -38,6 +42,7 @@
             to="/community"
             width="150"
             height="36"
+            depressed
            >
               Learn More
           </v-btn>
@@ -118,5 +123,10 @@ export default {
   background: linear-gradient(to right, #FFF0B5, #FFADBF);
   -webkit-background-clip: text;
   color: transparent;
+}
+.learn-join:hover{
+  box-shadow: 0 0 20px #ddd;
+  transform: translateY(-10px);
+  transition: transform .8s;
 }
 </style>

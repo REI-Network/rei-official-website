@@ -126,6 +126,7 @@
             target="_blank"
             width="100"
             height="32"
+            depressed
            >
               Learn More
           </v-btn>
@@ -136,6 +137,7 @@
             target="_blank"
             width="100"
             height="32"
+            depressed
            >
               Submit
           </v-btn>
@@ -215,5 +217,10 @@ export default {
   background: linear-gradient(90deg, #FFF0B5, #FFADBF);
   -webkit-background-clip: text;
   color: transparent;
+}
+.learn-join:hover{
+  box-shadow: 0 0 20px #ddd;
+  transform: translateY(-10px);
+  transition: transform .8s;
 }
 </style>

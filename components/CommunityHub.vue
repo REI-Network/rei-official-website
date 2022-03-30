@@ -15,7 +15,15 @@
                     >
                   <v-img :src="twitter" height="180" width="180" />
                   <div class="hub-content">
-                    <a href="https://twitter.com/GXChainGlobal" target="_blank"><div class="hub-name font-white">Twitter <img src="@/assets/img/arrow.svg" width="24" height="20"/></div></a>
+                    <a href="https://twitter.com/GXChainGlobal" target="_blank">
+                      <div class="hub-name font-white">Twitter
+                        <img
+                          height="8"
+                          width="20"
+                          style="margin-bottom:4px"
+                          src="https://lanhu.oss-cn-beijing.aliyuncs.com/ps6ewcu145q1rwbfo46nvslak04gn1p6dpb5c26ead-97e8-4ac8-b2b9-6c28f8be1011" />
+                      </div>
+                    </a>
                     <h2 class="font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
                   </div>
@@ -32,7 +40,15 @@
                   >
                   <img :src="reddit" height="180" width="160" />
                   <div class="hub-content">
-                    <a a href="https://www.reddit.com/r/GXS/" target="_blank"><div class="hub-name font-white">Reddit <v-icon color="#FFF">～</v-icon></div></a>
+                    <a a href="https://www.reddit.com/r/GXS/" target="_blank">
+                      <div class="hub-name font-white">Reddit
+                        <img
+                          height="8"
+                          width="20"
+                          style="margin-bottom:4px"
+                          src="https://lanhu.oss-cn-beijing.aliyuncs.com/ps6ewcu145q1rwbfo46nvslak04gn1p6dpb5c26ead-97e8-4ac8-b2b9-6c28f8be1011" />
+                      </div>
+                      </a>
                     <h2 class="font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
                   </div>
@@ -51,7 +67,14 @@
                   >
                   <img :src="github" height="180" width="160" />
                   <div class="hub-content">
-                    <a a href="https://github.com/rei-network" target="_blank"><div class="hub-name font-white">GitHub <v-icon color="#FFF">～</v-icon></div></a>
+                    <a a href="https://github.com/rei-network" target="_blank">
+                    <div class="hub-name font-white">GitHub
+                      <img
+                          height="8"
+                          width="20"
+                          style="margin-bottom:4px"
+                          src="https://lanhu.oss-cn-beijing.aliyuncs.com/ps6ewcu145q1rwbfo46nvslak04gn1p6dpb5c26ead-97e8-4ac8-b2b9-6c28f8be1011" />
+                    </div></a>
                     <h2 class="font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
                   </div>
@@ -68,7 +91,14 @@
                   >
                   <img :src="talk" height="180" width="160" />
                   <div class="hub-content">
-                    <a a href="https://open.kakao.com/o/gghzljsb" target="_blank"><div class="hub-name font-white">KaKao <v-icon color="#FFF">～</v-icon></div></a>
+                    <a a href="https://open.kakao.com/o/gghzljsb" target="_blank">
+                    <div class="hub-name font-white">KaKao
+                      <img
+                          height="8"
+                          width="20"
+                          style="margin-bottom:4px"
+                          src="https://lanhu.oss-cn-beijing.aliyuncs.com/ps6ewcu145q1rwbfo46nvslak04gn1p6dpb5c26ead-97e8-4ac8-b2b9-6c28f8be1011" />
+                    </div></a>
                     <h2 class=" font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
                   </div>
@@ -87,7 +117,14 @@
                   >
                   <v-img :src="discord" height="289" width="312" class="discord-img"/>
                   <div class="hub-content">
-                    <a a href="https://discord.com/invite/zhwWkXYtJt" target="_blank"><div class="hub-name font-white">Discord <v-icon color="#FFF">～</v-icon></div></a>
+                    <a a href="https://discord.com/invite/zhwWkXYtJt" target="_blank">
+                    <div class="hub-name font-white">discord
+                      <img
+                          height="8"
+                          width="20"
+                          style="margin-bottom:4px"
+                          src="https://lanhu.oss-cn-beijing.aliyuncs.com/ps6ewcu145q1rwbfo46nvslak04gn1p6dpb5c26ead-97e8-4ac8-b2b9-6c28f8be1011" />
+                    </div></a>
                     <h2 class=" font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
                   </div>
@@ -101,7 +138,14 @@
                <div class="left-telegram">
                   <img :src="Telegram" height="180" width="180" />
                   <div class="hub-content">
-                    <a a href="https://t.me/GXChain_international" target="_blank"><div class="hub-name font-white">Telegram <v-icon color="#FFF">～</v-icon></div></a>
+                    <a a href="https://t.me/GXChain_international" target="_blank">
+                    <div class="hub-name font-white">Telegram
+                       <img
+                          height="8"
+                          width="20"
+                          style="margin-bottom:4px"
+                          src="https://lanhu.oss-cn-beijing.aliyuncs.com/ps6ewcu145q1rwbfo46nvslak04gn1p6dpb5c26ead-97e8-4ac8-b2b9-6c28f8be1011" />
+                    </div></a>
                     <h2 class=" font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
                   </div>
@@ -224,6 +268,7 @@
                   target="_blank"
                   width="100"
                   height="32"
+                  depressed
                 >
                   Learn More
                 </v-btn>
@@ -234,16 +279,18 @@
                   target="_blank"
                   width="100"
                   height="32"
+                  depressed
                 >
                   Apply
                 </v-btn>
               </div>
-             </v-row>
+            </v-row>
         </v-col>
     </v-container>
   </div>
 </template>
 <script>
+import { mdiAtomVariant } from '@mdi/js'
 export default {
   data() {
     return {
@@ -254,7 +301,6 @@ export default {
       discord:require('@/assets/img/community/discord.png'),
       Telegram:require('@/assets/img/community/tg.png'),
       banner: require('@/assets/img/community/REIStartanode.png'),
-      arrow:require('@/assets/img/arrow.svg')
     }
   },
   components: {
@@ -394,5 +440,10 @@ export default {
     -webkit-background-clip: text;
     color: transparent;
   }
+}
+.learn-join:hover{
+  box-shadow: 0 0 20px #ddd;
+  transform: translateY(-10px);
+  transition: transform .8s;
 }
 </style>

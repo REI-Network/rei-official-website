@@ -13,6 +13,7 @@
                       href="https://reinetwork0.typeform.com/ApplyforGrants?typeform-source=www.rei.network"
                       target="_blank"
                       width="160"
+                      depressed
                     >
                       Apply
                     </v-btn>

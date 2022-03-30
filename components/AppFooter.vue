@@ -1,11 +1,13 @@
 <template>
   <div id="footer">
     <v-divider></v-divider>
+    <Subscribe></Subscribe>
+    <v-divider  class="mt-12"></v-divider>
     <v-container class="align-center">
       <v-row
         class="mt-16"
       >
-        <v-col cols="12" md="4" lg="4">
+        <v-col cols="12" md="3" lg="3">
           <div class="footer-title font-weight-black"><logo /></div>
           <div class="footer-text2 mt-3">
             REI Network is A New,Lightweight And
@@ -14,14 +16,14 @@
             Friendly To Developers.
           </div>
         </v-col>
-        <v-col cols="12" md="8" lg="8">
+        <v-col cols="12" md="9" lg="9">
           <v-row>
             <v-col
               v-for="item in project"
               :key="item.name"
-              cols="6"
-              lg="3"
-              md="3"
+              cols="12"
+              lg="2"
+              md="2"
               class="d-flex flex-column"
             >
               <div class="ml-2 mb-4 font-weight-black subtitle-2">{{ item.name }}</div>
@@ -43,8 +45,12 @@
         </v-col>
       </v-row>
     </v-container>
+    <v-divider  class="mt-12"/>
     <v-container>
-      <div class="copy-center">&copy; 2022 REI Network</div>
+      <v-row justify="space-between">
+        <div class="copy-center">&copy; 2022 REI Network</div>
+        <div class="copy-center">Privacy Policy</div>
+      </v-row>
     </v-container>
   </div>
 </template>
@@ -82,6 +88,19 @@ export default {
           ],
         },
         {
+          name: 'USE REI',
+          list: [
+            {
+              name: 'Ecosystem',
+              to:'/ecosystem'
+            },
+            {
+              name: 'REI EXplorer',
+              to: '/',
+            }
+          ],
+        },
+        {
           name: 'REIcosystem',
           list: [
             {
@@ -91,6 +110,23 @@ export default {
             },
             {
               name: 'Apply For Grants',
+              to: '/',
+            }
+          ],
+        },
+        {
+          name: 'REI DAO',
+          list: [
+            {
+              name: 'Dashboard',
+              to: '/',
+            },
+            {
+              name: 'My Account',
+              to: '/',
+            },
+            {
+              name: 'Voting',
               to: '/',
             }
           ],

@@ -133,12 +133,16 @@ export default {
 .img-box {
     display: flex;
     align-items: center;
-    max-height: 30px;
-    max-width: 60%;
+    height: 70px;
+    border-radius: 6px;
+    border: 1px solid #f0f0f0;
+    padding: 12px;
+    width: 80%;
     &:hover {
       box-shadow: 0 0 8px #ddd;
     }
 }
+
 .content-width{
     max-width: 1220px;
   }

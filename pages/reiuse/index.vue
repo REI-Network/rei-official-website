@@ -7,13 +7,14 @@
                   <div class="con-1 typing-text">
                     <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white">the REI<br/> network<br/> ecosystem</h1>
                     <h5 class="font-white font-margin">Explore the latest projects on REI network</h5>
-                    <v-btn
+                    <!-- <v-btn
                       color="#1D10F8"
                       class="btn-background font-white"
                       width="220"
+                      depressed
                     >
                       Submit Your Project
-                    </v-btn>
+                    </v-btn> -->
                   </div>
                 </div>
             </div>

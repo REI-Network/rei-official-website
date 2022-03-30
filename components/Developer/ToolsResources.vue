@@ -24,6 +24,7 @@
               target="_blank"
               width="120"
               height="32"
+              depressed
             >
               Learn More
             </v-btn>
@@ -52,6 +53,7 @@
               target="_blank"
               width="120"
               height="32"
+              depressed
             >
               Learn More
             </v-btn>
@@ -71,6 +73,7 @@
             target="_blank"
             width="120"
             height="36"
+            depressed
            >
               Learn More
           </v-btn>
@@ -81,6 +84,7 @@
             target="_blank"
             width="120"
             height="36"
+            depressed
            >
               Apply
           </v-btn>
@@ -100,6 +104,7 @@
             target="_blank"
             width="120"
             height="36"
+            depressed
            >
               Join Discord
           </v-btn>
@@ -180,5 +185,15 @@ export default {
   background: linear-gradient(to right, #FFF0B5, #FFADBF);
   -webkit-background-clip: text;
   color: transparent;
+}
+.learn-join:hover{
+  box-shadow: 0 0 20px #ddd;
+  transform: translateY(-10px);
+  transition: transform .8s;
+}
+.tools:hover{
+  box-shadow: 0 0 20px #ddd;
+  transform: translateY(-10px);
+  transition: transform .8s;
 }
 </style>

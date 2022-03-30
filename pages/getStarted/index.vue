@@ -6,74 +6,80 @@
             <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
-                <v-card tile
-                  :elevation="hover ? 12 : 0"
-                  :class="{ 'on-hover': hover }"
-                  class="process-block node"
-
-                  >
-                  <v-img :src="banner" class="img-style"/>
-                  <h6>Start a node</h6>
-                </v-card>
+                <a href="https://docs.rei.network/developer/quick-start" target="_blank">
+                  <v-card tile
+                    :elevation="hover ? 12 : 0"
+                    :class="{ 'on-hover': hover }"
+                    class="process-block node"
+                    >
+                    <v-img :src="banner" class="img-style"/>
+                    <h6>Start a node</h6>
+                  </v-card>
+                </a>
               </v-hover>
           </v-col>
           <v-col cols="12" md="2">
             <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
-                <v-card tile
-                  :elevation="hover ? 12 : 0"
-                  :class="{ 'on-hover': hover }"
-                  class="process-block become"
-
-                  >
-                  <v-img :src="banner1" class="img-style"/>
-                  <h6>Become a validator</h6>
-                </v-card>
+                <a href="https://docs.rei.network/rei-dao/guides/become-a-validator" target="_blank">
+                  <v-card tile
+                    :elevation="hover ? 12 : 0"
+                    :class="{ 'on-hover': hover }"
+                    class="process-block become"
+                    >
+                    <v-img :src="banner1" class="img-style"/>
+                    <h6>Become a validator</h6>
+                  </v-card>
+                </a>
               </v-hover>
           </v-col>
           <v-col cols="12" md="2">
             <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
-                <v-card tile
-                  :elevation="hover ? 12 : 0"
-                  :class="{ 'on-hover': hover }"
-                  class="process-block stake"
-
+                <a href="https://docs.rei.network/rei-dao/guides/voting-for-a-validator" target="_blank">
+                  <v-card tile
+                    :elevation="hover ? 12 : 0"
+                    :class="{ 'on-hover': hover }"
+                    class="process-block stake"
                   >
-                  <v-img :src="banner2" class="img-style"/>
-                  <h6>Stake for validator</h6>
-                </v-card>
+                    <v-img :src="banner2" class="img-style"/>
+                    <h6>Stake for validator</h6>
+                  </v-card>
+                </a>
               </v-hover>
           </v-col>
           <v-col cols="12" md="2">
             <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
-                <v-card tile
-                  :elevation="hover ? 12 : 0"
-                  :class="{ 'on-hover': hover }"
-                  class="process-block free-gas"
-
+                <a href="https://docs.rei.network/rei-dao/guides/stake-for-free-gas" target="_blank">
+                  <v-card tile
+                    :elevation="hover ? 12 : 0"
+                    :class="{ 'on-hover': hover }"
+                    class="process-block free-gas"
                   >
-                  <v-img :src="banner3" class="img-style"/>
-                  <h6>Stake for Free Gas</h6>
-                </v-card>
+                    <v-img :src="banner3" class="img-style"/>
+                    <h6>Stake for Free Gas</h6>
+                  </v-card>
+                </a>
               </v-hover>
           </v-col>
           <v-col cols="12" md="2">
             <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
-                <v-card tile
-                  :elevation="hover ? 12 : 0"
-                  :class="{ 'on-hover': hover }"
-                  class="process-block exchange"
-                  >
-                  <v-img :src="banner4" class="img-style"/>
-                  <h6>Exchange integration</h6>
-                </v-card>
+                <a href="https://docs.rei.network/rei-dao/guides/exchange-integration" target="_blank">
+                  <v-card tile
+                    :elevation="hover ? 12 : 0"
+                    :class="{ 'on-hover': hover }"
+                    class="process-block exchange"
+                    >
+                    <v-img :src="banner4" class="img-style"/>
+                    <h6>Exchange integration</h6>
+                  </v-card>
+                </a>
               </v-hover>
           </v-col>
         </v-row>
@@ -96,6 +102,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  color: #000;
+}
 .align-item{
   max-width: 1220px;
 }

@@ -1,16 +1,16 @@
 <template>
   <div>
     <v-container class="mt-12 align-item">
-          <h2>Blogs</h2>
-          <div class="learn-color">
-            <v-btn class="learn-btn"
-              depressed
-              href="https://medium.com/gxchain-project"
-              target="_blank"
-              >
-              Learn Detail>
+           <v-row justify="space-between" align="center">
+              <h2>Blogs</h2>
+              <v-btn class="learn-btn"
+                depressed
+                href="https://medium.com/gxchain-project"
+                target="_blank"
+                >
+                Learn Detail>
             </v-btn>
-          </div>
+            </v-row>
           <v-row class="mt-10" justify="space-between">
             <v-col cols="12" md="8" class="">
               <v-card>
@@ -46,7 +46,7 @@
               </v-card>
               </v-col>
             <v-col cols="12" md="4">
-              <v-card class="right-content"  
+              <v-card class="right-content"
                   v-for="(item,i) in otherLists"
                   :key="i"
                   :src="item.img"
@@ -63,7 +63,7 @@
                   </v-list-item>
                 </v-list>
               </v-card>
-              
+
             </v-col>
           </v-row>
           <h2 class="my-12">News</h2>
@@ -135,13 +135,10 @@ export default {
 .v-btn.v-btn--has-bg{
   background-color: transparent;
 }
-.learn-color{
-  text-align: right;
   .learn-btn{
     color:#4A37F8;
     font-weight: 700;
   }
-}
 .cover-content{
   width: 100%;
   height: 150px;

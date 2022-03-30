@@ -1,10 +1,10 @@
 <template>
   <div>
     <v-container class="mt-12 align-item">
+      <v-row justify="space-between" align="center">
         <h2>Why Build On REI Network?</h2>
-        <div class="learn-color">
-          <v-btn class="learn-btn" depressed to="/getStarted">Get Start ></v-btn>
-        </div>
+        <v-btn class="learn-btn" depressed to="/getStarted">Get Start ></v-btn>
+      </v-row>
         <v-row justify="space-between">
           <v-col cols="12" sm="4">
             <v-hover
@@ -164,13 +164,11 @@ export default {
 .v-btn.v-btn--has-bg{
   background-color: transparent;
 }
-.learn-color{
-  text-align: right;
   .learn-btn{
     color:#4A37F8;
     font-weight: 700;
   }
-}
+
 .more-title{
  color: #000;
  margin-left: 16px;

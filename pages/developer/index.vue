@@ -11,6 +11,7 @@
                       class="btn-background font-white"
                       width="160"
                       to="/getStarted"
+                      depressed
                     >
                       Get Started
                     </v-btn>
