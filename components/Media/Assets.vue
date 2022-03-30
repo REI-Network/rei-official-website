@@ -17,12 +17,9 @@
                   class="btn-background font-white"
                   width="120"
                   height="36"
-<<<<<<< Updated upstream
                   target="_blank"
                   href="https://static.rei.network/media/REI-VIS-Basic-System.zip"
-=======
                   depressed
->>>>>>> Stashed changes
                 >
                   Download
                 </v-btn>
