@@ -94,7 +94,6 @@ export default {
       async getDataList(){
         try {
             const { data } = await this.$axios.get('/api/news/list')
-            console.log(data)
             this.setData(data.rows)
         } catch (error) {
             console.log(error)

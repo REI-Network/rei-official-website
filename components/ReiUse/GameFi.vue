@@ -60,7 +60,6 @@ export default {
       async getDataList(){
         try {
             const { data } = await this.$axios.get('/api/project/list')
-            console.log(data)
             this.setData(data.rows)
         } catch (error) {
             //
