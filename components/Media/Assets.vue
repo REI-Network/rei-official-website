@@ -17,6 +17,8 @@
                   class="btn-background font-white"
                   width="120"
                   height="36"
+                  target="_blank"
+                  href="https://static.rei.network/media/REI-VIS-Basic-System.zip"
                 >
                   Download
                 </v-btn>
