@@ -3,7 +3,7 @@
     <v-container class="mt-12 align-item">
       <v-row justify="space-between" align="center">
         <h2>Why Build On REI Network?</h2>
-        <v-btn class="learn-btn" depressed to="/getStarted">Get Start ></v-btn>
+        <v-btn class="learn-btn" depressed to="/getStarted">Get Started ></v-btn>
       </v-row>
         <v-row justify="space-between">
           <v-col cols="12" sm="4">

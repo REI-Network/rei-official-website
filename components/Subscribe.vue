@@ -1,16 +1,16 @@
 <template>
   <div>
-    <v-container class="mt-12">
+    <v-container class="mt-8">
         <v-row justify="space-between">
-          <v-col cols="12" md="6">
+          <v-col cols="12" md="6" style="padding-left:0;">
             <h2>Subscribe</h2>
-            <div class="left-font mt-10">Subscribe To The Newsletter To Stay Up-To-Date With<br/>REI Network Updates And Events.</div>
+            <div class="left-font mt-2">Subscribe to the newsletter to stay up-to-date with REI Network updates and events.</div>
             <v-col>
-              <v-row class="mt-6" justify="space-between" align="center">
-                <v-col
+              <v-row class="mt-0" justify="space-between" align="center">
+                <!-- <v-col
                   cols="12"
                   md="9"
-                 >
+                 > -->
                   <v-text-field
                     v-model="email"
                     type="email"
@@ -19,7 +19,7 @@
                     outlined
                     placeholder="Your email address"
                   ></v-text-field>
-                </v-col>
+                <!-- </v-col> -->
                 <v-col cols="12" md="3">
                   <v-btn
                     :loading="loading"
@@ -82,14 +82,14 @@
           </v-col>
         </v-row>
     </v-container>
-    <div v-show="successShow" class="sub-success">
-      <v-icon color="#2B85FB" size="64">{{ mdiEmoticonHappyOutline }}</v-icon>
+    <v-alert color="rgb(63,163,63)" v-show="successShow" class="sub-success" style="color:#FFF;">
+      <v-icon color="#FFF" size="22">{{ mdiCheckCircle }}</v-icon>
       <span class="ml-4">Thank you for subscription.</span>
-    </div>
+    </v-alert>
   </div>
 </template>
 <script>
-import { mdiEmoticonHappyOutline } from '@mdi/js'
+import { mdiCheckCircle } from '@mdi/js'
 export default {
   computed: {
     asMobile() {
@@ -102,7 +102,7 @@ export default {
       loading: false,
       disabled: true,
       successShow: false,
-      mdiEmoticonHappyOutline,
+      mdiCheckCircle,
       banner: require('@/assets/img/ecosystem/exchange.png'),
       banner1: require('@/assets/img/ecosystem/Lending.png'),
       banner2: require('@/assets/img/ecosystem/REIiconGame.png'),
@@ -184,7 +184,7 @@ export default {
           ],
         },
         {
-          img:require("../assets/img/icon/Group 82.svg"),
+          img:require("../assets/img/icon/ri_kakao-talk-fill.svg"),
           color: "#ffc107",
           href: "https://open.kakao.com/o/gghzljsb",
         },
@@ -249,7 +249,7 @@ export default {
 }
 .left-font{
   font-size: 14px;
-  color: #b1b6bb;
+  color: #8A8A9A;
 }
 .font-white{
   color: #FFF;
@@ -258,19 +258,20 @@ export default {
   border: none;
 }
 .sub-success {
-  width: 600px;
-  height: 200px;
-  line-height: 200px;
-  background: #fff;
-  border: 2px solid #2b85fb;
-  border-radius: 10px;
-  color: #666;
+  width: 425px;
+  padding:12px;
+  // height: 43px;
+  // line-height: 200px;
+  // background: #fff;
+  // border: 2px solid #2b85fb;
+  // border-radius: 10px;
+  // color: #666;
   font-size: 18px;
   text-align: center;
   position: fixed;
   left: 0;
   right: 0;
-  top: 120px;
+  bottom:0px;
   margin: auto;
 }
 </style>

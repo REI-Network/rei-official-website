@@ -1,8 +1,8 @@
 <template>
   <div style="width:100%">
     <v-container class="mt-12 content-width">
-        <h2>Partners</h2>
-        <v-row no-gutters>
+        <h1>Partners</h1>
+        <v-row no-gutters class="mt-12">
             <v-col
                 v-for="item in list"
                 :key="item.title"

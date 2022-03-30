@@ -1,19 +1,16 @@
 <template>
   <div id="footer">
-    <v-divider></v-divider>
-    <Subscribe></Subscribe>
-    <v-divider  class="mt-12"></v-divider>
     <v-container class="align-center">
+        <v-divider color="#8A8A9A" class="divider"></v-divider>
+        <Subscribe></Subscribe>
+        <v-divider color="#8A8A9A" class="mt-6 divider"></v-divider>
       <v-row
-        class="mt-16"
+        class="mt-8"
       >
         <v-col cols="12" md="3" lg="3">
           <div class="footer-title font-weight-black"><logo /></div>
           <div class="footer-text2 mt-3">
-            REI Network is A New,Lightweight And
-            Quasi-Free Application-Level Public Chain
-            That is EVM-Compatible And is More
-            Friendly To Developers.
+            REI Network was developed to better adapt to the development trend of the blockchain, and to achieve a lightweight, Ethereum compatible, higher performance, and no fee blockchain framework.
           </div>
         </v-col>
         <v-col cols="12" md="9" lg="9">
@@ -36,6 +33,7 @@
                   text
                   nofollow
                   x-small
+                  style="font-size:14px;"
                 >
                   {{ link.name }}
                 </v-btn>
@@ -44,12 +42,12 @@
           </v-row>
         </v-col>
       </v-row>
+      <v-divider  color="#8A8A9A" class="mt-8 divider"/>
     </v-container>
-    <v-divider  class="mt-12"/>
     <v-container>
       <v-row justify="space-between">
         <div class="copy-center">&copy; 2022 REI Network</div>
-        <div class="copy-center">Privacy Policy</div>
+        <a href="https://static.rei.network/media/privacy-policy.pdf" target="_blank" class="copy-center">Privacy Policy</a>
       </v-row>
     </v-container>
   </div>
@@ -70,20 +68,22 @@ export default {
           list: [
             {
               name: 'Get Started',
-              to: '/',
+              to: '/getStarted',
             },
             {
               name: 'Dev Docs',
-              href: '/',
+              href: 'https://docs.rei.network/rei-network/welcome-to-rei-network',
               target: '_blank',
             },
             {
               name: 'Bug Bounty',
-              to: '/',
+              href: 'https://docs.google.com/forms/d/e/1FAIpQLSdW0tOt5nDVlCZw4auUWW0BrfqxujpV6Y_jJt-ilZsGS4sWOQ/viewform',
+              target:'_blank'
             },
             {
               name: 'Chat On Discord',
-              to: '/',
+              href: 'https://discord.com/invite/zhwWkXYtJt',
+              target:'_blank'
             },
           ],
         },
@@ -92,11 +92,12 @@ export default {
           list: [
             {
               name: 'Ecosystem',
-              to:'/ecosystem'
+              to:'/reiuse'
             },
             {
               name: 'REI EXplorer',
-              to: '/',
+              href: 'https://scan.rei.network/',
+              target:'_blank'
             }
           ],
         },
@@ -105,12 +106,13 @@ export default {
           list: [
             {
               name: 'Introduction',
-              href: '',
+              href: 'https://medium.com/gxchain-project/rei-reicosystem-started-150-million-rei-growth-fund-for-ecosystem-building-bcb78658e506',
               target: '_blank',
             },
             {
               name: 'Apply For Grants',
-              to: '/',
+              href: 'https://reinetwork0.typeform.com/ApplyforGrants?typeform-source=www.rei.network',
+              target:'_blank'
             }
           ],
         },
@@ -119,15 +121,18 @@ export default {
           list: [
             {
               name: 'Dashboard',
-              to: '/',
+              href: 'https://dao.rei.network/#/dashboards',
+              target:'_blank'
             },
             {
               name: 'My Account',
-              to: '/',
+              href: 'https://dao.rei.network/#/myAccount',
+              target:'_blank'
             },
             {
               name: 'Voting',
-              to: '/',
+              href: 'https://dao.rei.network/#/stake',
+              target:'_blank'
             }
           ],
         },
@@ -136,15 +141,17 @@ export default {
           list: [
             {
               name: 'Blogs',
-              to: '/',
+              href: 'https://medium.com/gxchain-project',
+              target:'_blank'
             },
             {
               name: 'General News',
-              to: '/',
+              href: 'https://twitter.com/GXChainGlobal',
+              target:'_blank'
             },
             {
               name: 'Brand Kits',
-              to: '/',
+              href: 'https://static.rei.network/media/REI-VIS-Basic-System.zip',
             },
           ],
         },
@@ -153,12 +160,8 @@ export default {
           list: [
             {
               name: 'Hub',
-              to: '/',
+              to: '/community',
             },
-            {
-              name: 'Subscribe',
-              to: '/',
-            }
           ],
         },
       ],
@@ -169,7 +172,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 #footer {
   padding-top: 18px;
 }
@@ -181,16 +184,27 @@ export default {
 }
 .footer-text {
   font-size: 18px;
-  color: #b1b6bb;
+  color: #8A8A9A ;
 }
 .footer-text2 {
-  font-size: .8rem;
-  color: #b1b6bb;
+  font-size: 14px;
+  color: #8A8A9A ;
 }
 
 .copy-center {
-  padding: 30px 0;
+  padding-bottom: 12px ;
   text-align: center;
-  color: #b1b6bb;
+  color: #8A8A9A ;
+  font-size: 15px;
+}
+.divider{
+  opacity: 0.15;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  color: #8A8A9A ;
 }
 </style>

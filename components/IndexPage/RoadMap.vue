@@ -1,11 +1,24 @@
 <template>
   <div style="width:100%">
     <v-container class="mt-12 content-width">
-        <h2>Roadmap</h2>
-        <v-row no-gutters
+        <h1 style="margin-bottom:72px">Roadmap</h1>
+        <!-- <v-row no-gutters
             v-for="(item, i) in items"
-            :key="i">
-            <v-col
+            :key="i"> -->
+            <v-timeline
+             v-for="(item, i) in items"
+            :key="i"
+            dense
+            >
+
+    <v-timeline-item color="#2340f0" small class="text-left timeline">
+       <div class="time-content">
+         <span class="pa-5">{{item.time}}</span>
+      <div class="pa-5">{{item.text}}</div>
+       </div>
+    </v-timeline-item>
+  </v-timeline>
+            <!-- <v-col
                 cols="12"
                 md="2"
             >
@@ -20,8 +33,8 @@
                 <div class="pa-5">
                     {{item.text}}
                 </div>
-            </v-col>
-        </v-row>
+            </v-col> -->
+        <!-- </v-row> -->
     </v-container>
   </div>
 </template>
@@ -29,6 +42,7 @@
 export default {
   data() {
       return {
+        reverse: true,
         items:[
             {
                 time: "2021.04",
@@ -47,6 +61,10 @@ export default {
                 text: "GXChain 2.0 testnet was upgraded to realize the free economic model"
             },
             {
+                time: "2021.12",
+                text: "GXChain 2.0 was officially renamed REI network. GXChain 1.0 and REI network are interconnected & CrossChain through GXC-Relay"
+            },
+            {
                 time: "2022",
                 text: "REI Network ecological construction; Function optimization and infrastructure upgrading of governance module and stacking module"
             },
@@ -62,4 +80,14 @@ export default {
 .content-width{
     max-width: 1220px;
   }
+.time-content{
+  padding-top:32px;
+  padding-bottom:12px;
+}
+    .time-content:hover{
+      font-weight: bold;
+       background-color: #F2F5F8;
+      transform: translateY(-10px);
+      transition: transform .8s;
+    }
 </style>

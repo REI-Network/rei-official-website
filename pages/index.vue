@@ -1,11 +1,11 @@
 <template>
   <div class="index-page">
       <div class="pos-r">
-          <v-img :src="banner" height="480" />
+          <v-img :src="banner" height="550" />
           <div class="pos-mask">
                 <div class="wrap-1">
                 <div class="con-1">
-                    <h1 class="mt-16 text-h2 font-italic font-weight-bold" style="width:200px">{{animatedText}}<span id="caret">&nbsp;</span></h1>
+                    <h1 class="mt-16 text-h2 font-italic font-weight-bold" style="width:200px;line-height:100px;">{{animatedText}}<span id="caret">&nbsp;</span></h1>
                     <!-- <h1>{{animatedText}}</h1> -->
                 </div>
                 </div>
@@ -62,7 +62,7 @@
                         REI Mainnet Is<br /> Now Live
                     </div>
                     <div>
-                        <v-btn
+                        <!-- <v-btn
                             href=""
                             dark
                             rounded
@@ -71,7 +71,7 @@
                             depressed
                         >
                             Learn More
-                        </v-btn>
+                        </v-btn> -->
                     </div>
                 </div>
                 </v-col>
@@ -100,7 +100,7 @@
                         <div class="text-h5 mb-1 font-italic font-weight-bold mt-6">
                             <b class="text-h1 font-weight-bold">F</b>ree Gas
                         </div>
-                        <p class="text-justify feat-des pr-16 card-text ">
+                        <p class="feat-des pr-16 card-text ">
                             REI Network can achieve free, users are able to complete on-chain transactions with almost zero fees through the innovative design of staking&replacement for on-chain resources.
                         </p>
 
@@ -116,8 +116,8 @@
                             <div class="text-h5 mb-1 font-italic font-weight-bold mt-6">
                                 <b class="text-h1 font-weight-bold">F</b>ast Transactions
                             </div>
-                            <p class="text-justify feat-des pr-16 card-text">
-                                REI.network pays great attention to speed, with an average block time of 3 seconds. Tps reaches 3000+. Under the premise of ensuring decentralization, it will bring users a faster experience.
+                            <p class="feat-des pr-16 card-text">
+                                REI Network pays great attention to speed, with an average block time of 3 seconds. Tps reaches 3000+. Under the premise of ensuring decentralization, it will bring users a faster experience.
                             </p>
                         </div>
                         <div class="d-flex justify-end">
@@ -135,12 +135,12 @@
                 >
                     <div class="cardbg lighten-4 pa-15">
                         <div class="text-h4 font-weight-bold">Developer</div>
-                        <p class="text-justify card-text mt-4">
-                            Read the REI.network document, learn the features of REI.network, look for development resources, and apply for developer growth funds.
+                        <p class="card-text mt-4">
+                            Read the REI Network document, learn the features of REI Network, look for development resources, and apply for developer growth funds.
                         </p>
                         <div>
                             <v-btn
-                                href=""
+                                to="/developer"
                                 dark
                                 rounded
                                 color="#2340f0"
@@ -155,17 +155,18 @@
                 <v-col cols="12" md="6" lg="6">
                     <div class="cardbg lighten-4 pa-15">
                         <div class="text-h4 font-weight-bold">REI DAO</div>
-                        <p class="text-justify card-text mt-4">
-                            Join REI.DAO to become a validator, vote for the validator to get rewards, Stake gets Free Gas, participate in community governance, and submit proposals.
+                        <p class="card-text mt-4">
+                            Join REI DAO to become a validator, vote for the validator to get rewards, Stake gets Free Gas, participate in community governance, and submit proposals.
                         </p>
                         <div>
                             <v-btn
-                                href=""
+                                href="https://dao.rei.network"
+                                target="_blank"
                                 dark
                                 rounded
                                 color="#2340f0"
                                 depressed
-                                 class="mt-8"
+                                class="mt-8"
                             >
                                 Learn More
                             </v-btn>
@@ -182,12 +183,12 @@
                 >
                     <div class="cardbg lighten-4 pa-15">
                         <div class="text-h4 font-weight-bold">Ecosystem</div>
-                        <p class="text-justify card-text mt-4">
+                        <p class="card-text mt-4">
                             REI Network can be shared and symbiotic with the EVM Ecosystem, also supporting the development of Defi, GameFi, and NFT.
                         </p>
                         <div>
                             <v-btn
-                                href=""
+                                to="/ecosystem"
                                 dark
                                 rounded
                                 color="#2340f0"
@@ -202,12 +203,12 @@
                 <v-col cols="12" md="6" lg="6">
                     <div class="cardbg lighten-4 pa-15">
                         <div class="text-h4 font-weight-bold">Media center</div>
-                       <p class="text-justify card-text mt-4">
-                            Learn about REI Network latest brand building, operation trends, development progress, etc.
+                       <p class="card-text mt-4">
+                          Learn about REI Network latest brand building, operation trends, development progress, etc.
                         </p>
                         <div>
                             <v-btn
-                                href=""
+                                to="/media"
                                 dark
                                 rounded
                                 color="#2340f0"
@@ -234,16 +235,16 @@
                          <v-img :src="communityImg" :aspect-ratio="13/11"/>
                 </v-col>
                 <v-col cols="12" md="8" lg="8">
-                    <div class="px-5 mr-6">
+                    <div class="px-16 mr-6">
                         <div class="text-h4 font-weight-bold">
-                            REI network community
+                            REI Network community
                         </div>
-                        <p class="text-justify card-text mt-4">
-                           REI's community participants are all over the world. You are welcome to join REI.network, share your creativity, ideas, free use and build dapps.Join the growing REI.NETWORK community–supporting 13+ languages.
+                        <p class="card-text mt-4">
+                          REI's community participants are all over the world. You are welcome to join REI Network, share your creativity, ideas, free use and build dapps. Join the growing REI Network community–supporting 13+ languages.
                         </p>
                         <div>
                             <v-btn
-                                href=""
+                               to="/community"
                                 dark
                                 rounded
                                 color="#2340f0"
@@ -338,7 +339,7 @@ export default {
     background-color: #f2f5f8;
 }
 .cardbg:hover{
-  box-shadow:rgb(0 0 0 / 10%) 0px 0px 10px;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%) !important;
   transform: translateY(-10px);
   transition: transform .8s;
 

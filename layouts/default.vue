@@ -3,10 +3,12 @@
     <v-app-bar
       fixed
       app
-      color="white"
-      elevation="1"
+      color="#FFF"
+      height="80"
+      elevation="0"
+      class="header"
     >
-      <v-container class="d-flex align-center" style="max-width:1220px">
+      <v-container class="d-flex align-center" style="max-width:1220px;">
         <v-btn text color="transparent" to="/" class="always-active mr-8">
           <logo />
         </v-btn>
@@ -66,8 +68,9 @@
         </v-menu>
         <v-btn
             small
-            class="hidden-sm-and-down nav-btn text-subtitle-1"
+            class="hidden-sm-and-down nav-btn text-subtitle-1 left-margin"
             color="#1D10F8"
+            height="44"
             dark
             to="/getStarted"
         >
@@ -162,11 +165,6 @@ export default {
           link: '/reiuse',
         },
         {
-          text: 'REI.DAO',
-          href: 'https://dao.rei.network',
-          target: '_blank',
-        },
-        {
           text: 'REIcosystem',
           link: '/ecosystem'
         },
@@ -177,6 +175,11 @@ export default {
         {
           text: 'Community',
           link: '/community',
+        },
+        {
+          text: 'REI DAO',
+          href: 'https://dao.rei.network',
+          target: '_blank',
         }
       ],
       miniVariant: false,
@@ -187,3 +190,13 @@ export default {
   }
 }
 </script>
+<style scoped>
+.header{
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%) !important;
+  /* filter: blur(20px);
+  opacity: 0.8; */
+}
+.left-margin{
+  margin-left: 16px;
+}
+</style>
