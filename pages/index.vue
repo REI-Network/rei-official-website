@@ -5,7 +5,7 @@
           <div class="pos-mask">
                 <div class="wrap-1">
                 <div class="con-1">
-                    <h1 class="mt-16 text-h2 font-italic font-weight-bold" style="width:200px;line-height:100px;">{{animatedText}}<span id="caret">&nbsp;</span></h1>
+                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-line-height">{{animatedText}}<span id="caret">&nbsp;</span></h1>
                     <!-- <h1>{{animatedText}}</h1> -->
                 </div>
                 </div>
@@ -403,6 +403,10 @@ export default {
   border-left: 2px solid #000;
   margin-left: 3px;
   animation: blink-caret 1s infinite;
+}
+.font-line-height{
+  width:200px;
+  line-height:100px !important;
 }
 
 

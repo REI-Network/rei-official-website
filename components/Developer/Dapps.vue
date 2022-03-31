@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container class="mt-10 align-item">
-        <h2>What Dapps You Can Build On REI Network?</h2>
+        <h1>What Dapps You Can Build On REI Network?</h1>
         <v-row class="mt-10" justify="space-between" align="center">
           <v-col cols="12" sm="4">
             <v-hover

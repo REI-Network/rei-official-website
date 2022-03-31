@@ -47,6 +47,14 @@
               </span>
             </v-btn>
           </template>
+           <v-list  v-if="item.system">
+              <v-list-item link to="/reiuse">
+                  <v-list-item-title>{{ item.system }}</v-list-item-title>
+              </v-list-item>
+              <v-list-item link href="https://scan.rei.network/" target="_blank">
+                  <v-list-item-title>{{ item.rei }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
           <v-list v-if="item.childs">
             <v-list-item v-for="child in item.childs" :key="child.text">
               <v-btn
@@ -163,6 +171,9 @@ export default {
         {
           text: 'REI USE',
           link: '/reiuse',
+          system:'Ecosystem',
+          rei:'REI Explorer'
+
         },
         {
           text: 'REIcosystem',
@@ -190,7 +201,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 .header{
   box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%) !important;
   /* filter: blur(20px);
@@ -198,5 +209,8 @@ export default {
 }
 .left-margin{
   margin-left: 16px;
+}
+.v-btn.v-btn--has-bg{
+  background-color: transparent;
 }
 </style>

@@ -15,7 +15,7 @@
           <v-col cols="12" md="7" class="right-color"  align-self="center">
               <h2>REI explorer</h2>
               <div class="card-text">
-                REI.network supports developers to find data on the chain, including transaction records, account information, etc.
+                REI Network supports developers to find data on the chain, including transaction records, account information, etc.
               </div>
               <v-btn
               color="#1D10F8"
@@ -44,7 +44,7 @@
           <v-col cols="12" md="7" class="right-color"  align-self="center">
               <h2>REI Network Doc</h2>
               <div class="card-text">
-                The document provides a detailed interpretation of the concepts, advantages, vision and technical development guidelines of REI.network
+                The document provides a detailed interpretation of the concepts, advantages, vision and technical development guidelines of REI Network.
               </div>
               <v-btn
               color="#1D10F8"
@@ -62,8 +62,8 @@
          <v-row class="mt-12 learn-join" justify="space-around" align="center">
           <div><v-img :src="banner" :aspect-ratio="13/12" width="130"/></div>
           <div class="bounty">
-            <h3 class="font-gradient">50 Million $ REI Growth Fund For #REIcosystem Building!</h3>
-            <p class="font-white distance">If You Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
+            <h3 class="font-gradient">150 million $REI Growth Fund for #REIcosystem Building! </h3>
+            <!-- <p class="font-white distance">If You Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p> -->
           </div>
           <div class="tow-btn">
             <v-btn
@@ -93,7 +93,7 @@
         <v-row class="mt-12 learn-join join-rei" justify="space-around" align="center">
           <div><v-img :src="banner1" :aspect-ratio="12/13" width="120"/></div>
           <div class="bounty">
-            <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
+            <h3 class="font-gradient">join the REI developer community</h3>
             <p class="font-white distance">REI`s Developer Community Spans All Across The Globe.Share Your Ideas,And Build Without Limits.</p>
           </div>
           <div>
@@ -145,7 +145,7 @@ export default {
 }
 .card-text {
   font-size: 15px;
-  color: #b1b6bb;
+  color: #8A8A9A;
   margin-top:12px;
 }
 .btn-background{

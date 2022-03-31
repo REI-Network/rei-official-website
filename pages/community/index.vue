@@ -1,7 +1,7 @@
 <template>
   <div class="community-page">
       <div class="pos-r">
-          <v-img :src="banner" height="480" />
+          <v-img :src="banner" height="550" />
           <div class="pos-mask">
                 <div class="wrap-1">
                 <div class="con-1 typing-text">

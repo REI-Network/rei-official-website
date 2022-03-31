@@ -177,6 +177,6 @@ export default {
 .card-text {
   margin-top:10px;
   font-size: 14px;
-  color: #b1b6bb;
+  color: #8A8A9A;
 }
 </style>

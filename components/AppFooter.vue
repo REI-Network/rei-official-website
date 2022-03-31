@@ -7,13 +7,13 @@
       <v-row
         class="mt-8"
       >
-        <v-col cols="12" md="3" lg="3">
+        <v-col cols="12" md="4" lg="4">
           <div class="footer-title font-weight-black"><logo /></div>
           <div class="footer-text2 mt-3">
             REI Network was developed to better adapt to the development trend of the blockchain, and to achieve a lightweight, Ethereum compatible, higher performance, and no fee blockchain framework.
           </div>
         </v-col>
-        <v-col cols="12" md="9" lg="9">
+        <v-col cols="12" md="8" lg="8">
           <v-row>
             <v-col
               v-for="item in project"
@@ -33,7 +33,7 @@
                   text
                   nofollow
                   x-small
-                  style="font-size:14px;"
+                  style="font-size:12px;"
                 >
                   {{ link.name }}
                 </v-btn>

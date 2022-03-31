@@ -5,9 +5,9 @@
           <div class="second"></div>
           <div class="third"></div>
           <div class="pos-mask media-content">
-                <v-row class="" align="center" justify="space-betweenn">
+                <v-row class="wrap-1" align="center" justify="space-betweenn">
                   <v-col cols="12" md="7" class="typing-text">
-                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white">REI<br/>Media Center<br/> Mainnet Is Now Live!</h1>
+                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white font-line-height">REI<br/>Media Center<br/> Mainnet Is Now Live!</h1>
                     <h5 class="font-white font-margin">The Latest REI Nnetwork Media Information.</h5>
                   </v-col>
                   <v-col cols="12" md="5">
@@ -46,11 +46,14 @@ export default {
 <style lang="scss" scoped>
 .media-gradient{
   width: 100%;
-  height: 480px;
+  height: 550px;
   position: relative;
   z-index: 1;
   display: flex;
   justify-content: center;
+}
+.font-line-height{
+  line-height: 100px;
 }
 .font-white{
   color: #FFF;
@@ -71,7 +74,7 @@ export default {
 .first,
 .second,
 .third {
-    height: 480px;
+    height: 550px;
     width: 100vw;
 }
 .first,

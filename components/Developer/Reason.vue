@@ -2,7 +2,7 @@
   <div>
     <v-container class="mt-12 align-item">
       <v-row justify="space-between" align="center">
-        <h2>Why Build On REI Network?</h2>
+        <h1>Why Build On REI Network?</h1>
         <v-btn class="learn-btn" depressed to="/getStarted">Get Started ></v-btn>
       </v-row>
         <v-row justify="space-between">
@@ -176,12 +176,13 @@ export default {
 //  font-size: 30px;
 }
 .on-hover{
+ box-shadow:rgb(0 0 0 / 10%) 0px 0px 20px !important;
     transform: translateY(-10px);
     transition: transform .8s;
   }
 .card-text {
   font-size: 15px;
-  color: #b1b6bb;
+  color: #8A8A9A;
   margin-top: 20px;
 }
 .why-background{
