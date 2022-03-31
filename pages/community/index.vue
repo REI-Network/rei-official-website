@@ -7,8 +7,7 @@
                 <div class="con-1 typing-text">
                     <h1 class="mt-12 text-h2 font-italic font-weight-bold font-white">Join<br/>REI Network<br/>Community</h1>
                     <h5 class="font-white font-margin">
-                      REI`s Community Participants Are All Over The World.You Are Welcome<br/>To Join ReI.Network,Share Your Creativity,Ideas,Free Use And Build<br/>
-                      Dapps.Join The Growing REI.NETWORK Community-Supporting 13+<br/>Languages
+                      REI Network community members are around the world. You are<br/> welcome to join our community, share your creativity, ideas, freely<br/> use and build Dapps on REI Network. Join the growing REI Network<br/> community which supports13+ languages
                     </h5>
                 </div>
                 </div>

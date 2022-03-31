@@ -1,8 +1,8 @@
 <template>
   <div>
     <v-container class="mt-12 align-item">
-          <h2>Projects</h2>
-          <v-row class="mt-12">
+          <h1>Projects</h1>
+          <v-row class="mt-8">
             <v-col
               cols="12"
               sm="4"
@@ -16,7 +16,6 @@
                 v-slot="{ hover }"
                 open-delay="200">
                 <v-card
-                  tile
                   elevation="0"
                   :class="{ 'on-hover': hover }"
                   >
@@ -26,10 +25,10 @@
                         <v-img :src="item.logo"></v-img>
                       </v-list-item-avatar>
                       <v-list-item-content>
-                        <v-list-item-title class="font-white">{{item.app_name}}</v-list-item-title>
+                        <v-list-item-title class="font-white"><h3>{{item.app_name}}</h3></v-list-item-title>
                         <v-list-item-subtitle class="subtitle-content font-white">{{item.description}}</v-list-item-subtitle>
                         <v-list-item-icon class="right-icon" style="margin-bottom:0;">
-                          <img src='https://lanhu.oss-cn-beijing.aliyuncs.com/pslxlxij4x8t7sx8bfe0loaxw2j1r3704c2a56dfbc-0780-4980-ad1e-5e068eae88ba' width="20" height="8"/>
+                          <img src='../../assets/img/arrow.png' width="20" height="6"/>
                         </v-list-item-icon>
                       </v-list-item-content>
                     </v-list-item>
@@ -91,11 +90,11 @@ export default {
   background-color:#EEF3F7;
 }
 .list-item:hover{
-  background-color:#2A2E3D;
+  box-shadow: 0 0 20px #ddd !important;
   transform: translateY(-10px);
   transition: transform .8s;
   .font-white{
-    color: #FFF;
+    // color: #FFF;
   }
 }
 </style>

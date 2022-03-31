@@ -176,7 +176,7 @@ export default {
 //  font-size: 30px;
 }
 .on-hover{
- box-shadow:rgb(0 0 0 / 10%) 0px 0px 20px !important;
+    box-shadow: 0 0 20px #ddd !important;
     transform: translateY(-10px);
     transition: transform .8s;
   }

@@ -8,13 +8,13 @@
                 href="https://medium.com/gxchain-project"
                 target="_blank"
                 >
-                Learn Detail>
+                More Details>
             </v-btn>
             </v-row>
           <v-row class="mt-10" justify="space-between">
             <v-col cols="12" md="8" class="">
-              <v-card>
-                <v-carousel v-model="model">
+              <v-card class="blogs-shadow">
+                <v-carousel v-model="model" hide-delimiter-background :prev-icon="mdiChevronLeft" :next-icon="mdiChevronRight" :delimiter-icon="mdiMinus">
                 <v-carousel-item
                   v-for="(item,i) in lists"
                   :key="i"
@@ -22,10 +22,10 @@
                 >
                   </v-carousel-item>
                 </v-carousel>
-                <v-list three-line style="padding:0;">
+                <v-list three-line style="padding:5px;">
                     <v-list-item class="list-content">
                       <v-list-item-content>
-                        <v-list-item-title>{{lists.length>0?lists[model].title:''}}</v-list-item-title>
+                        <v-list-item-title><h3>{{lists.length>0?lists[model].title:''}}</h3></v-list-item-title>
                         <v-list-item-subtitle class="subtitle-content">{{lists.length>0?lists[model].desc:0}}</v-list-item-subtitle>
                       </v-list-item-content>
                       <v-list-item-action>
@@ -52,12 +52,12 @@
                   :src="item.img"
                   @click="goto(item.link)"
                   >
-                  
+
                 <v-img :src="item.img" width="100%"  :aspect-ratio="16/9" />
                 <v-list two-line>
                   <v-list-item>
                     <v-list-item-content>
-                        <v-list-item-title>{{item.title}}</v-list-item-title>
+                        <v-list-item-title class="font-weight-bold">{{item.title}}</v-list-item-title>
                         <v-list-item-subtitle class="subtitle-content">{{item.desc}}</v-list-item-subtitle>
                       </v-list-item-content>
                   </v-list-item>
@@ -76,9 +76,13 @@
   </div>
 </template>
 <script>
+import { mdiChevronLeft,mdiChevronRight,mdiMinus } from '@mdi/js'
 export default {
   data() {
     return {
+      mdiChevronLeft,
+      mdiChevronRight,
+      mdiMinus,
       banner1: require('@/assets/img/media/banner.png'),
       model: 0,
       lists: [],
@@ -152,7 +156,12 @@ export default {
 .subtitle-content{
   margin-top: 8px;
 }
+.blogs-shadow{
+  box-shadow: 0 0 20px #ddd !important;
+}
 .right-content{
+  box-shadow: 0 0 20px #ddd !important;
+  margin-bottom: 20px;
   .cover{
     padding: 20px;
   }

@@ -15,7 +15,7 @@
                   class="dapps"
                   tile
                 >
-                  <h2>Defi</h2>
+                  <h2>DeFi</h2>
                   <div>
                     <v-img :src="banner" :aspect-ratio="11/10" width="100" />
                   </div>
@@ -87,7 +87,7 @@
                   class="dapps"
                   tile
                 >
-                  <h2>Gamefi</h2>
+                  <h2>GameFi</h2>
                   <div>
                     <v-img :src="banner4" :aspect-ratio="9/8" width="90" />
                   </div>
@@ -104,7 +104,7 @@
                   class="dapps content-bottom"
                   tile
                 >
-                  <h2>Socialfi</h2>
+                  <h2>SocialFi</h2>
                   <div>
                     <v-img :src="banner5" :aspect-ratio="11/12" width="110" />
                   </div>
@@ -116,7 +116,7 @@
           <div><v-img :src="bounty" :aspect-ratio="11/13" width="110" class="img-style"/></div>
           <div class="bounty">
             <h3 class="font-gradient">$1,500,000 For Bug Bounty!#REI #Mainnet</h3>
-            <p class="font-white distance">If You Find A Bug Or Have Any Ideas Which Will Improve Mainnet Security.Piz Contact Us</p>
+            <p class="font-white distance">If you find a bug or have any ideas which will improve mainnet security, Please contact us.</p>
           </div>
           <div class="tow-btn">
             <v-btn
@@ -180,10 +180,6 @@ export default {
 .content-bottom{
   margin-top: 20px;
 }
-.on-hover{
-    transform: translateY(-10px);
-    transition: transform .8s;
-  }
 .learn-join{
   margin: auto;
   background: linear-gradient(150deg, #4B72C8, #9EB8F4);
@@ -211,6 +207,11 @@ export default {
 .font-white{
   color: #FFF;
 }
+.on-hover{
+  box-shadow: 0 0 20px #ddd !important;
+   transform: translateY(-10px);
+  transition: transform .8s;
+}
 .font-gradient{
   font-size: 25px;
   font-weight: 900;
@@ -219,8 +220,9 @@ export default {
   color: transparent;
 }
 .learn-join:hover{
-  box-shadow: 0 0 20px #ddd;
-  transform: translateY(-10px);
+  box-shadow: 0 0 20px #ddd !important;
+   transform: translateY(-10px);
   transition: transform .8s;
+
 }
 </style>

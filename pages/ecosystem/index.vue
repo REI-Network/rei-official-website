@@ -2,7 +2,7 @@
   <div class="ecosystem-page">
       <div class="pos-r">
           <v-img :src="banner" height="550" />
-          <div class="pos-mask">
+          <div class="pos-mask mt-16">
                 <div class="wrap-1">
                 <div class="con-1 typing-text">
                     <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white">REIcosystem</h1>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container class="mt-12 align-item">
-          <h2>Community Hub</h2>
+          <h1>Community Hub</h1>
           <v-row class="font-white mt-4" justify="space-between">
             <v-col cols="12" sm="4">
               <v-hover
@@ -21,7 +21,7 @@
                           height="8"
                           width="20"
                           style="margin-bottom:4px"
-                          src="https://lanhu.oss-cn-beijing.aliyuncs.com/ps6ewcu145q1rwbfo46nvslak04gn1p6dpb5c26ead-97e8-4ac8-b2b9-6c28f8be1011" />
+                          src="../assets/img/arrow_white.png" />
                       </div>
                     </a>
                     <h2 class="font-white font-bebas">≈ 94,330</h2>
@@ -46,7 +46,7 @@
                           height="8"
                           width="20"
                           style="margin-bottom:4px"
-                          src="https://lanhu.oss-cn-beijing.aliyuncs.com/ps6ewcu145q1rwbfo46nvslak04gn1p6dpb5c26ead-97e8-4ac8-b2b9-6c28f8be1011" />
+                          src="../assets/img/arrow_white.png" />
                       </div>
                       </a>
                     <h2 class="font-white font-bebas">≈ 94,330</h2>
@@ -73,7 +73,7 @@
                           height="8"
                           width="20"
                           style="margin-bottom:4px"
-                          src="https://lanhu.oss-cn-beijing.aliyuncs.com/ps6ewcu145q1rwbfo46nvslak04gn1p6dpb5c26ead-97e8-4ac8-b2b9-6c28f8be1011" />
+                          src="../assets/img/arrow_white.png" />
                     </div></a>
                     <h2 class="font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
@@ -97,7 +97,7 @@
                           height="8"
                           width="20"
                           style="margin-bottom:4px"
-                          src="https://lanhu.oss-cn-beijing.aliyuncs.com/ps6ewcu145q1rwbfo46nvslak04gn1p6dpb5c26ead-97e8-4ac8-b2b9-6c28f8be1011" />
+                          src="../assets/img/arrow_white.png" />
                     </div></a>
                     <h2 class=" font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
@@ -123,7 +123,7 @@
                           height="8"
                           width="20"
                           style="margin-bottom:4px"
-                          src="https://lanhu.oss-cn-beijing.aliyuncs.com/ps6ewcu145q1rwbfo46nvslak04gn1p6dpb5c26ead-97e8-4ac8-b2b9-6c28f8be1011" />
+                          src="../assets/img/arrow_white.png" />
                     </div></a>
                     <h2 class=" font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
@@ -144,7 +144,7 @@
                           height="8"
                           width="20"
                           style="margin-bottom:4px"
-                          src="https://lanhu.oss-cn-beijing.aliyuncs.com/ps6ewcu145q1rwbfo46nvslak04gn1p6dpb5c26ead-97e8-4ac8-b2b9-6c28f8be1011" />
+                          src="../assets/img/arrow_white.png" />
                     </div></a>
                     <h2 class=" font-white font-bebas">≈ 94,330</h2>
                     <div class="font-white">Members</div>
@@ -301,6 +301,7 @@ export default {
       discord:require('@/assets/img/community/discord.png'),
       Telegram:require('@/assets/img/community/tg.png'),
       banner: require('@/assets/img/community/REIStartanode.png'),
+      arrow:require('@/assets/img/arrow.svg')
     }
   },
   components: {
@@ -329,6 +330,7 @@ export default {
     color: #FFF;
   }
   .on-hover{
+     box-shadow: 0 0 20px #ddd !important;
     transform: translateY(-10px);
     transition: transform .8s;
   }
@@ -442,7 +444,7 @@ export default {
   }
 }
 .learn-join:hover{
-  box-shadow: 0 0 20px #ddd;
+   box-shadow: 0 0 20px #ddd !important;
   transform: translateY(-10px);
   transition: transform .8s;
 }

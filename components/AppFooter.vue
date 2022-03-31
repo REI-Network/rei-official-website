@@ -44,7 +44,7 @@
       </v-row>
       <v-divider  color="#8A8A9A" class="mt-8 divider"/>
     </v-container>
-    <v-container>
+    <v-container class="align-center">
       <v-row justify="space-between">
         <div class="copy-center">&copy; 2022 REI Network</div>
         <a href="https://static.rei.network/media/privacy-policy.pdf" target="_blank" class="copy-center">Privacy Policy</a>
@@ -95,7 +95,7 @@ export default {
               to:'/reiuse'
             },
             {
-              name: 'REI EXplorer',
+              name: 'REI Explorer',
               href: 'https://scan.rei.network/',
               target:'_blank'
             }
@@ -196,6 +196,7 @@ export default {
   text-align: center;
   color: #8A8A9A ;
   font-size: 15px;
+  margin: 0 12px;
 }
 .divider{
   opacity: 0.15;

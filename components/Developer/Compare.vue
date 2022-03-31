@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container class="mt-12 align-item" style="overflow: auto;">
-        <h2>Comparing To Other Blockchains</h2>
+        <h1>Compared With Other Blockchains</h1>
         <div class="mt-12 ov-a">
           <table class="compare-table e-table-1">
             <thead>
@@ -64,28 +64,33 @@ export default {
     padding: 8px 15px;
   }
   thead {
-    background: #E7EBEF;
+    background-color: #f6f7f8;
     font-weight: bold;
     border-top-left-radius:6px;
   }
   tbody{
-    background: #E7EBEF;
+    background: #EEF3F7;
+  }
+  thead tr td{
+    padding: 20px;
   }
   tbody tr td:nth-child(1) {
     text-align: right;
     padding-right: 30px;
   }
   tbody tr td:nth-child(2) {
-    background-color: #292D3C;
+    background-color: #292D3C !important;
     color: #FFF;
-    padding-top: 12px;
+    padding: 20px;
+    font-weight: bold;
   }
   thead tr td:nth-child(2) {
     background-color: #292D3C;
     color: #FFF;
+    font-weight: bold;
   }
-  // tbody tr:nth-child(even) td {
-  //   background: #f6f7f8;
-  // }
+  tbody tr:nth-child(even) td {
+    background: #f6f7f8;
+  }
 }
 </style>

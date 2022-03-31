@@ -2,9 +2,6 @@
   <div style="width:100%">
     <v-container class="mt-12 content-width">
         <h1 style="margin-bottom:72px">Roadmap</h1>
-        <!-- <v-row no-gutters
-            v-for="(item, i) in items"
-            :key="i"> -->
             <v-timeline
              v-for="(item, i) in items"
             :key="i"
@@ -13,28 +10,11 @@
 
     <v-timeline-item color="#2340f0" small class="text-left timeline">
        <div class="time-content">
-         <span class="pa-5">{{item.time}}</span>
+         <span class="pa-5 font-weight-bold">{{item.time}}</span>
       <div class="pa-5">{{item.text}}</div>
        </div>
     </v-timeline-item>
   </v-timeline>
-            <!-- <v-col
-                cols="12"
-                md="2"
-            >
-                <div class="pa-5">
-                    {{item.time}}
-                </div>
-            </v-col>
-            <v-col
-                cols="12"
-                md="10"
-            >
-                <div class="pa-5">
-                    {{item.text}}
-                </div>
-            </v-col> -->
-        <!-- </v-row> -->
     </v-container>
   </div>
 </template>
@@ -81,7 +61,7 @@ export default {
     max-width: 1220px;
   }
 .time-content{
-  padding-top:32px;
+  padding-top:20px;
   padding-bottom:12px;
 }
     .time-content:hover{

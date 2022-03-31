@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container class="mt-12 align-item">
-          <h2>Explore REIcostystem</h2>
+          <h1>Explore REIcostystem</h1>
           <v-row class="mt-4" justify="space-between">
             <v-col cols="12" sm="6">
               <v-hover
@@ -20,7 +20,7 @@
                   <div class="card-margin">
                     <h3>Decentralized Exchange</h3>
                     <v-card-text class="card-text">
-                      Build a secure, easy-to-use decentralized exchange on Avalanche. Think Uniswap, 0x, and more.
+                      Build a secure, easy-to-use decentralized exchange on REI Network. Like Uniswap, 0x, and more.
                     </v-card-text>
                   </div>
                 </v-card>
@@ -41,7 +41,7 @@
                   <div class="card-margin">
                     <h3>Gamefi </h3>
                     <v-card-text class="card-text">
-                      Gaming and decentralized finance (DeFi), which also referred to as play-to-earn (P2E) games. Think Axie
+                      Gaming and decentralized finance (DeFi), which are also referred to as play-to-earn (P2E) games. Like Axie.
                     </v-card-text>
                   </div>
                 </v-card>
@@ -62,7 +62,7 @@
                   <div class="card-margin">
                     <h3>NFT Marketplace</h3>
                     <v-card-text class="card-text">
-                      Gaming and decentralized finance (DeFi), which also referred to as play-to-earn (P2E) games. Think Axie
+                      An NFT marketplace is simply an online marketplace where you can buy, sell or trade NFT tokens.
                     </v-card-text>
                   </div>
                 </v-card>
@@ -86,7 +86,7 @@
                   <div class="card-margin">
                     <h3>Lending</h3>
                     <v-card-text class="card-text">
-                      Build a safe, non-custodial lending solution on Avalanche. Think Compound, or Aave.
+                      Build a safe, non-custodial lending solution on REI Network. Like Compound, or Aave.
                     </v-card-text>
                   </div>
                 </v-card>
@@ -107,7 +107,7 @@
                   <div class="card-margin">
                     <h3>Stablecoin</h3>
                     <v-card-text class="card-text">
-                      Build the next-generation stablecoin on REI Network. Think DAI, USDC and more.
+                      Build the next-generation stablecoin on REI Network. Like DAI, USDC and more.
                     </v-card-text>
                   </div>
                 </v-card>
@@ -145,8 +145,9 @@ export default {
   background: linear-gradient(180deg, #B5D0FF, #E1FBFC);
 }
 .on-hover{
-    transform: translateY(-10px);
-    transition: transform .8s;
+  box-shadow: 0 0 20px #ddd !important;
+  transform: translateY(-10px);
+  transition: transform .8s;
   }
 .img-style{
   float:right;

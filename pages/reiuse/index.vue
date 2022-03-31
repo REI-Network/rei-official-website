@@ -5,8 +5,8 @@
           <div class="pos-mask">
                 <div class="wrap-1">
                   <div class="con-1 typing-text">
-                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white">the REI<br/> network<br/> ecosystem</h1>
-                    <h5 class="font-white font-margin">Explore the latest projects on REI network</h5>
+                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-line-height font-white">The REI<br/>Network<br/> Ecosystem</h1>
+                    <h5 class="font-white font-margin">Explore the latest projects on REI Network</h5>
                     <!-- <v-btn
                       color="#1D10F8"
                       class="btn-background font-white"
@@ -55,6 +55,9 @@ export default {
 .typing-text{
   animation-name: example;
   animation-duration: 1s;
+}
+.font-line-height{
+  line-height: 72px;
 }
 @keyframes example {
   from{

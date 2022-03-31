@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container class="mt-8 align-item">
-        <h2>REI Network Tools</h2>
+        <h1>REI Network Tools</h1>
         <v-row class="mt-10 tools" justify="space-between" align="center">
           <v-col cols="12" md="5" align-self="center" class="left-color">
             <v-card
@@ -13,7 +13,7 @@
                 </v-card>
           </v-col>
           <v-col cols="12" md="7" class="right-color"  align-self="center">
-              <h2>REI explorer</h2>
+              <h2>REI Explorer</h2>
               <div class="card-text">
                 REI Network supports developers to find data on the chain, including transaction records, account information, etc.
               </div>
@@ -30,7 +30,7 @@
             </v-btn>
           </v-col>
         </v-row>
-        <h2 class="mt-10">Developer Resources</h2>
+        <h1 class="mt-10">Developer Resources</h1>
         <v-row class="mt-10 tools" justify="space-between" align="center">
           <v-col cols="12" md="5" align-self="center" class="left-color">
             <v-card
@@ -91,15 +91,15 @@
           </div>
         </v-row>
         <v-row class="mt-12 learn-join join-rei" justify="space-around" align="center">
-          <div><v-img :src="banner1" :aspect-ratio="12/13" width="120"/></div>
+          <div><v-img :src="banner1" :aspect-ratio="11/13" width="110" class="img-style"/></div>
           <div class="bounty">
-            <h3 class="font-gradient">join the REI developer community</h3>
-            <p class="font-white distance">REI`s Developer Community Spans All Across The Globe.Share Your Ideas,And Build Without Limits.</p>
+            <h3 class="font-gradient">Join The REI Developer Community</h3>
+            <p class="font-white distance">REI’s developer community spans all across the globe. Share your ideas, and build without limits.</p>
           </div>
           <div>
             <v-btn
             color="#1D10F8"
-            class="btn-background font-white"
+            class="btn-join font-white"
             href="https://discord.com/invite/zhwWkXYtJt"
             target="_blank"
             width="120"
@@ -148,9 +148,15 @@ export default {
   color: #8A8A9A;
   margin-top:12px;
 }
+.img-style{
+  margin: 10px 0;
+}
 .btn-background{
   border-radius: 30px;
   margin-top:20px;
+}
+.btn-join{
+  border-radius: 30px;
 }
 .learn-join{
   padding: 0 20px;

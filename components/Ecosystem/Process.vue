@@ -1,18 +1,18 @@
 <template>
   <div>
-    <v-container class="align-center align-item">
+    <v-container class="align-center align-item mt-6">
           <v-row justify="space-between" align="center">
-            <h2>Application Process</h2>
+            <h1>Application Process</h1>
             <v-btn class="learn-btn"
                 depressed
                 href="https://medium.com/gxchain-project/rei-reicosystem-started-150-million-rei-growth-fund-for-ecosystem-building-bcb78658e506"
                 target="_blank"
                >
-                Learn Detail>
+                More Details>
             </v-btn>
           </v-row>
-          <v-row class="mt-10 apply-rules" justify="space-between">
-            <v-col cols="12" sm="4">
+          <v-row class="mt-12 apply-rules" justify="space-between" align="center">
+            <v-col cols="12" sm="3">
               <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
@@ -22,11 +22,14 @@
                   class="process-block"
                   >
                   <v-img :src="banner" class="img-style"/>
-                  <h6>Apply</h6>
+                  <h5>Step 1:Apply</h5>
                 </v-card>
               </v-hover>
             </v-col>
-            <v-col cols="12" sm="4">
+            <div class="step-arrow">
+              <v-icon color="#699BF7" size="32">{{ mdiChevronRight }}</v-icon>
+            </div>
+            <v-col cols="12" sm="3">
               <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
@@ -36,11 +39,14 @@
                   class="process-block"
                   >
                   <v-img :src="banner1" class="img-style"/>
-                  <h6>Evaluation Criteria</h6>
+                  <h5>Step 2:Evaluation Criteria</h5>
                 </v-card>
             </v-hover>
             </v-col>
-            <v-col cols="12" sm="4">
+            <div class="step-arrow">
+              <v-icon color="#699BF7" size="30">{{ mdiChevronRight }}</v-icon>
+            </div>
+            <v-col cols="12" sm="3">
               <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
@@ -50,7 +56,7 @@
                   class="process-block"
                   >
                   <v-img :src="banner2" class="img-style"/>
-                  <h6>Funding Distribution Rules</h6>
+                  <h5>Step 3:Funding Distribution</h5>
                 </v-card>
             </v-hover>
             </v-col>
@@ -107,9 +113,11 @@
   </div>
 </template>
 <script>
+import { mdiChevronRight } from '@mdi/js'
 export default {
   data() {
     return {
+      mdiChevronRight,
       banner: require('@/assets/img/ecosystem/Apply.png'),
       banner1: require('@/assets/img/ecosystem/DistributionRules.png'),
       banner2: require('@/assets/img/ecosystem/EvaluationCriteria.png'),
@@ -136,12 +144,13 @@ export default {
   }
 
 .on-hover{
+  box-shadow: 0 0 20px #ddd !important;
     transform: translateY(-10px);
     transition: transform .8s;
   }
 .process-block{
   // width: 31%;
-  height: 450px;
+  height: 400px;
   background: linear-gradient(180deg, #B5D0FF, #E1FBFC);
   box-shadow: 0px 0px 10px 0px rgba(22, 36, 48, 0.1);
   text-align: center;
@@ -152,10 +161,18 @@ export default {
     height: 200px;
     margin:0 auto;
   }
-  h6{
-    margin-top: 100px;
+  h5{
+    margin-top: 50px;
   }
 }
+.step-arrow{
+    height: 44px;
+    width: 44px;
+    border-radius: 22px;
+    background-color:#D5EFFC ;
+    text-align: center;
+    line-height: 44px;
+  }
 .learn-join{
   margin: auto;
   background: linear-gradient(to bottom right, #4B72C8, #9EB8F4);
@@ -197,7 +214,7 @@ export default {
   color: transparent;
 }
 .learn-join:hover{
-  box-shadow: 0 0 20px #ddd;
+  box-shadow: 0 0 20px #ddd !important;
   transform: translateY(-10px);
   transition: transform .8s;
 }

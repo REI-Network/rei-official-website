@@ -6,7 +6,6 @@
                 <div class="wrap-1">
                 <div class="con-1">
                     <h1 class="mt-16 text-h2 font-italic font-weight-bold font-line-height">{{animatedText}}<span id="caret">&nbsp;</span></h1>
-                    <!-- <h1>{{animatedText}}</h1> -->
                 </div>
                 </div>
             </div>
@@ -48,21 +47,21 @@
         </v-container>
       </div>
       <div id="video" class="section-video">
-        <v-container class="content-width">
-            <v-row class="video-box lighten-4 cardbg">
+        <v-container class="video-container" style="">
+            <v-row class="lighten-4" justify="space-between">
               <v-col
                 class="d-flex flex-column justify-center"
                 cols="12"
-                md="6"
-                lg="6"
+                md="5"
+                lg="5"
                 >
-                <div class="pa-10">
-                    <div class="text-h3  mb-1 font-italic font-weight-bold">Hello,World</div>
-                    <div class="text-h5 mainnet font-weight-bold font-italic">
-                        REI Mainnet Is<br /> Now Live
+                <div class="font-hello">
+                    <div class="mb-1 font-italic font-weight-bold title-size">Hello,World</div>
+                    <div class="mainnet font-weight-bold font-italic">
+                        REI Mainnet Is Now Live!
                     </div>
-                    <div>
-                        <!-- <v-btn
+                    <!-- <div>
+                        <v-btn
                             href=""
                             dark
                             rounded
@@ -71,23 +70,24 @@
                             depressed
                         >
                             Learn More
-                        </v-btn> -->
-                    </div>
+                        </v-btn>
+                    </div> -->
                 </div>
                 </v-col>
-                <v-col cols="12" md="6" lg="6">
-                <video
+                <v-col cols="12" md="6" class="backdrop-img">
+                  <video
                     controls
                     preload="meta"
                     class="video-play"
                     src="https://static.rei.network/media/rei-network.mp4"
-                ></video>
+                  >
+                  </video>
                 </v-col>
             </v-row>
-        </v-container>
+          </v-container>
       </div>
       <div id="feature-wrap">
-          <v-container class="content-width">
+          <v-container class="content-width mt-8">
             <v-row>
                 <v-col
                     class="d-flex flex-column justify-center"
@@ -182,7 +182,7 @@
                 lg="6"
                 >
                     <div class="cardbg lighten-4 pa-15">
-                        <div class="text-h4 font-weight-bold">Ecosystem</div>
+                        <div class="text-h4 font-weight-bold">REIcosystem</div>
                         <p class="card-text mt-4">
                             REI Network can be shared and symbiotic with the EVM Ecosystem, also supporting the development of Defi, GameFi, and NFT.
                         </p>
@@ -261,7 +261,6 @@
       </div>
       <RoadMap></RoadMap>
       <Partner></Partner>
-      <!-- <Subscribe></Subscribe> -->
   </div>
 </template>
 
@@ -291,15 +290,28 @@ export default {
       }
     }
   },
+   watch: {
+    animatedText(newV) {
+      if (newV === this.sloganText) {
+        setTimeout(() => {
+          //注意這裡必須使用arrow function才能讓this被正確指向
+          this.i = 0;
+          this.animatedText = "";
+          this.typeWriter();
+        }, 6000);
+      }
+    },
+  },
+
   created() {
-    setTimeout(() => this.typeWriter(), 1000);
+    setTimeout(() => this.typeWriter(), 2000);
   },
   mounted() {
     this.getData();
   },
   methods: {
     typeWriter() {
-      const speed = 100;
+      const speed = 200;
       if (this.i < this.sloganText.length) {
         this.animatedText += this.sloganText.charAt(this.i);
         this.i++;
@@ -334,6 +346,7 @@ export default {
 }
 .index-statistic {
     background: url('@/assets/img/index/mid-bg.png') center center no-repeat;
+    background-size:100% 100%;
 }
 .cardbg {
     background-color: #f2f5f8;
@@ -351,24 +364,47 @@ export default {
   line-height: 25px;
 }
 .mainnet{
+  font-size: 36px;
   font-weight: bold;
   color: #828293;
 }
 .feat-des{
 
 }
+.title-size{
+  font-size: 80px;
+}
+.font-hello{
+  margin-top:70px;
+  max-height: 100px;
+}
 .text-nowrap {
   white-space: nowrap;
 }
 .section-video {
-  padding: 20px 0;
+  height:760px;
+  // margin-top: 12px;
+  background: url('@/assets/img/index/home_bg.png') center center no-repeat;
+  background-size:1440px 100%;
+  background-color: #EEF3F7;
+}
+.video-container{
+  height:760px;
+  max-width:1220px;
+
+}
+.backdrop-img{
+  text-align: center;
 }
 .content-width{
     max-width: 1220px;
   }
 .video-play {
-  max-width: 1200px;
+  max-width: 600px;
   width: 100%;
+  border-radius: 20px;
+  margin-top: 220px;
+  z-index:1999;
 }
 
  .border-box {
