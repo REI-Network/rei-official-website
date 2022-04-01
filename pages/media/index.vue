@@ -5,9 +5,9 @@
           <div class="second"></div>
           <div class="third"></div>
           <div class="pos-mask media-content">
-                <v-row class="wrap-1" align="center" justify="space-betweenn">
-                  <v-col cols="12" md="7" class="typing-text">
-                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white ">REI<br/>Media Center<br/> Is Now Live!</h1>
+                <v-row class="wrap-1" align="center" justify="center">
+                  <v-col class="typing-text">
+                    <h1 class="mt-8 text-h2 font-italic font-weight-bold font-white ">Media Center<br/> Is Now Live!</h1>
                     <h5 class="font-white font-margin">The Latest REI Nnetwork Media Information.</h5>
                   </v-col>
                   <!-- <v-col cols="12" md="5">
@@ -46,7 +46,7 @@ export default {
 <style lang="scss" scoped>
 .media-gradient{
   width: 100%;
-  height: 480px;
+  height: 300px;
   position: relative;
   z-index: 1;
   display: flex;
@@ -57,7 +57,7 @@ export default {
 }
 .font-margin{
   margin-top: 30px;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
 }
 .video-play {
   max-width: 1200px;
@@ -71,7 +71,7 @@ export default {
 .first,
 .second,
 .third {
-    height: 480px;
+    height: 300px;
     width: 100vw;
 }
 .first,
@@ -85,7 +85,7 @@ export default {
 }
 .first {
     animation: first 10s infinite;
-    background: linear-gradient(#5ff8ca, #60e08c);
+    background: linear-gradient(#2340f0, #00a1f0);
     z-index: 10;
 }
 @keyframes first {
@@ -167,7 +167,7 @@ export default {
 .third {
     animation: third 10s infinite;
     animation-delay: 8s;
-    background: linear-gradient(#aab7f8, #ff75c6);
+    background:linear-gradient(#2340f0, #19eaa6);
     z-index: 30;
 }
 @keyframes third {

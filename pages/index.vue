@@ -79,6 +79,7 @@
                     controls
                     preload="meta"
                     class="video-play"
+                    :poster="poster"
                     src="https://static.rei.network/media/rei-network.mp4"
                   >
                   </video>
@@ -285,6 +286,7 @@ export default {
       communityImg: require('@/assets/img/index/index-community.png'),
       featImg1: require('@/assets/img/index/feat-1.png'),
       featImg2: require('@/assets/img/index/feat-2.png'),
+      poster:require('@/assets/img/poster.png'),
       stats:{
 
       }
@@ -395,6 +397,7 @@ export default {
 }
 .backdrop-img{
   text-align: center;
+  // z-index:1999;
 }
 .content-width{
     max-width: 1220px;
@@ -404,7 +407,7 @@ export default {
   width: 100%;
   border-radius: 20px;
   margin-top: 220px;
-  z-index:1999;
+  object-fit: cover;
 }
 
  .border-box {

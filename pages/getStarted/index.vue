@@ -1,7 +1,7 @@
 <template>
   <v-container class="align-item">
-     <h2 class="mt-12 start-title">Getting Start On REI.NetWork</h2>
-     <v-row class="mt-16" justify="space-between" no-gutters>
+     <h1 class="mt-12 start-title">Getting Start On REI NetWork</h1>
+     <v-row class="mt-12 bottom-margin" justify="space-between" no-gutters>
           <v-col cols="12" md="2">
             <v-hover
                 v-slot="{ hover }"
@@ -13,7 +13,7 @@
                     class="process-block node"
                     >
                     <v-img :src="banner" class="img-style"/>
-                    <h6>Start a node</h6>
+                    <h4>Start a node</h4>
                   </v-card>
                 </a>
               </v-hover>
@@ -29,7 +29,7 @@
                     class="process-block become"
                     >
                     <v-img :src="banner1" class="img-style"/>
-                    <h6>Become a validator</h6>
+                    <h4>Become a validator</h4>
                   </v-card>
                 </a>
               </v-hover>
@@ -45,7 +45,7 @@
                     class="process-block stake"
                   >
                     <v-img :src="banner2" class="img-style"/>
-                    <h6>Stake for validator</h6>
+                    <h4>Stake for validator</h4>
                   </v-card>
                 </a>
               </v-hover>
@@ -61,7 +61,7 @@
                     class="process-block free-gas"
                   >
                     <v-img :src="banner3" class="img-style"/>
-                    <h6>Stake for Free Gas</h6>
+                    <h4>Stake for Free Gas</h4>
                   </v-card>
                 </a>
               </v-hover>
@@ -77,7 +77,7 @@
                     class="process-block exchange"
                     >
                     <v-img :src="banner4" class="img-style"/>
-                    <h6>Exchange integration</h6>
+                    <h4>Exchange integration</h4>
                   </v-card>
                 </a>
               </v-hover>
@@ -125,13 +125,17 @@ a:hover{
     height: 6rem;
     margin:0 auto;
   }
-  h6{
+  h4{
     margin-top: 4rem;
   }
 }
 .on-hover{
+  box-shadow: 0 0 20px #ddd !important;
     transform: translateY(-10px);
     transition: transform .8s;
+  }
+  .bottom-margin{
+    margin-bottom: 30px;
   }
 .node{
     background: linear-gradient(to bottom, #B7E1F7, #DFF6FF);

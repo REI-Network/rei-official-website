@@ -18,6 +18,7 @@
                 <v-card
                   elevation="0"
                   :class="{ 'on-hover': hover }"
+                  @click="goto(item.app_url)"
                   >
                   <v-list two-line class="list-item">
                     <v-list-item>
@@ -66,7 +67,10 @@ export default {
       },
       setData(data){
           this.lists = data;
-      }
+      },
+      goto(href) {
+        window.open(href)
+      },
   },
   components: {
 

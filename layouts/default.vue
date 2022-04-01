@@ -170,7 +170,6 @@ export default {
         },
         {
           text: 'REI USE',
-          link: '/reiuse',
           system:'Ecosystem',
           rei:'REI Explorer'
 

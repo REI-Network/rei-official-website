@@ -24,8 +24,8 @@
                           src="../assets/img/arrow_white.png" />
                       </div>
                     </a>
-                    <h2 class="font-white font-bebas">≈ 94,330</h2>
-                    <div class="font-white">Members</div>
+                    <h2 class="font-white font-bebas">≈ 94,400</h2>
+                    <div class="font-white">Followers</div>
                   </div>
                 </v-card>
               </v-hover>
@@ -49,7 +49,7 @@
                           src="../assets/img/arrow_white.png" />
                       </div>
                       </a>
-                    <h2 class="font-white font-bebas">≈ 94,330</h2>
+                    <h2 class="font-white font-bebas">≈ 27,100</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </v-card>
@@ -75,8 +75,8 @@
                           style="margin-bottom:4px"
                           src="../assets/img/arrow_white.png" />
                     </div></a>
-                    <h2 class="font-white font-bebas">≈ 94,330</h2>
-                    <div class="font-white">Members</div>
+                    <h2 class="font-white font-bebas">4</h2>
+                    <div class="font-white">Core Contributors</div>
                   </div>
                 </v-card>
               </v-hover>
@@ -99,7 +99,7 @@
                           style="margin-bottom:4px"
                           src="../assets/img/arrow_white.png" />
                     </div></a>
-                    <h2 class=" font-white font-bebas">≈ 94,330</h2>
+                    <h2 class=" font-white font-bebas">≈ 920</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </v-card>
@@ -125,7 +125,7 @@
                           style="margin-bottom:4px"
                           src="../assets/img/arrow_white.png" />
                     </div></a>
-                    <h2 class=" font-white font-bebas">≈ 94,330</h2>
+                    <h2 class=" font-white font-bebas">≈ 23,600</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </v-card>
@@ -146,7 +146,7 @@
                           style="margin-bottom:4px"
                           src="../assets/img/arrow_white.png" />
                     </div></a>
-                    <h2 class=" font-white font-bebas">≈ 94,330</h2>
+                    <h2 class=" font-white font-bebas">≈ 42,200</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </div>
