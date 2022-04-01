@@ -33,7 +33,7 @@
                   text
                   nofollow
                   x-small
-                  style="font-size:12px;"
+                  style="font-size:13px;"
                 >
                   {{ link.name }}
                 </v-btn>
@@ -88,7 +88,7 @@ export default {
           ],
         },
         {
-          name: 'USE REI',
+          name: 'Network',
           list: [
             {
               name: 'Ecosystem',
@@ -187,6 +187,7 @@ export default {
   color: #8A8A9A ;
 }
 .footer-text2 {
+  line-height: 24px;
   font-size: 14px;
   color: #8A8A9A ;
 }
@@ -195,7 +196,7 @@ export default {
   padding-bottom: 12px ;
   text-align: center;
   color: #8A8A9A ;
-  font-size: 15px;
+  font-size: 14px;
   margin: 0 12px;
 }
 .divider{

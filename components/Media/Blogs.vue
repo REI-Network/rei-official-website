@@ -2,7 +2,7 @@
   <div>
     <v-container class="mt-12 align-item">
            <v-row justify="space-between" align="center">
-              <h2>Blogs</h2>
+              <h1>Blogs</h1>
               <v-btn class="learn-btn"
                 depressed
                 href="https://medium.com/gxchain-project"
@@ -22,10 +22,10 @@
                 >
                   </v-carousel-item>
                 </v-carousel>
-                <v-list three-line style="padding:5px;">
+                <v-list three-line style="padding:3px;">
                     <v-list-item class="list-content">
                       <v-list-item-content>
-                        <v-list-item-title><h3>{{lists.length>0?lists[model].title:''}}</h3></v-list-item-title>
+                        <v-list-item-title class="text-h6 font-weight-bold">{{lists.length>0?lists[model].title:''}}</v-list-item-title>
                         <v-list-item-subtitle class="subtitle-content">{{lists.length>0?lists[model].desc:0}}</v-list-item-subtitle>
                       </v-list-item-content>
                       <v-list-item-action>
@@ -36,7 +36,8 @@
                           height="36"
                           :href="lists.length>0?lists[model].link:''"
                           target="_blank"
-                          tile
+                          style="border-radius:20px;"
+                          depressed
                         >
                           Read More
                           </v-btn>
@@ -66,7 +67,7 @@
 
             </v-col>
           </v-row>
-          <h2 class="my-12">News</h2>
+          <h1 class="my-12">News</h1>
           <v-row>
             <v-col cols="4" md="4" v-for="(item,i) in news" :key="i">
                 <div v-html="item"></div>

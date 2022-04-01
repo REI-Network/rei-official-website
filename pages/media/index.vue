@@ -8,7 +8,7 @@
                 <v-row class="wrap-1" align="center" justify="center">
                   <v-col class="typing-text">
                     <h1 class="mt-8 text-h2 font-italic font-weight-bold font-white ">Media Center<br/> Is Now Live!</h1>
-                    <h5 class="font-white font-margin">The Latest REI Nnetwork Media Information.</h5>
+                    <h5 class="font-white font-margin">The Latest REI Network Media Information.</h5>
                   </v-col>
                   <!-- <v-col cols="12" md="5">
                     <video
@@ -101,15 +101,15 @@ export default {
     30% {
         opacity: 0.4;
     }
-    40% {
-        opacity: 0.2;
-    }
-    50% {
-        opacity: 0.1;
-    }
-    60% {
-        opacity: 0.2;
-    }
+    // 40% {
+    //     opacity: 0.2;
+    // }
+    // 50% {
+    //     opacity: 0.1;
+    // }
+    // 60% {
+    //     opacity: 0.2;
+    // }
     70% {
         opacity: 0.4;
     }

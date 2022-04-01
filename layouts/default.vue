@@ -8,8 +8,8 @@
       elevation="0"
       class="header"
     >
-      <v-container class="d-flex align-center" style="max-width:1220px;">
-        <v-btn text color="transparent" to="/" class="always-active mr-8">
+      <v-container class="d-flex align-center" style="max-width:1220px;padding:0;">
+        <v-btn text color="transparent" to="/" style="padding:0">
           <logo />
         </v-btn>
          <v-spacer />
@@ -169,7 +169,7 @@ export default {
           link: '/developer',
         },
         {
-          text: 'REI USE',
+          text: 'Network',
           system:'Ecosystem',
           rei:'REI Explorer'
 

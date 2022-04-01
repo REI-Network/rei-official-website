@@ -11,7 +11,7 @@
             </div>
       </div>
       <div class="index-statistic">
-        <v-container>
+        <v-container class="align-item">
         <v-row class="white--text text-center">
             <v-col
                 cols="12"
@@ -40,7 +40,7 @@
             >
                 <div class="py-4">
                     <h2 class="font-bebas">{{stats.totalStake}}</h2>
-                    <p>Total Stake (REI)</p>
+                    <p>Total Staked (REI)</p>
                 </div>
             </v-col>
         </v-row>
@@ -102,11 +102,11 @@
                             <b class="text-h1 font-weight-bold">F</b>ree Gas
                         </div>
                         <p class="feat-des pr-16 card-text ">
-                            REI Network can achieve free, users are able to complete on-chain transactions with almost zero fees through the innovative design of staking&replacement for on-chain resources.
+                            REI Network can achieve free gas, users are able to complete on-chain transactions with almost zero fees through the innovative design of staking&replacement for on-chain resources.
                         </p>
 
                     </div>
-                    <div class="d-flex justify-end mt-6">
+                    <div class="d-flex justify-end">
                         <v-img :src="featImg1" contain position="right bottom" height="230" class="imgStyle" />
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                     <div class="cardbg lighten-4 pa-15">
                         <div class="text-h4 font-weight-bold">REI DAO</div>
                         <p class="card-text mt-4">
-                            Join REI DAO to become a validator, vote for the validator to get rewards, Stake gets Free Gas, participate in community governance, and submit proposals.
+                            Join REI DAO to become a validator, vote for the validator to get rewards, staking to get free gas, participate in community governance, and submit proposals.
                         </p>
                         <div>
                             <v-btn
@@ -203,7 +203,7 @@
                 </v-col>
                 <v-col cols="12" md="6" lg="6">
                     <div class="cardbg lighten-4 pa-15">
-                        <div class="text-h4 font-weight-bold">Media center</div>
+                        <div class="text-h4 font-weight-bold">Media Center</div>
                        <p class="card-text mt-4">
                           Learn about REI Network latest brand building, operation trends, development progress, etc.
                         </p>
@@ -238,10 +238,13 @@
                 <v-col cols="12" md="8" lg="8">
                     <div class="px-16 mr-6">
                         <div class="text-h4 font-weight-bold">
-                            REI Network community
+                            REI Network Community
                         </div>
                         <p class="card-text mt-4">
-                          REI's community participants are all over the world. You are welcome to join REI Network, share your creativity, ideas, free use and build dapps. Join the growing REI Network community–supporting 13+ languages.
+                          REI Network community members are around the world. You are
+                          welcome to join our community, share your creativity, ideas, freely
+                          use and build Dapps on REI Network. Join the growing REI Network
+                          community which supports 13+ languages.
                         </p>
                         <div>
                             <v-btn
@@ -279,7 +282,7 @@ export default {
   },
   data() {
     return {
-      sloganText: "Rapid Economical Innonative",
+      sloganText: "Rapid Economical Innovative",
       animatedText: "",
       i: 0,
       banner: require('@/assets/img/index/banner-index.png'),
@@ -306,7 +309,7 @@ export default {
   },
 
   created() {
-    setTimeout(() => this.typeWriter(), 2000);
+    setTimeout(() => this.typeWriter(), 0);
   },
   mounted() {
     this.getData();
@@ -332,8 +335,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@font-face {
+<style lang="scss" scoped>
+  @font-face {
   font-family: 'bebas';
   src: url('../assets/bebas/BEBAS.eot');
   src: url('../assets/bebas/BEBAS.eot#iefix') format('embedded-opentype'),
@@ -343,6 +346,12 @@ export default {
   font-weight: normal;
   font-style: normal;
 }
+// .align-item{
+//   max-width: 1220px;
+// }
+.font-bebas{
+    font-family: bebas;
+  }
 .index-page{
 
 }
@@ -434,9 +443,6 @@ export default {
   .border-both{
     border-right: 2px solid #636774;
     border-left: 2px solid #636774;
-  }
-  .font-bebas{
-    font-family: bebas;
   }
   #caret {
   border-left: 2px solid #000;

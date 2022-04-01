@@ -6,7 +6,7 @@
                 <div class="wrap-1">
                 <div class="con-1 typing-text">
                     <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white">REIcosystem</h1>
-                    <h5 class="font-white font-margin">50 Million $REI Growth Fund For #REIcostystem Building!</h5>
+                    <h5 class="font-white font-margin">150 Million $REI Growth Fund For #REIcosystem Building!</h5>
                     <v-btn
                       color="#1D10F8"
                       class="btn-background font-white"

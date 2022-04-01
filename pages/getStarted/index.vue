@@ -12,7 +12,9 @@
                     :class="{ 'on-hover': hover }"
                     class="process-block node"
                     >
-                    <v-img :src="banner" class="img-style"/>
+                    <div class="img-style">
+                      <v-img :src="banner" :aspect-ratio="10/9" width="100"/>
+                    </div>
                     <h4>Start a node</h4>
                   </v-card>
                 </a>
@@ -28,7 +30,9 @@
                     :class="{ 'on-hover': hover }"
                     class="process-block become"
                     >
-                    <v-img :src="banner1" class="img-style"/>
+                    <div class="img-style">
+                      <v-img :src="banner1" :aspect-ratio="1" width="90"/>
+                    </div>
                     <h4>Become a validator</h4>
                   </v-card>
                 </a>
@@ -44,7 +48,9 @@
                     :class="{ 'on-hover': hover }"
                     class="process-block stake"
                   >
-                    <v-img :src="banner2" class="img-style"/>
+                    <div class="img-style">
+                      <v-img :src="banner2" :aspect-ratio="1" width="100"/>
+                    </div>
                     <h4>Stake for validator</h4>
                   </v-card>
                 </a>
@@ -60,7 +66,9 @@
                     :class="{ 'on-hover': hover }"
                     class="process-block free-gas"
                   >
-                    <v-img :src="banner3" class="img-style"/>
+                    <div class="img-style">
+                      <v-img :src="banner3" :aspect-ratio="11/9" width="110"/>
+                    </div>
                     <h4>Stake for Free Gas</h4>
                   </v-card>
                 </a>
@@ -76,7 +84,9 @@
                     :class="{ 'on-hover': hover }"
                     class="process-block exchange"
                     >
-                    <v-img :src="banner4" class="img-style"/>
+                    <div class="img-style">
+                      <v-img :src="banner4"  :aspect-ratio="9/10" width="90"/>
+                    </div>
                     <h4>Exchange integration</h4>
                   </v-card>
                 </a>
@@ -116,17 +126,17 @@ a:hover{
   text-align: center;
 }
 .process-block{
-  // height: 25rem;
+  height: 260px;
   text-align: center;
   padding:3rem 0;
   margin-top: 1.2rem;
   .img-style{
-    width: 6rem;
-    height: 6rem;
-    margin:0 auto;
+    height: 110px;
+    width: 100px;
+    margin: 0 auto;
   }
   h4{
-    margin-top: 4rem;
+    margin-top:28px;
   }
 }
 .on-hover{

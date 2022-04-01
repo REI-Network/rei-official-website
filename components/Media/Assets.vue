@@ -32,7 +32,7 @@
             <h3 class="font-gradient">Join The REI Network International Community</h3>
             <p class="font-white distance">Join the growing REI Network community–supporting 13+ languages.</p>
           </div>
-          <div class="tow-btn">
+          <!-- <div> -->
             <v-btn
             color="#1D10F8"
             class="btn-background font-white"
@@ -43,7 +43,7 @@
            >
               Learn More
           </v-btn>
-          </div>
+          <!-- </div> -->
         </v-row>
     </v-container>
   </div>
@@ -90,17 +90,12 @@ export default {
 }
 .btn-background{
   border-radius: 30px;
-  margin-top:20px;
   font-size: 12px;
 }
 .learn-join{
   padding: 0 20px;
    margin: auto;
    background: linear-gradient(150deg, #383D4D, #505668);
-  .tow-btn{
-    margin-top: -20px;
-    margin-bottom: 20px;
-  }
   .bounty{
      margin-top: 12px;
   }

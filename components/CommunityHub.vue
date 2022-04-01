@@ -75,8 +75,8 @@
                           style="margin-bottom:4px"
                           src="../assets/img/arrow_white.png" />
                     </div></a>
-                    <h2 class="font-white font-bebas">4</h2>
-                    <div class="font-white">Core Contributors</div>
+                    <!-- <h2 class="font-white font-bebas">4</h2>
+                    <div class="font-white">Core Contributors</div> -->
                   </div>
                 </v-card>
               </v-hover>
@@ -146,7 +146,7 @@
                           style="margin-bottom:4px"
                           src="../assets/img/arrow_white.png" />
                     </div></a>
-                    <h2 class=" font-white font-bebas">≈ 42,200</h2>
+                    <h2 class=" font-white font-bebas">≈ 92,481</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </div>
@@ -258,7 +258,7 @@
               <div><v-img :src="banner" :aspect-ratio="13/12" width="130" class="img-style"/></div>
               <div class="bounty">
                 <h3 class="font-gradient">150 million $REI Growth Fund for #REIcosystem Building! </h3>
-                <p class="font-white distance">Thank you for applying to the REI Network accelerator. Please include all details of your proposal within this form.</p>
+                <p class="font-white distance">Thank you for applying for the REI Network ecosystem partner. Please fill in all details of your proposal in this form.</p>
               </div>
               <div class="tow-btn">
                 <v-btn
@@ -319,7 +319,6 @@ export default {
 }
 .font-white{
   color: #FFF;
-  font-family:bebas;
 }
   a{
     text-decoration: none;
@@ -395,7 +394,7 @@ export default {
       font-size:14px;
       text-align: center;
       // background: pink;
-      padding: 10px 12px;
+      padding: 10px 16px;
     }
     .img-head{
       height: 54px;

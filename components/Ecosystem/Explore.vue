@@ -39,9 +39,9 @@
                     <v-img :src="banner3" class="img-style"/>
                   </div>
                   <div class="card-margin">
-                    <h3>Gamefi </h3>
+                    <h3>GameFi </h3>
                     <v-card-text class="card-text">
-                      Gaming and decentralized finance (DeFi), which are also referred to as play-to-earn (P2E) games. Like Axie.
+                      GamFi and decentralized finance (DeFi), are also referred to as play-to-earn (P2E) games. Like Axie.
                     </v-card-text>
                   </div>
                 </v-card>
