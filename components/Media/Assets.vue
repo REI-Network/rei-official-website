@@ -120,4 +120,15 @@ export default {
   transform: translateY(-10px);
   transition: transform .8s;
 }
+@media screen and (max-width: 920px){
+  .tools{
+     padding-right: 0px;
+     .right-color{
+       padding: 20px;
+     }
+  }
+  .btn-background{
+    margin-bottom: 20px;
+  }
+}
 </style>

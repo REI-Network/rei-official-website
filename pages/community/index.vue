@@ -5,7 +5,7 @@
           <div class="pos-mask">
                 <div class="wrap-1">
                 <div class="con-1 typing-text">
-                    <h1 class="mt-12 text-h2 font-italic font-weight-bold font-white">Join<br/>REI Network<br/>Community</h1>
+                    <h1 class="mt-12 text-h2 font-italic font-weight-bold font-white font-line">Join<br/>REI Network<br/>Community</h1>
                     <h5 class="font-white font-margin">
                       REI Network community members are around the world. You are<br/> welcome to join our community, share your creativity, ideas, freely<br/> use and build Dapps on REI Network. Join the growing REI Network<br/> community which supports13+ languages
                     </h5>
@@ -52,6 +52,11 @@ export default {
   }
   to{
     transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 920px){
+  .font-line{
+    font-size: 48px !important;
   }
 }
 </style>

@@ -96,7 +96,7 @@
                     md="6"
                     lg="6"
                 >
-                <div class="cardbg" style="height:520px">
+                <div class="cardbg free-fast">
                     <div class="lighten-4 pa-10 pb-1 pr-16">
                         <div class="text-h5 mb-1 font-italic font-weight-bold mt-6">
                             <b class="text-h1 font-weight-bold">F</b>ree Gas
@@ -112,7 +112,7 @@
                 </div>
                 </v-col>
                 <v-col cols="12" md="6" lg="6">
-                    <div class="cardbg" style="height:520px">
+                    <div class="cardbg free-fast" >
                         <div class="lighten-4 pa-10 pb-1 pr-16">
                             <div class="text-h5 mb-1 font-italic font-weight-bold mt-6">
                                 <b class="text-h1 font-weight-bold">F</b>ast Transactions
@@ -122,7 +122,7 @@
                             </p>
                         </div>
                         <div class="d-flex justify-end">
-                            <v-img :src="featImg2" contain position="right bottom" height="230" class="imgStyle" />
+                            <v-img :src="featImg2" contain position="right bottom" height="230" class="imgStyle2" />
                         </div>
                     </div>
                 </v-col>
@@ -237,7 +237,7 @@
                 </v-col>
                 <v-col cols="12" md="8" lg="8">
                     <div class="px-16 mr-6">
-                        <div class="text-h4 font-weight-bold">
+                        <div class="text-h4 mt-4 font-weight-bold">
                             REI Network Community
                         </div>
                         <p class="card-text mt-4">
@@ -253,7 +253,7 @@
                                 rounded
                                 color="#2340f0"
                                 depressed
-                                class="mt-8"
+                                class="mt-8 iphone-btn"
                             >
                                 Learn More
                             </v-btn>
@@ -362,6 +362,9 @@ export default {
 .cardbg {
     background-color: #f2f5f8;
 }
+.free-fast{
+  height:520px
+}
 .cardbg:hover{
   box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%) !important;
   transform: translateY(-10px);
@@ -402,7 +405,6 @@ export default {
 .video-container{
   height:760px;
   max-width:1220px;
-
 }
 .backdrop-img{
   text-align: center;
@@ -462,6 +464,43 @@ export default {
   to {
     border:none;
     opacity: 0;
+  }
+}
+@media screen and (max-width: 920px){
+  .video-container{
+      height:560px;
+  }
+  .section-video{
+      height:560px;
+      background-image: none;
+  }
+  .title-size{
+    font-size: 30px;
+  }
+  .mainnet{
+    font-size: 20px;
+  }
+  .index-statistic{
+    background-image:none;
+    background: #373D4E ;
+  }
+  .video-play{
+    margin-top:50px;
+  }
+  .free-fast{
+    height: 480px;
+  }
+  .imgStyle{
+    height: 0px !important;
+  }
+  .imgStyle2{
+     height: 0px !important;
+  }
+  .iphone-btn{
+    margin-bottom: 40px;
+  }
+  .border-both{
+    border:none;
   }
 }
 </style>

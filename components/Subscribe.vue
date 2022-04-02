@@ -7,10 +7,11 @@
             <div class="left-font mt-2">Subscribe to the newsletter to stay up-to-date with REI Network updates and events.</div>
             <v-col>
               <v-row class="mt-0" justify="space-between" align="center">
-                <!-- <v-col
+                <v-col
                   cols="12"
                   md="9"
-                 > -->
+                  style="padding-left:0;"
+                 >
                   <v-text-field
                     v-model="email"
                     type="email"
@@ -19,8 +20,8 @@
                     outlined
                     placeholder="Your email address"
                   ></v-text-field>
-                <!-- </v-col> -->
-                <v-col cols="12" md="3">
+                </v-col>
+                <v-col cols="12" md="3" style="padding-left:0;">
                   <v-btn
                     :loading="loading"
                     color="#1D10F8"

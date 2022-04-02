@@ -57,7 +57,7 @@
                   max-width="560"
                   >
                   <div class="img-background">
-                    <v-img :src="banner3" class="img-style"/>
+                    <v-img :src="banner4" class="img-style"/>
                   </div>
                   <div class="card-margin">
                     <h3>NFT Marketplace</h3>

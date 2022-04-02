@@ -172,6 +172,7 @@ export default {
     background-color:#D5EFFC ;
     text-align: center;
     line-height: 44px;
+    margin: 0 auto;
   }
 .learn-join{
   margin: auto;
@@ -217,5 +218,11 @@ export default {
   box-shadow: 0 0 20px #ddd !important;
   transform: translateY(-10px);
   transition: transform .8s;
+}
+
+@media screen and (max-width: 920px){
+  .step-arrow{
+    transform: rotate(90deg);
+  }
 }
 </style>

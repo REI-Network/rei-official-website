@@ -74,4 +74,9 @@ export default {
     transform: translateY(0px);
   }
 }
+@media screen and (max-width: 920px){
+  .font-line{
+    font-size: 48px !important;
+  }
+}
 </style>

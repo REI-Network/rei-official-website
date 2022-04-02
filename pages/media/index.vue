@@ -219,12 +219,12 @@ export default {
 }
 @media screen and (max-width: 960px){
   .media-gradient{
-    height:820px;
+    height:420px;
   }
 .first,
 .second,
 .third {
-    height: 820px;
+    height: 420px;
 }
 }
 </style>

@@ -202,4 +202,9 @@ export default {
   transform: translateY(-10px);
   transition: transform .8s;
 }
+@media screen and (max-width: 920px){
+  .btn-join{
+    margin-bottom: 20px;
+  }
+}
 </style>

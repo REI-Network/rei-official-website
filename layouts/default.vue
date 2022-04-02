@@ -119,27 +119,37 @@
               </v-list-item-title>
             </v-list-item>
           </v-list-group>
-          <v-list-item
+          <v-list-group
             v-else
             :key="item.text"
             nuxt
-            :to="item.link"
-            :href="item.href"
-            :target="item.target"
+            :value="true"
+            no-action
           >
-            <v-list-item-title>
-              <span>
-                {{ item.text }}
-              </span>
+          <template #activator>
+            <v-list-item :to="item.link" :href="item.href" :target="item.target">
+              <v-list-item-title>
+                <span>
+                  {{ item.text }}
+                </span>
             </v-list-item-title>
-          </v-list-item>
-
+            </v-list-item>
+          </template>
+            <v-list-item-content v-if="item.system">
+              <v-list-item class="left-margin" link to="/reiuse">
+                  <v-list-item-subtitle>{{ item.system }}</v-list-item-subtitle>
+              </v-list-item>
+              <v-list-item  class="left-margin" link href="https://scan.rei.network/" target="_blank">
+                  <v-list-item-subtitle>{{ item.rei }}</v-list-item-subtitle>
+              </v-list-item>
+            </v-list-item-content>
+          </v-list-group>
         </template>
         <v-list-item
             nuxt
             to="/getStarted"
           >
-            <v-list-item-title>
+            <v-list-item-title class="left-margin">
               <span>
                 Get Started
               </span>
