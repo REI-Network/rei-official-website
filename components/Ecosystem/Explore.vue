@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container class="mt-12 align-item">
-          <h1>Explore REIcostystem</h1>
+          <h1>Explore REIcosystem</h1>
           <v-row class="mt-4" justify="space-between">
             <v-col cols="12" sm="6">
               <v-hover
