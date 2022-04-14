@@ -1,9 +1,9 @@
 <template>
   <div class="media-page">
       <div class="pos-r">
-          <v-img :src="banner" height="480" />
-          <div class="pos-mask">
-                <div class="wrap-1">
+          <v-img :src="banner" height="480" class="img-banner"/>
+          <div class="pos-mask mt-16">
+                <div class="wrap-1 mt-10">
                   <div class="con-1 typing-text">
                     <h1 class="mt-16 text-h2 font-italic font-weight-bold font-line font-white">The REI<br/>Network<br/> Ecosystem</h1>
                     <h5 class="font-white font-margin">Explore the latest projects on REI Network</h5>
@@ -71,6 +71,11 @@ export default {
 @media screen and (max-width: 920px){
   .font-line{
     font-size: 48px !important;
+  }
+}
+@media screen and (min-width: 1440px){
+  .img-banner{
+    height: 750px !important;
   }
 }
 </style>

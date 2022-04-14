@@ -1,9 +1,9 @@
 <template>
   <div class="index-page">
       <div class="pos-r">
-          <v-img :src="banner" height="550" />
-          <div class="pos-mask">
-                <div class="wrap-1">
+          <v-img :src="banner" height="550" class="img-banner"/>
+          <div class="pos-mask mt-16">
+                <div class="wrap-1 mt-6">
                 <div class="con-1">
                     <h1 class="mt-16 text-h2 font-italic font-weight-bold font-line-height">{{animatedText}}<span id="caret">&nbsp;</span></h1>
                 </div>
@@ -501,6 +501,11 @@ export default {
   }
   .border-both{
     border:none;
+  }
+}
+@media screen and (min-width: 1440px){
+  .img-banner{
+    height: 750px !important;
   }
 }
 </style>
