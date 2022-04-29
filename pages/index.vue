@@ -1,9 +1,9 @@
 <template>
   <div class="index-page">
-      <div class="pos-r">
+      <div class="pos-r" id="topAnchor">
           <v-img :src="banner" height="550" class="img-banner"/>
-          <div class="pos-mask mt-16">
-                <div class="wrap-1 mt-6">
+          <div class="pos-mask">
+                <div class="wrap-1">
                 <div class="con-1">
                     <h1 class="mt-16 text-h2 font-italic font-weight-bold font-line-height">{{animatedText}}<span id="caret">&nbsp;</span></h1>
                 </div>
@@ -455,8 +455,6 @@ export default {
   width:200px;
   line-height:100px !important;
 }
-
-
 @keyframes blink-caret {
   from {
     border-color: transparent;
@@ -503,9 +501,12 @@ export default {
     border:none;
   }
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1441px){
   .img-banner{
     height: 750px !important;
+  }
+  .font-line-height{
+    margin-top:160px !important;
   }
 }
 </style>

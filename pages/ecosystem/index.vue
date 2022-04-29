@@ -1,16 +1,16 @@
 <template>
   <div class="ecosystem-page">
-      <div class="pos-r">
+      <div class="pos-r" id="topAnchor">
           <v-img :src="banner" height="550" class="img-banner"/>
-          <div class="pos-mask mt-16">
-                <div class="wrap-1 mt-10">
+          <div class="pos-mask">
+                <div class="wrap-1">
                 <div class="con-1 typing-text">
-                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white font-line">REIcosystem</h1>
+                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white font-line font-line-height">REIcosystem</h1>
                     <h5 class="font-white font-margin">150 Million $REI Growth Fund For #REIcosystem Building!</h5>
                     <v-btn
                       color="#1D10F8"
                       class="btn-background font-white"
-                      href="https://reinetwork0.typeform.com/ApplyforGrants?typeform-source=www.rei.network"
+                      href="https://form.typeform.com/to/q7cU4ewA"
                       target="_blank"
                       width="160"
                       depressed
@@ -78,9 +78,12 @@ export default {
     font-size: 48px !important;
   }
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1441px){
   .img-banner{
     height: 750px !important;
+  }
+  .font-line-height{
+    margin-top:160px !important;
   }
 }
 </style>

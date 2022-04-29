@@ -1,11 +1,11 @@
 <template>
   <div class="developer-page">
-      <div class="pos-r">
+      <div class="pos-r" id="topAnchor">
           <v-img :src="banner" height="550" class="img-banner"/>
-          <div class="pos-mask mt-16">
-            <div class="wrap-1 mt-6">
+          <div class="pos-mask">
+            <div class="wrap-1">
                 <div class="con-1 typing-text">
-                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white font-line">Build<br/>Dapps On<br/>REI Network</h1>
+                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white font-line font-line-height">Build<br/>Dapps On<br/>REI Network</h1>
                     <v-btn
                       color="#1D10F8"
                       class="btn-background font-white"
@@ -79,9 +79,12 @@ export default {
     font-size: 48px !important;
   }
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1441px){
   .img-banner{
     height: 750px !important;
+  }
+    .font-line-height{
+    margin-top:160px !important;
   }
 }
 </style>

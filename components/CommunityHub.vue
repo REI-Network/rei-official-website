@@ -275,7 +275,7 @@
                 <v-btn
                   color="green"
                   class="btn-background mt-4 font-white"
-                  href="https://reinetwork0.typeform.com/ApplyforGrants?typeform-source=www.rei.network"
+                  href="https://form.typeform.com/to/q7cU4ewA"
                   target="_blank"
                   width="100"
                   height="32"

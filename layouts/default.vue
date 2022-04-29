@@ -158,11 +158,19 @@
       </v-list>
     </v-navigation-drawer>
     <app-footer />
+    <div class="scroll-top" @click="backTop()" v-show="backFlag">
+        <v-icon
+            x-large
+            color="#1d10f8"
+          >
+          {{mdiChevronUp}}
+        </v-icon>
+      </div>
   </v-app>
 </template>
 
 <script>
-import { mdiMenu,mdiChevronDown } from '@mdi/js'
+import { mdiMenu,mdiChevronDown,mdiChevronUp } from '@mdi/js'
 import Logo from '../components/Logo.vue'
 import AppFooter from '../components/AppFooter.vue'
 export default {
@@ -172,6 +180,7 @@ export default {
     return {
       mdiMenu,
       mdiChevronDown,
+      mdiChevronUp,
       showDrawer: false,
       links: [
         {
@@ -204,8 +213,46 @@ export default {
       ],
       miniVariant: false,
       right: true,
+      backFlag:false,
       rightDrawer: false,
       title: 'Vuetify.js'
+    }
+  },
+  mounted () {
+      let that = this;
+      window.addEventListener('scroll', that.scrollToTop);
+      this.scrollToTop ()
+    },
+
+  destroyed (){
+      let that = this;
+      window.removeEventListener('scroll', that.scrollToTop);
+      this.scrollToTop ()
+  },
+  methods:{
+    backTop () {
+      let timer = setInterval(function () {
+        var top = document.body.scrollTop || document.documentElement.scrollTop;
+        var speed = top / 4;
+        if (document.body.scrollTop!=0) {
+          document.body.scrollTop -= speed;
+        }else {
+          document.documentElement.scrollTop -= speed;
+        }
+        if (top == 0) {
+          clearInterval(timer);
+        }
+      },30);
+    },
+    scrollToTop () {
+      const that = this
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      that.scrollTop = scrollTop;
+      if (that.scrollTop > 100) {
+        that.backFlag = true
+      }else {
+        that.backFlag = false
+      }
     }
   }
 }
@@ -221,5 +268,14 @@ export default {
 }
 .v-btn.v-btn--has-bg{
   background-color: transparent;
+}
+.scroll-top{
+  position:fixed;
+  right:28px;
+  bottom:120px;
+  border-radius: 50px;
+  border: 1px #E2E2E2 solid;
+  padding:10px;
+  cursor: pointer;
 }
 </style>

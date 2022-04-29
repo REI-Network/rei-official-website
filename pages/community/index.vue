@@ -1,11 +1,11 @@
 <template>
   <div class="community-page">
-      <div class="pos-r">
+      <div class="pos-r" id="topAnchor">
           <v-img :src="banner" height="550" class="img-banner"/>
-          <div class="pos-mask mt-16">
-                <div class="wrap-1 mt-6">
+          <div class="pos-mask ">
+                <div class="wrap-1 ">
                 <div class="con-1 typing-text">
-                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white font-line">Join<br/>REI Network<br/>Community</h1>
+                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white font-line font-line-height">Join<br/>REI Network<br/>Community</h1>
                     <h5 class="font-white font-margin">
                       REI Network community members are around the world. You are<br/> welcome to join our community, share your creativity, ideas, freely<br/> use and build Dapps on REI Network. Join the growing REI Network<br/> community which supports13+ languages
                     </h5>
@@ -30,7 +30,7 @@ export default {
   },
   components:{
     CommunityHub,
-  }
+  },
 }
 </script>
 
@@ -46,6 +46,7 @@ export default {
   animation-name: example;
   animation-duration: 1s;
 }
+
 @keyframes example {
   from{
     transform: translateY(-80px);
@@ -59,9 +60,12 @@ export default {
     font-size: 48px !important;
   }
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1441px){
   .img-banner{
     height: 750px !important;
+  }
+   .font-line-height{
+    margin-top:160px !important;
   }
 }
 </style>
