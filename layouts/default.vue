@@ -47,12 +47,39 @@
               </span>
             </v-btn>
           </template>
-           <v-list  v-if="item.system">
-              <v-list-item link to="/reiuse">
-                  <v-list-item-title>{{ item.system }}</v-list-item-title>
+           <v-list class="network-list" v-if="item.system" two-line>
+              <v-list-item link to="/reiuse" class="network-item">
+                <v-list-item-avatar>
+                  <v-img :src="item.avatar"></v-img>
+                </v-list-item-avatar>
+                  <v-list-item-content>
+                    <v-list-item-title>{{ item.system }}</v-list-item-title>
+                    <v-list-item-subtitle class="subtitle">Explore the latest projects on REI Network</v-list-item-subtitle>
+                  </v-list-item-content>
               </v-list-item>
-              <v-list-item link href="https://scan.rei.network/" target="_blank">
+              <v-list-item link href="https://scan.rei.network/" target="_blank" class="network-item">
+                <v-list-item-avatar>
+                  <v-img :src="item.avatar1"></v-img>
+                </v-list-item-avatar>
+                <v-list-item-content>
                   <v-list-item-title>{{ item.rei }}</v-list-item-title>
+                  <v-list-item-subtitle class="subtitle">Explore the REI Network transactions, blocks, and more info</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+              <v-list-item target="_blank" class="network-item">
+                <v-list-item-avatar>
+                  <v-img :src="item.avatar2"></v-img>
+                </v-list-item-avatar>
+                <v-list-item-content>
+                  <v-list-item-title>CrossChain Bridge</v-list-item-title>
+                  <v-list-item-subtitle class="subtitle">
+                     <v-row justify="space-between">
+                       <v-col><a href="https://app.multichain.org/#/router" target="_blank" >Multichain ></a></v-col>
+                       <v-col><a href="https://cbridge.celer.network/#/transfer" target="_blank" >Cbridge ></a></v-col>
+                       <!-- <v-col><a href="https://scan.rei.network/" target="_blank" >Dashboard ></a></v-col> -->
+                     </v-row>
+                  </v-list-item-subtitle>
+                </v-list-item-content>
               </v-list-item>
             </v-list>
           <v-list v-if="item.childs">
@@ -190,8 +217,10 @@ export default {
         {
           text: 'Network',
           system:'Ecosystem',
-          rei:'REI Explorer'
-
+          rei:'REI Explorer',
+          avatar:require("../assets/img/Ecosystem.png"),
+          avatar1:require("../assets/img/REI Explore.png"),
+          avatar2:require("../assets/img/Chain Bridge.png")
         },
         {
           text: 'REIcosystem',
@@ -269,6 +298,18 @@ export default {
 .v-btn.v-btn--has-bg{
   background-color: transparent;
 }
+.network-list{
+  width: 470px;
+  padding-bottom: 20px;
+  margin-top:20px;
+  // box-shadow: 0 0 20px #ddd !important;
+  .network-item{
+    padding: 12px 28px;
+  }
+  .subtitle{
+    margin-top:8px;
+  }
+}
 .scroll-top{
   position:fixed;
   right:28px;
@@ -277,5 +318,13 @@ export default {
   border: 1px #E2E2E2 solid;
   padding:10px;
   cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: #7E7E7E;
+}
+a:hover{
+  text-decoration: underline;
+  // color: #6979f8;
 }
 </style>
