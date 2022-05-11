@@ -133,6 +133,16 @@ export default {
               name: 'Voting',
               href: 'https://dao.rei.network/#/stake',
               target:'_blank'
+            },
+            {
+              name: 'Governance',
+              href: 'https://dao.rei.network/#/governance',
+              target:'_blank'
+            },
+            {
+              name: 'Forum',
+              href: 'https://forum.rei.network/',
+              target:'_blank'
             }
           ],
         },

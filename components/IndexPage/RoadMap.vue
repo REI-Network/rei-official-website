@@ -34,28 +34,21 @@ export default {
         reverse: true,
         items:[
           {
-                time: "2021.04",
-                text: "GXChain 2.0 developer Preview Version released, and the code is officially open-sourced"
+                time: "2021.Q2",
+                text: "",
+                content1:"GXChain 2.0 developer Preview Version released, and the code is officially open-sourced",
+                content2:"GXChain 2.0 testnet released, supports EVM and Ethereum general infrastructure, and is based on POA consensus; GXChain 2.0 testnet block explorer launched",
             },
             {
-                time: "2021.06",
-                text: "GXChain 2.0 testnet released, supports EVM and Ethereum general infrastructure, and is based on POA consensus; GXChain 2.0 testnet block explorer launched"
+                time: "2021.Q3",
+                text: "",
+                content1:"GXChain 2.0 testnet was upgraded, and stacking and slashing modules were introduced to realize second-level block confirmation",
             },
             {
-                time: "2021.08",
-                text: "GXChain 2.0 testnet was upgraded, and stacking and slashing modules were introduced to realize second-level block confirmation"
-            },
-            {
-                time: "2021.10",
-                text: "GXChain 2.0 testnet was upgraded to realize the free economic model"
-            },
-            {
-                time: "2021.12",
-                text: "GXChain 2.0 was officially renamed REI network. GXChain 1.0 and REI network are interconnected & CrossChain through GXC-Relay"
-            },
-            {
-                time: "2022",
-                text: "REI Network ecological construction; Function optimization and infrastructure upgrading of governance module and stacking module"
+                time: "2021.Q4",
+                text: "",
+                content1:"GXChain 2.0 testnet was upgraded to realize the free economic model",
+                content2:"GXChain 2.0 was officially renamed REI network. GXChain 1.0 and REI network are interconnected & CrossChain through GXC-Relay",
             },
             {
                 time: "Eureka  2022.Q1",
