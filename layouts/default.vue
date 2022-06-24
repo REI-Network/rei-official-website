@@ -71,7 +71,7 @@
                   <v-img :src="item.avatar2"></v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title>CrossChain Bridge</v-list-item-title>
+                  <v-list-item-title>Bridges</v-list-item-title>
                   <v-list-item-subtitle class="subtitle">
                      <v-row justify="space-between">
                        <v-col><a href="https://app.multichain.org/#/router" target="_blank" >Multichain ></a></v-col>
