@@ -24,7 +24,7 @@
                           src="../assets/img/arrow_white.png" />
                       </div>
                     </a>
-                    <h2 class="font-white font-bebas">≈ 114,590</h2>
+                    <h2 class="font-white font-bebas">≈ 119,258</h2>
                     <div class="font-white">Followers</div>
                   </div>
                 </v-card>
@@ -99,7 +99,7 @@
                           style="margin-bottom:4px"
                           src="../assets/img/arrow_white.png" />
                     </div></a>
-                    <h2 class=" font-white font-bebas">≈ 634</h2>
+                    <h2 class=" font-white font-bebas">≈ 655</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </v-card>
@@ -125,7 +125,7 @@
                           style="margin-bottom:4px"
                           src="../assets/img/arrow_white.png" />
                     </div></a>
-                    <h2 class=" font-white font-bebas">≈ 40,529</h2>
+                    <h2 class=" font-white font-bebas">≈ 44,528</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </v-card>
@@ -146,7 +146,7 @@
                           style="margin-bottom:4px"
                           src="../assets/img/arrow_white.png" />
                     </div></a>
-                    <h2 class=" font-white font-bebas">≈ 91,068</h2>
+                    <h2 class=" font-white font-bebas">≈ 91,160</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </div>
