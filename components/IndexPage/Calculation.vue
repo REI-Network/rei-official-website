@@ -24,7 +24,7 @@
             class="elevation-0 select-rate"
             v-model="value"
             :items="calculationItems"
-            style="border-radius:20px"
+            style=""
             background-color="#FFF"
             dense
             outlined
@@ -34,13 +34,13 @@
           >
           <template slot="selection" slot-scope="data">
             <v-row justify="space-between">
-              <v-col cols="12" md="7" class="nodeName">{{data.item.nodeName}}&nbsp;&nbsp;&nbsp;{{ data.item.address | addr}}</v-col>
+              <v-col cols="12" md="5" class="nodeName">{{data.item.nodeName}}&nbsp;&nbsp;&nbsp;{{ data.item.address | addr}}</v-col>
               <v-col class="font-grey commission">Commission Rate:{{ data.item.commissionRate}}%</v-col>
             </v-row>
           </template>
           <template #item="{ item }">
             <v-row justify="space-between" style="background-color:transparent;">
-              <v-col cols="12" md="7" class="nodeName">{{ item.nodeName }}&nbsp;&nbsp;&nbsp;{{ item.address | addr }}</v-col>
+              <v-col cols="12" md="5" class="nodeName">{{ item.nodeName }}&nbsp;&nbsp;&nbsp;{{ item.address | addr }}</v-col>
               <v-col class="font-grey commission">Commission Rate:{{item.commissionRate}}%</v-col>
             </v-row>
           </template>
@@ -85,7 +85,7 @@
           </v-row>
           <v-slider
             v-model="days"
-            track-color="white"
+            track-color="#F1F5F8"
             track-fill-color="#2116E5"
             thumb-color="#2116E5"
             always-dirty
@@ -110,6 +110,7 @@
           </v-row>
         </v-col>
       </v-row>
+
     </v-container>
   </div>
 </template>
@@ -273,10 +274,7 @@ export default {
   .stake-right {
     border-radius:8px ;
     background-color: #fff;
-    padding:12px;
-    .slider-stake {
-      background-color: transparent;
-    }
+    padding:20px;
   }
   .font-amount {
     color: #2116e5;
@@ -286,7 +284,8 @@ export default {
     margin-top: -40px;
   }
   .select-rate {
-    margin-top: 20px;
+    border-radius:20px;
+    margin:12px 0;
   }
   .font-blue {
     // font-family: babes !important;
@@ -310,6 +309,9 @@ a{
 }
 .commission{
    font-size: 14px;
+}
+.calculate-input{
+  margin-top:-20px;
 }
 @keyframes metronome-example {
   from {

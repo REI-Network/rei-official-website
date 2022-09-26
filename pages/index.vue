@@ -88,6 +88,7 @@
           </v-container>
       </div>
       <Calculation></Calculation>
+      <BuiltDapps></BuiltDapps>
       <div id="feature-wrap">
           <v-container class="content-width">
             <v-row>
@@ -273,6 +274,7 @@
 import RoadMap from '../components/IndexPage/RoadMap';
 import Partner from '../components/IndexPage/Partner';
 import Calculation from '../components/IndexPage/Calculation';
+import BuiltDapps from '../components/IndexPage/BuiltDapps';
 import Subscribe from '../components/Subscribe';
 
 export default {
@@ -281,7 +283,8 @@ export default {
       RoadMap,
       Partner,
       Subscribe,
-      Calculation
+      Calculation,
+      BuiltDapps
   },
   data() {
     return {
@@ -463,9 +466,6 @@ export default {
 }
 .v-slider--horizontal .v-slider__track-container{
   height:10px;
-}
-.v-text-field--outlined fieldset{
-  border:none !important;
 }
 @keyframes blink-caret {
   from {
