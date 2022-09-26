@@ -87,8 +87,9 @@
             </v-row>
           </v-container>
       </div>
+      <Calculation></Calculation>
       <div id="feature-wrap">
-          <v-container class="content-width mt-8">
+          <v-container class="content-width">
             <v-row>
                 <v-col
                     class="d-flex flex-column justify-center"
@@ -271,6 +272,7 @@
 <script>
 import RoadMap from '../components/IndexPage/RoadMap';
 import Partner from '../components/IndexPage/Partner';
+import Calculation from '../components/IndexPage/Calculation';
 import Subscribe from '../components/Subscribe';
 
 export default {
@@ -278,7 +280,8 @@ export default {
   components:{
       RoadMap,
       Partner,
-      Subscribe
+      Subscribe,
+      Calculation
   },
   data() {
     return {
@@ -335,7 +338,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @font-face {
   font-family: 'bebas';
   src: url('../assets/bebas/BEBAS.eot');
@@ -454,6 +457,15 @@ export default {
 .font-line-height{
   width:200px;
   line-height:100px !important;
+}
+.calculate-input .theme--light.v-input input, .theme--light.v-input textarea{
+  color:#2116E5 !important;
+}
+.v-slider--horizontal .v-slider__track-container{
+  height:10px;
+}
+.v-text-field--outlined fieldset{
+  border:none !important;
 }
 @keyframes blink-caret {
   from {
