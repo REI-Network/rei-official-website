@@ -87,8 +87,10 @@
             </v-row>
           </v-container>
       </div>
-      <Calculation></Calculation>
-      <BuiltDapps></BuiltDapps>
+      <div v-if="width > 900">
+        <Calculation></Calculation>
+        <BuiltDapps></BuiltDapps>
+      </div>
       <div id="feature-wrap">
           <v-container class="content-width">
             <v-row>
@@ -293,6 +295,7 @@ export default {
       sloganText: "Rapid Economical Innovative",
       animatedText: "",
       i: 0,
+      width:0,
       banner: require('@/assets/img/index/banner-index.png'),
       communityImg: require('@/assets/img/index/index-community.png'),
       featImg1: require('@/assets/img/index/feat-1.png'),
@@ -320,9 +323,14 @@ export default {
     setTimeout(() => this.typeWriter(), 0);
   },
   mounted() {
+    this.windowWidth()
     this.getData();
   },
   methods: {
+    windowWidth() {
+      const that = this;
+      that.width = window.innerWidth;
+    },
     typeWriter() {
       const speed = 200;
       if (this.i < this.sloganText.length) {
