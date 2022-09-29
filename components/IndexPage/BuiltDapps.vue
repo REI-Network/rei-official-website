@@ -4,119 +4,119 @@
       <v-row justify="space-between" class="dapps">
         <v-col cols="12" sm="6">
           <div class="stake-text">
-            There are already hundreds <br />
-            of Dapps built on the <br />REI Network
+            There are already many <br />
+            Dapps built on the <br />REI Network
           </div>
           <div class="font-grey dapp-text">
             REI Network Realize lower resource consumption through <br />the
             design of tokenomics.Provides a more user-friendly<br />
             solution.
           </div>
-          <v-btn class="more-btn">
-            <a href="" target="_blank">learn more</a>
+          <v-btn class="more-btn" to="/reiuse">
+          learn more
           </v-btn>
         </v-col>
         <v-col cols="12" sm="6" class="all-dapps">
           <div class="explore">
-            <v-btn class="explore-btn">
-            <a href="" target="_blank">Explore all dApps</a>
+            <v-btn class="explore-btn" to="/reiuse">
+            Explore all dApps
           </v-btn>
           </div>
           <v-row class="logo-two">
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo1" width="80" height="80" />
+                <v-img class="image" :src="logo1" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo2" width="80" height="80" />
+                <v-img class="image" :src="logo2" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo3" width="80" height="80" />
+                <v-img class="image" :src="logo3" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo4" width="80" height="80" />
+                <v-img class="image" :src="logo4" width="68" height="68" />
               </div>
             </v-col>
           </v-row>
           <v-row justify="space-around">
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo5" width="80" height="80" />
+                <v-img class="image" :src="logo5" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo6" width="80" height="80" />
+                <v-img class="image" :src="logo6" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo7" width="80" height="80" />
+                <v-img class="image" :src="logo7" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo8" width="80" height="80" />
+                <v-img class="image" :src="logo8" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo1" width="80" height="80" />
+                <v-img class="image" :src="logo1" width="68" height="68" />
               </div>
             </v-col>
           </v-row>
            <v-row class="logo-two">
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo1" width="80" height="80" />
+                <v-img class="image" :src="logo1" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo2" width="80" height="80" />
+                <v-img class="image" :src="logo2" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo3" width="80" height="80" />
+                <v-img class="image" :src="logo3" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo4" width="80" height="80" />
+                <v-img class="image" :src="logo4" width="68" height="68" />
               </div>
             </v-col>
           </v-row>
           <v-row>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo5" width="80" height="80" />
+                <v-img class="image" :src="logo5" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo6" width="80" height="80" />
+                <v-img class="image" :src="logo6" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo7" width="80" height="80" />
+                <v-img class="image" :src="logo7" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo8" width="80" height="80" />
+                <v-img class="image" :src="logo8" width="68" height="68" />
               </div>
             </v-col>
             <v-col>
               <div class="img-back">
-                <v-img class="image" :src="logo1" width="80" height="80" />
+                <v-img class="image" :src="logo1" width="68" height="68" />
               </div>
             </v-col>
           </v-row>
@@ -207,8 +207,8 @@ a {
     }
   }
   .img-back {
-    width: 80px;
-    height: 80px;
+    width: 68px;
+    height: 68px;
     border-radius: 50px;
     box-shadow: 0 0 20px #ddd;
     .image {
@@ -217,7 +217,6 @@ a {
   }
   .image:hover{
     border: 1px blue solid;
-    cursor: pointer;
   }
 }
 </style>

@@ -120,7 +120,6 @@ export default {
       try {
         const { data } = await this.$axios.get(`/api/project/list?type=${value.query}`);
         this.setData(data.rows);
-        console.log(value)
       } catch (error) {
         //
       }
@@ -158,6 +157,9 @@ export default {
   .font-white {
     // color: #FFF;
   }
+}
+h1{
+  margin-bottom: 20px;
 }
 .v-chip:not(.v-chip--active) {
   padding: 14px 40px;

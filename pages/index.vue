@@ -277,6 +277,8 @@ import Calculation from '../components/IndexPage/Calculation';
 import BuiltDapps from '../components/IndexPage/BuiltDapps';
 import Subscribe from '../components/Subscribe';
 
+
+
 export default {
   name: 'IndexPage',
   components:{
@@ -352,15 +354,19 @@ export default {
   font-weight: normal;
   font-style: normal;
 }
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Varela&display=swap');
 // .align-item{
 //   max-width: 1220px;
+// }
+// .index-page{
+//   font-family: 'Varela', sans-serif;
+// }
+// h1,h2,h3,h4,h5,h6{
+//   font-family: 'Poppins', sans-serif !important;
 // }
 .font-bebas{
     font-family: bebas;
   }
-.index-page{
-
-}
 .index-statistic {
     background: url('@/assets/img/index/mid-bg.png') center center no-repeat;
     background-size:100% 100%;
