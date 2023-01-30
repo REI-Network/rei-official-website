@@ -46,7 +46,7 @@
     </v-container>
     <v-container class="align-center">
       <v-row justify="space-between">
-        <div class="copy-center">&copy; 2022 REI Network</div>
+        <div class="copy-center">&copy; 2023 REI Network</div>
         <a href="https://static.rei.network/media/privacy-policy.pdf" target="_blank" class="copy-center">Privacy Policy</a>
       </v-row>
     </v-container>
