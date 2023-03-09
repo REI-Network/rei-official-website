@@ -5,7 +5,7 @@
           <div class="pos-mask ">
                 <div class="wrap-1 ">
                 <div class="con-1 typing-text">
-                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white font-line font-line-height">Join<br/>REI Network<br/>Community</h1>
+                    <h1 class="mt-16 text-h2 font-italic font-weight-bold font-white font-line font-line-height">Join REI Network Community</h1>
                     <h5 class="font-white font-margin">
                       REI Network community members are around the world. You are<br/> welcome to join our community, share your creativity, ideas, freely<br/> use and build Dapps on REI Network. Join the growing REI Network<br/> community which supports13+ languages
                     </h5>
