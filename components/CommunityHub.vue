@@ -24,7 +24,7 @@
                           src="../assets/img/arrow_white.png" />
                       </div>
                     </a>
-                    <h2 class="font-white font-bebas">≈ 119,258</h2>
+                    <h2 class="font-white font-bebas">≈ 124,052</h2>
                     <div class="font-white">Followers</div>
                   </div>
                 </v-card>
@@ -55,7 +55,7 @@
                 </v-card>
               </v-hover>
             </v-col>
-            <v-col cols="12" sm="4" class="Hub">
+            <v-col cols="12" sm="4">
               <v-hover
                 v-slot="{ hover }"
                 open-delay="200">
@@ -65,7 +65,7 @@
                   :class="{ 'on-hover': hover }"
                   class="hub-background mt-10 github"
                   >
-                  <img :src="github" height="180" width="160" />
+                  <v-img :src="github" height="300" width="240" class="discord-img"/>
                   <div class="hub-content">
                     <a a href="https://github.com/rei-network" target="_blank">
                     <div class="hub-name font-white">GitHub
@@ -75,35 +75,9 @@
                           style="margin-bottom:4px"
                           src="../assets/img/arrow_white.png" />
                     </div></a>
-                    <!-- <h2 class="font-white font-bebas">4</h2>
-                    <div class="font-white">Core Contributors</div> -->
                   </div>
                 </v-card>
-              </v-hover>
-              <v-hover
-                v-slot="{ hover }"
-                open-delay="200">
-                <v-card
-                  tile
-                  :elevation="hover ? 12 : 0"
-                  :class="{ 'on-hover': hover }"
-                  class="hub-background mt-6 kakao"
-                  >
-                  <img :src="talk" height="180" width="160" />
-                  <div class="hub-content">
-                    <a a href="https://open.kakao.com/o/gghzljsb" target="_blank">
-                    <div class="hub-name font-white">KaKao
-                      <img
-                          height="8"
-                          width="20"
-                          style="margin-bottom:4px"
-                          src="../assets/img/arrow_white.png" />
-                    </div></a>
-                    <h2 class=" font-white font-bebas">≈ 655</h2>
-                    <div class="font-white">Members</div>
-                  </div>
-                </v-card>
-              </v-hover>
+                </v-hover>
             </v-col>
             <v-col cols="12" sm="4">
               <v-hover
@@ -125,7 +99,7 @@
                           style="margin-bottom:4px"
                           src="../assets/img/arrow_white.png" />
                     </div></a>
-                    <h2 class=" font-white font-bebas">≈ 44,528</h2>
+                    <h2 class=" font-white font-bebas">≈ 46,801</h2>
                     <div class="font-white">Members</div>
                   </div>
                 </v-card>
@@ -351,9 +325,16 @@ export default {
   }
   .github{
     background: linear-gradient(to bottom, #7E707E, #B1B3B1);
-  }
-  .kakao{
-    background: linear-gradient(to bottom, #FFCE6B, #FBD99B);
+    height: 45.5rem;
+    .discord-img{
+      margin-top: 50px;
+    }
+    .hub-content{
+      margin-top: 200px;
+    }
+    h2{
+      margin: 12px 0;
+    }
   }
   .discord{
     height: 45.5rem;
