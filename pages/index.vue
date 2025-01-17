@@ -265,13 +265,11 @@
             </v-row>
         </v-container>
       </div>
-      <RoadMap></RoadMap>
       <Partner></Partner>
   </div>
 </template>
 
 <script>
-import RoadMap from '../components/IndexPage/RoadMap';
 import Partner from '../components/IndexPage/Partner';
 import Calculation from '../components/IndexPage/Calculation';
 import BuiltDapps from '../components/IndexPage/BuiltDapps';
@@ -282,7 +280,6 @@ import Subscribe from '../components/Subscribe';
 export default {
   name: 'IndexPage',
   components:{
-      RoadMap,
       Partner,
       Subscribe,
       Calculation,
