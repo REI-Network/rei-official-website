@@ -86,6 +86,12 @@ export default {
           img: require("@/assets/img/index/partner/inblockchain.png"),
         },
         {
+          img: require("@/assets/img/index/partner/ic-8dec.png"),
+        },
+        {
+          img: require("@/assets/img/index/partner/ic-linkvc-2.png"),
+        },
+        {
           img: require("@/assets/img/index/partner/ic-bixin.png"),
         },
         {
