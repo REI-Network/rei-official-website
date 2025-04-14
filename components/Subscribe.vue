@@ -139,49 +139,49 @@ export default {
               en: "Korean Community",
             },
             {
-              link: "https://t.me/GXChain_Rus",
-              en: "Russian Community",
-            },
-            {
-              link: "https://t.me/GXChainhispano",
-              en: "Spanish Community",
-            },
-            {
-              link: "https://t.me/GXChainDeutsch",
-              en: "German Community",
-            },
-            {
               link: "https://t.me/GXChainJapanese",
               en: "Japanese Community",
             },
-            {
-              link: "https://t.me/GXChainBrazil",
-              en: "Brazil Community",
-            },
-            {
-              link: "https://t.me/GXChainItalia",
-              en: "Italian Community",
-            },
-            {
-              link: "https://t.me/gxchainvietnam",
-              en: "Vietnamese Community",
-            },
-            {
-              link: "https://t.me/GXChainAfrica",
-              en: "African Community",
-            },
-            {
-              link: "https://t.me/GXChainTurkey",
-              en: "Turkish Community",
-            },
-            {
-              link: "https://t.me/gxchainsrilanka",
-              en: "Sri Lanka Community",
-            },
-            {
-              link: "https://t.me/GXChain_Indonesia",
-              en: "Indonesian Community",
-            },
+            // {
+            //   link: "https://t.me/GXChain_Rus",
+            //   en: "Russian Community",
+            // },
+            // {
+            //   link: "https://t.me/GXChainhispano",
+            //   en: "Spanish Community",
+            // },
+            // {
+            //   link: "https://t.me/GXChainDeutsch",
+            //   en: "German Community",
+            // },
+            // {
+            //   link: "https://t.me/GXChainBrazil",
+            //   en: "Brazil Community",
+            // },
+            // {
+            //   link: "https://t.me/GXChainItalia",
+            //   en: "Italian Community",
+            // },
+            // {
+            //   link: "https://t.me/gxchainvietnam",
+            //   en: "Vietnamese Community",
+            // },
+            // {
+            //   link: "https://t.me/GXChainAfrica",
+            //   en: "African Community",
+            // },
+            // {
+            //   link: "https://t.me/GXChainTurkey",
+            //   en: "Turkish Community",
+            // },
+            // {
+            //   link: "https://t.me/gxchainsrilanka",
+            //   en: "Sri Lanka Community",
+            // },
+            // {
+            //   link: "https://t.me/GXChain_Indonesia",
+            //   en: "Indonesian Community",
+            // },
           ],
         },
         {
