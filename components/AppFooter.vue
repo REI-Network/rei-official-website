@@ -82,7 +82,7 @@ export default {
             },
             {
               name: 'Chat On Discord',
-              href: 'https://discord.com/invite/zhwWkXYtJt',
+              href: 'https://discord.gg/H3Hzethnr5',
               target:'_blank'
             },
           ],

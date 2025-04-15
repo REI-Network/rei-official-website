@@ -191,7 +191,7 @@ export default {
         },
         {
           img:require("../assets/img/icon/Group 82.svg"),
-          href: "https://discord.com/invite/zhwWkXYtJt",
+          href: "https://discord.gg/H3Hzethnr5",
           color: "#714bdf",
         },
       ],

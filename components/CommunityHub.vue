@@ -101,7 +101,7 @@
               <div class="hub-content">
                 <a
                   a
-                  href="https://discord.com/invite/zhwWkXYtJt"
+                  href="https://discord.gg/H3Hzethnr5"
                   target="_blank"
                 >
                   <div class="hub-name font-white">

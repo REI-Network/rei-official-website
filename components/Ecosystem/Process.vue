@@ -99,7 +99,7 @@
             <v-btn
             color="#1D10F8"
             class="btn-background font-white"
-            href="https://discord.com/invite/zhwWkXYtJt"
+            href="https://discord.gg/H3Hzethnr5"
             target="_blank"
             width="120"
             height="36"
