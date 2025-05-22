@@ -1,7 +1,7 @@
 <template>
   <div style="width:100%">
     <v-container class="mt-12 content-width">
-        <h1 style="margin-bottom:72px">Roadmap</h1>
+        <h1 style="margin-bottom:72px">Roadmap <span style="font-size: 20px;">「New Released」</span></h1>
             <v-timeline
              v-for="(item, i) in items"
             :key="i"
@@ -14,12 +14,12 @@
          <span class="pa-5 font-weight-bold">{{item.time}}</span>
           <div class="pa-5 time-text">{{item.text}}</div>
           <ul class="road-content">
-            <li v-if="item.content1">{{item.content1}}</li>
-            <li v-if="item.content2">{{item.content2}}</li>
-            <li v-if="item.content3">{{item.content3}}</li>
-            <li v-if="item.content4">{{item.content4}}</li>
-            <li v-if="item.content5">{{item.content5}}</li>
-            <li v-if="item.content6">{{item.content6}}</li>
+            <li v-if="item.content1" v-html="item.content1"></li>
+            <li v-if="item.content2" v-html="item.content2"></li>
+            <li v-if="item.content3" v-html="item.content3"></li>
+            <li v-if="item.content4" v-html="item.content4"></li>
+            <li v-if="item.content5" v-html="item.content5"></li>
+            <li v-if="item.content6" v-html="item.content6"></li>
           </ul>
        </div>
     </v-timeline-item>
@@ -34,59 +34,47 @@ export default {
         reverse: true,
         items:[
           {
-                time: "2021.Q2",
+                time: "2025 Q2",
                 text: "",
-                content1:"GXChain 2.0 developer Preview Version released, and the code is officially open-sourced",
-                content2:"GXChain 2.0 testnet released, supports EVM and Ethereum general infrastructure, and is based on POA consensus; GXChain 2.0 testnet block explorer launched",
+                content1:"<strong>Core Performance:</strong> Monitor node activity to optimize block‐producing network; phase out high‐miss, long‐offline nodes",
+                content2:"<strong>AI Integration:</strong> Publish AI module API spec; launch REI MCP framework and AI Agent developer program",
+                content3:"<strong>Cross-Chain:</strong> Onboard a third-party Bridge for BSC assets",
+                content4:"<strong>Stake-to-Earn:</strong> Combine token rewards with partner airdrops (USDT/BUSD/partner tokens) to boost staking; partner DApps and bridges run multiple airdrop rounds for active stakers",
+                content5:"<strong>Gas-Free UX:</strong> Introduce stablecoins to enable gas-free payments, voting, gaming, etc.",
             },
             {
-                time: "2021.Q3",
+                time: "2025 Q3",
                 text: "",
-                content1:"GXChain 2.0 testnet was upgraded, and stacking and slashing modules were introduced to realize second-level block confirmation",
+                content1:"<strong>Core Performance:</strong> Upgrade P2P layer to reduce sync latency ",
+                content2:"<strong>AI Integration:</strong> Deepen native AI module support ",
+                content3:"<strong>Gas-Free UX:</strong> Expand gas-free use cases alongside stablecoin rollout",
             },
             {
-                time: "2021.Q4",
+                time: "2025 Q4",
                 text: "",
-                content1:"GXChain 2.0 testnet was upgraded to realize the free economic model",
-                content2:"GXChain 2.0 was officially renamed REI network. GXChain 1.0 and REI network are interconnected & CrossChain through GXC-Relay",
+                content1:"<strong>Core Performance:</strong> “Block Acceleration” testnet: shorten block time from 3s to 1.5s ",
+                content2:"<strong>AI Integration:</strong> Launch REI MCP Marketplace; provide gas subsidies for top AI Agents ",
+                content3:"<strong>Cross-Chain:</strong> Add Solana-compatible bridge for broader interoperability ",
+                content4:"<strong>Stake-to-Earn:</strong> Roll out gas-free airdrop subsidies; “stake‐to‐mine + airdrop” model with DEX fee credits and gas refunds ",
+                content5:"<strong>Gas-Free UX:</strong> Host “Gas-Free Swap” events for major asset pairs to boost liquidity ",
             },
             {
-                time: "Eureka  2022.Q1",
-                text: "The singularity of the rebrand from GXChain to REI Network.",
-                content1:"Compatible with EVM and Ethereum infrastructure, fast transaction confirmation through DPoS+BFT",
-                content2:"FreeStake (Free Economic Model) testnet was live",
-                content3:"$GXC-$REI token swap",
-                content4:"REI Network ecosystem infrastructure construction, ecosystem blueprint and brand building plan",
+                time: "2026 Q1",
+                text: "",
+                content1:"<strong>Performance Optimization:</strong> Continue testnet validation of 1.5s block times.",
+                content2:"<strong>Cross-Chain Infrastructure:</strong> Further optimize Solana cross-chain compatibility.",
+                content3:"<strong>Stake-to-Earn Incentives: </strong>Implement targeted, multi-metric incentives—based on on-chain activity, DApp usage, and holding duration—to maximize resource efficiency and drive genuine growth.",
             },
             {
-                time: "Tribes  2022.Q2",
-                text: "The tribe is the source of human civilization. At this stage, the development of REI Network will be accelerated.",
-                content1:"REI Network connects with mainstream blockchain ecosystems",
-                content2:"REI Network project and ecosystem growth plan released (Users, TVL)",
-                content3:"FreeStake (Free Economic Model) mainnet is launched",
-                content4:"REI DAO Decentralized Governance is live",
-                content5:"REI Network Super Node Campaign is started",
-                content6:"REI Network Brand Building: covers the world’s major crypto markets",
+                time: "2026 Q2",
+                text: "",
+                content1:"<strong>Performance Optimization:</strong> Deploy 1.5s block production on mainnet based on test feedback, supporting high-frequency interactions.",
+                content2:"<strong>Cross-Chain Infrastructure:</strong> List cross-chain assets on REI Network’s DEX and attract mainstream liquidity through incentive programs.",
             },
             {
-                time: "Federation  2022.Q3-Q4",
-                text: "The Federation is a more modern and efficient paradigm for human society and civilization. At this stage, REI Network will focus on building a more organized, scaled, and oriented ecosystem:",
-                content1:"Reconstruct RPC, P2P network, consensus mechanism, and virtual machine module to achieve 2–3 times overall performance improvement",
-                content2:"Explore modular public chain technology, and the integration of Rollups, sharding, multi-chain, and other technologies with REI Network ",
-                content3:"Large-scale projects and ecosystem growth cycle on REI Network (Users, TVL) ",
-                content4:"Field focused growth: accelerate field growth plans for Free Economic Model (DeFi, GameFi, NFT, SocialFi, etc.) ",
-                content5:"Strengthen brand recognition of REI Network: expanding the global space",
-                content6:"",
-            },
-            {
-                time: "Spreading  2023",
-                text: "REI Network will commit itself to improve performance and applying native assets to more areas, expanding global acceptance:",
-                content1:"Solve the Trilemma of public chain through modular public chain technology, achieve a hundredfold performance improvement of REI Network under the premise of security and decentralization",
-                content2:"REI Network is further accepted by global users",
-                content3:"$REI, the native asset: covers more fields and use cases",
-                content4:"The public welfare attribute of REI Network: playing an inclusive social role",
-                content5:"",
-                content6:"",
+                time: "By 2026 Q3",
+                text: "",
+                content1:"<strong>Gasless Use Cases:</strong> Partner with Web3 applications to roll out gas-free payment scenarios, exploring on-chain payments and daily consumer use cases.",
             },
         ]
       }
