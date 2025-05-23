@@ -1,7 +1,7 @@
 <template>
   <div style="width:100%">
     <v-container class="mt-12 content-width">
-        <h1 style="margin-bottom:72px">Roadmap <span style="font-size: 20px;">「New Released」</span></h1>
+        <h1 style="margin-bottom:72px">Roadmap <span style="font-size: 20px;"><img width="80" src="../../assets/img/new_release.png"></span></h1>
             <v-timeline
              v-for="(item, i) in items"
             :key="i"
